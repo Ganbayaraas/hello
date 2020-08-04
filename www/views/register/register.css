@@ -52,9 +52,21 @@
 .progressbar .step-li-2.active:after {
   transition: all 0.8s;
   background: rgb(170, 212, 38);
-  background: -moz-linear-gradient(45deg, rgba(170, 212, 38, 1) 15%, rgba(104, 201, 166, 1) 77%);
-  background: -webkit-linear-gradient(45deg, rgba(170, 212, 38, 1) 15%, rgba(104, 201, 166, 1) 77%);
-  background: linear-gradient(45deg, rgba(170, 212, 38, 1) 15%, rgba(104, 201, 166, 1) 77%);
+  background: -moz-linear-gradient(
+    45deg,
+    rgba(170, 212, 38, 1) 15%,
+    rgba(104, 201, 166, 1) 77%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(170, 212, 38, 1) 15%,
+    rgba(104, 201, 166, 1) 77%
+  );
+  background: linear-gradient(
+    45deg,
+    rgba(170, 212, 38, 1) 15%,
+    rgba(104, 201, 166, 1) 77%
+  );
 }
 .progressbar .step-li-3.active:before {
   border-color: #41c1f2;
@@ -64,16 +76,40 @@
 .progressbar .step-li-3.active:after {
   transition: all 0.8s;
   background: rgb(104, 201, 166);
-  background: -moz-linear-gradient(45deg, rgba(104, 201, 166, 1) 30%, rgba(65, 193, 242, 1) 77%);
-  background: -webkit-linear-gradient(45deg, rgba(104, 201, 166, 1) 30%, rgba(65, 193, 242, 1) 77%);
-  background: linear-gradient(45deg, rgba(104, 201, 166, 1) 30%, rgba(65, 193, 242, 1) 77%);
+  background: -moz-linear-gradient(
+    45deg,
+    rgba(104, 201, 166, 1) 30%,
+    rgba(65, 193, 242, 1) 77%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(104, 201, 166, 1) 30%,
+    rgba(65, 193, 242, 1) 77%
+  );
+  background: linear-gradient(
+    45deg,
+    rgba(104, 201, 166, 1) 30%,
+    rgba(65, 193, 242, 1) 77%
+  );
 }
 
 .btn {
   background: rgb(162, 209, 52);
-  background: -moz-linear-gradient(45deg, rgba(162, 209, 52, 1) 30%, rgba(59, 193, 249, 1) 77%);
-  background: -webkit-linear-gradient(45deg, rgba(162, 209, 52, 1) 30%, rgba(59, 193, 249, 1) 77%);
-  background: linear-gradient(45deg, rgba(162, 209, 52, 1) 30%, rgba(59, 193, 249, 1) 77%);
+  background: -moz-linear-gradient(
+    45deg,
+    rgba(162, 209, 52, 1) 30%,
+    rgba(59, 193, 249, 1) 77%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(162, 209, 52, 1) 30%,
+    rgba(59, 193, 249, 1) 77%
+  );
+  background: linear-gradient(
+    45deg,
+    rgba(162, 209, 52, 1) 30%,
+    rgba(59, 193, 249, 1) 77%
+  );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a2d134",endColorstr="#3bc1f9",GradientType=1);
   color: white;
   width: 70%;
