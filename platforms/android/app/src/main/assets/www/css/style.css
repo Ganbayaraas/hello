@@ -1,0 +1,57 @@
+/* Empty. Add your own CSS if you like */
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../lib/roboto/Roboto-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../lib/roboto/Roboto-Regular.ttf") format("truetype");
+}
+.cus-header-icon {
+  color: #000 !important;
+}
+.cus-header-title {
+  left: 35px !important;
+}
+.cus-header-right-icon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.ion-color-green {
+  color: #add321 !important;
+}
+.ion-color-blue {
+  color: #263667 !important;
+}
+.ion-text-bold {
+  font-weight: bold;
+  font-size: 20px;
+}
+.ion-float-left {
+  float: left;
+}
+.ion-float-right {
+  float: right;
+}
+.tabs-top > .tabs {
+  height: 40px !important;
+  width: 130px !important;
+  left: 17px;
+}
+.tabs-top.tabs-striped .tab-item.tab-item-active {
+  border-color: #add321;
+}
+.tab-item-active > .tab-title {
+  color: #add321 !important;
+}
+.tabs-top.tabs-striped .tab-item:active {
+  border-color: #add321;
+  color: #add321 !important;
+}
+.tab-item .tab-item-active {
+  border-width: 0px 0px 2px 0px !important;
+  border-style: solid;
+}

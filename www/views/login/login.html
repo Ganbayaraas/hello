@@ -1,0 +1,34 @@
+<ion-view ng-app="login.Ctrl">
+  <link href="views/login/login.css" rel="stylesheet" />
+  <ion-content scroll="false" class="login-content">
+    <div ng-controller="loginCtrl" class="login-container">
+      <div class="box">
+        <img class="login-favicon" src="/www/img/favicon.png" />
+        <input type="text" placeholder="Утансы дугаар" name="mobileNumber" />
+        <div class="login-password-container">
+          <input type="{{inputType}}" class="login-password" placeholder="Нууц үг" name="password" id="myInput" />
+          <button class="button button-icon show-pass-btn" style="zoom: 1;" ng-click="hideShowPassword()">
+            <i class="fa fa-eye" id="eye-icon"></i>
+          </button>
+        </div>
+        <a href="#" class="login-forgot">Нууц үг мартсан?</a>
+        <div class="login-radio">
+          <ul class="unstyled centered">
+            <li>
+              <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1" checked />
+              <label for="styled-checkbox-1">Хурууны хээгээр нэвтрэх</label>
+            </li>
+            <li>
+              <input class="styled-checkbox" id="styled-checkbox-2" type="checkbox" value="value2" checked />
+              <label for="styled-checkbox-2">Царай таних</label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sign-class">
+          <button class="button login-button" ui-sref="profile">Нэвтрэх</button>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,54 @@
+.intro2-container {
+  padding: 30px;
+}
+.intro2-img {
+  width: 100%;
+  height: auto;
+}
+.intro2-text {
+  font-size: 20px;
+}
+.intro2-btn {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  bottom: 10%;
+  border-radius: 20px;
+  width: 50%;
+}
+
+/* custom radio button */
+/* replace with any ionic icon or your own custom */
+/* ionic icons can be found at: http://ionicons.com/ */
+/* ionic icons UTF-8 character | UTF-8 Icons: https://github.com/ionic-team/ionicons/blob/master/css/ionicons.css */
+/* the use of !important is not recomended, play with it in your app where things might be diffrent */
+
+.radio-icon:before {
+  content: "\25C9" !important;
+  font-family: Ionicons;
+  overflow: hidden;
+}
+
+.item-radio input:checked + .radio-content .radio-icon:before {
+  visibility: visible;
+  content: "\26AA" !important;
+  font-family: Ionicons;
+}
+
+.radio-icon.ion-checkmark:before {
+  content: "";
+}
+.radio1 {
+  display: flex;
+  align-items: center;
+}
+.radio2 {
+  display: flex;
+  align-items: center;
+}
+label {
+  display: inline-block;
+  width: 30%;
+  line-height: 2;
+}

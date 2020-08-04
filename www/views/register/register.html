@@ -1,0 +1,48 @@
+<ion-view>
+  <link href="views/register/register.css" rel="stylesheet" />
+  <ion-content scroll="false">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <ul id="progress-bar" class="progressbar">
+            <li class="active step-li-1"></li>
+            <li class="active step-li-2"></li>
+            <li class="step-li-3"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="register-step-1" class="register-step-1">
+      <div class="step-1-text">
+        <p>Та утасны дугаараа оруулна уу</p>
+        <p>Таны утсанд баталгаажуулах код илгээх болно.</p>
+      </div>
+      <div class="step-1-text">
+        <input type="text" placeholder="Утасны дугаар" name="mobileNumber" class="register-mobile" />
+      </div>
+      <div class="step-1-text">
+        <p>Энэ таны нэвтрэх нэр болно.</p>
+      </div>
+    </div>
+    <div id="register-step-2" class="register-step-2 remove-step">
+      <div class="step-1-text">
+        <p>Таны 886677** дугаарт илгээсэн 6 оронтой кодыг оруулж баталгаажуулна уу.</p>
+      </div>
+      <div class="step-1-text">
+        <input type="text" placeholder="000000" name="firstName" />
+      </div>
+      <div class="step-1-text">
+        <p>Дахин код илгээх</p>
+      </div>
+    </div>
+    <!-- <ion-tabs class="tabs-striped tabs-top profile-card-tabs">
+      <ion-tab title="Хувь1"> </ion-tab>
+      <ion-tab title="Хувь2"> </ion-tab>
+    </ion-tabs> -->
+    <div class="btn-container">
+      <button class="button btn register-next-button" id="Next">Үргэлжлүүлэх</button>
+      <!-- <button class="btn" id="Back">Back</button> -->
+      <!-- <button class="btn" id="Reset">Reset</button> -->
+    </div>
+  </ion-content>
+</ion-view>

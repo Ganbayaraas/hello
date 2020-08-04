@@ -1,0 +1,69 @@
+<ion-view id="request_listPage">
+  <ion-pane>
+    <link href="views/request-list/request_list.css" rel="stylesheet" />
+    <ion-nav-view>
+      <ion-content scroll="false">
+        <div class="card">
+          <div class="item bank-card card-body item-text-wrap">
+            <div class="expandcollapse-item" ng-click="active = !active" ng-class="{'expandcollapse-heading-collapsed': active, 'expandcollapse-heading-expanded': !active}">
+              <div class="row">
+                <div class="col">
+                  <span class="ion-float-left">Land Cruiser 200</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <span class="ion-color-blue"><span class="ion-text-bold">16,000,000</span>.00 ₮</span>
+                </div>
+                <div class="col">
+                  <span class="ion-float-right">Авто лизинг</span>
+                </div>
+              </div>
+            </div>
+            <div class="list row slideDown" ng-hide="active">
+              <a class="item item-thumbnail-left bank-card-expand" href="#">
+                <img src="/www/img/khanbank-mn.png" />
+                <div class="row">
+                  <div class="col">
+                    <p class="ion-color-blue">Хаан банк</p>
+                  </div>
+                  <div class="col">
+                    <p class="ion-float-right">Хүү: 3.6%</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <p class="ion-color-green">Баталсан</p>
+                  </div>
+                  <div class="col">
+                    <p class="ion-float-right">Хугацаа: 12 сар</p>
+                  </div>
+                </div>
+              </a>
+              <a class="item item-thumbnail-left bank-card-expand" href="#">
+                <img src="/www/img/khanbank-mn.png" />
+                <div class="row">
+                  <div class="col">
+                    <p class="ion-color-blue">Хаан банк</p>
+                  </div>
+                  <div class="col">
+                    <p class="ion-float-right">Хүү: 3.6%</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <p class="ion-color-green">Баталсан</p>
+                  </div>
+                  <div class="col">
+                    <p class="ion-float-right">Хугацаа: 12 сар</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <span class="badge badge-assertive loan-card-badge">1</span>
+          </div>
+        </div>
+      </ion-content>
+    </ion-nav-view>
+  </ion-pane>
+</ion-view>

@@ -1,0 +1,39 @@
+﻿.home-card-1 {
+  background-image: linear-gradient(-90deg, #40c2f2, #aad426);
+  color: #fff;
+}
+.home-card-2 {
+  background: #5270ec;
+  color: #fff;
+  height: 135px;
+}
+.home-card-3 {
+  background: #314ba8;
+  color: #fff;
+  height: 135px;
+}
+.home-card-4 {
+  background: #3ac6d4;
+  color: #fff;
+  height: 135px;
+}
+.home-card-5 {
+  background: #3ac6d4;
+  color: #fff;
+  height: 135px;
+}
+.home-card-1-first-row {
+  margin-bottom: 50px;
+}
+.home-card-small-text {
+  font-size: 12px;
+}
+.home-card-icon {
+  margin-left: auto;
+  margin-right: 0;
+  zoom: 2;
+  color: #808080;
+}
+.home-card {
+  width: 100%;
+}
