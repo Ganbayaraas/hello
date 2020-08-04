@@ -139,3 +139,6 @@ li {
 .show-pass-btn i {
   color: #fff;
 }
+.login-mobile {
+  text-align: left !important;
+}
