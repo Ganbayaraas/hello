@@ -80,6 +80,7 @@
   color: white;
   width: 70%;
   border-radius: 10px;
+  font-weight: 600;
 }
 .btn:hover {
   color: white;
