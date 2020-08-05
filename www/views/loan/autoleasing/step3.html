@@ -2,9 +2,6 @@
     <link href="views/loan/autoleasing.css" rel="stylesheet" />
     <ion-content scroll="true" style="background-color: ghostwhite;">
       <div class="bg-container">
-        <div class="head-text">
-          <p>Та хайх гэж буй үйлдвэрээ сонгох эсвэл бичиж оруулна уу.</p>
-        </div>
         <div class="container">
           <div class="row">
             <div class="col">
@@ -18,32 +15,159 @@
           </div>
         </div>
         <div class="input-text">
-          <p class="upper-text">Анхан шатны шалгуур хангасан банкууд</p>
-          
-          <ul class="list-group">
+          <p class="middle-title">Анхан шатны шалгуур хангасан банкууд</p>
+          <ul class="list-group"> 
             <li>
-                <img class="bank-logo" src="/www/img/khanbank-mn.png" />
-              <span class="gray-title">Хас банк</span>
-              <span class="badge">Дэлгэрэнгүй >>></span>
+                <ion-checkbox >
+                    <div class="bank-logo-container">
+                        <img class="logo-size" src="/www/img/khanbank-mn.png" />
+                    </div>
+                    <div class="ml-42">
+                        <span class="bank-middle-title">Хаан банк</span>
+                        <br/ >
+                        <p class="bank-desc-green">Тэнцсэн банк</p>
+                        <span class="right-btn" ui-sref="autoleasing-bank-info">Дэлгэрэнгүй >>></span>
+                    </div>
+                </ion-checkbox>
             </li>
             <li class="line" />
             <li>
-              
+                <ion-checkbox >
+                    <div class="bank-logo-container">
+                        <img class="logo-size" src="/www/img/khanbank-mn.png" />
+                    </div>
+                    <div class="ml-42">
+                        <span class="bank-middle-title">Хас банк</span>
+                        <br/ >
+                        <p class="bank-desc-green">Тэнцсэн банк</p>
+                    </div>
+                    <span  class="right-btn">Дэлгэрэнгүй >>></span>
+                </ion-checkbox>
             </li>
-            
+            <li class="line" />
+            </div>
+          </ul>
+          <!-- Shalguur hangaagui bankuud -->
+          <p class="middle-title" style="margin-top: 30px;">Анхан шатны шалгуур хангасан банкууд</p>
+          <ul class="list-group"> 
+            <li>
+                <ion-checkbox >
+                    <div class="bank-logo-container">
+                        <img class="logo-size" src="/www/img/khanbank-mn.png" />
+                    </div>
+                    <div class="ml-42">
+                        <span class="bank-middle-title">Хаан банк</span>
+                        <br/ >
+                        <p class="bank-desc-red">Тэнцээгүй банк</p>
+                    </div>
+                </ion-checkbox>
+            </li>
+            <li class="line" />
+            <li>
+                <ion-checkbox >
+                    <div class="bank-logo-container">
+                        <img class="logo-size" src="/www/img/khanbank-mn.png" />
+                    </div>
+                    <div class="ml-42">
+                        <span class="bank-middle-title">Хас банк</span>
+                        <br/ >
+                        <p class="bank-desc-red">Тэнцээгүй банк</p>
+                    </div>
+                </ion-checkbox>
+            </li>
+            <li class="line" />
             </div>
           </ul>
         </div>
-      </div>
-
-      <div class="btn-container" style="margin-bottom: 20%;">
-          <button class="button btn register-next-button" id="Next" ui-sref="autoleasing-3">
+        </div>
+      <div class="btn-container" style="">
+          <button class="button btn register-next-button" id="Next" ui-sref="autoleasing-bank-info">
             Үргэлжлүүлэх
           </button>
         </div>
     </ion-content>
   </ion-view>
   <style>
+.bank-logo-container {
+    display: flex; 
+    position: relative; 
+    float: left;
+}
+.logo-size {width: 35px;height: 35px;}
+.ml-42 {margin-left: 42px;margin-top: -5px;}
+.bank-middle-title {
+    margin-top: -5px;
+    font-size: 19px;
+    font-weight: 900;
+    color: #000658cf;
+}
+.bank-desc-green {
+    color: #aad426 !important;
+    font-size: 13px !important;
+    bottom: 0px;
+}
+.bank-desc-red {
+    color: #f7574c !important;
+    font-size: 13px !important;
+    bottom: 0px;
+}
+.right-btn {
+    position: absolute;
+    bottom: 14px;
+    right: 0px; color: #aaaaaa; z-index: 1; display: inline-block;font-size: 14px;
+}
+.checkbox input, .checkbox-icon {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    display: block;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+.checkbox input:before, .checkbox-icon:before {
+    display: table;
+    width: 100%;
+    height: 100%;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    background: #fff;
+    content: " ";
+    -webkit-transition: background-color 20ms ease-in-out;
+    transition: background-color 20ms ease-in-out;
+}
+.checkbox input:checked:before, .checkbox input:checked + .checkbox-icon:before {
+    background: yellowgreen;
+    border-color: yellowgreen;
+}
+.item {
+    padding: 15px 15px 15px 45px;
+    width: 100%;
+    border-color: #ddd;
+    border: none;
+    background-color: #fff;
+    color: #444;
+    position: relative;
+    z-index: 2;
+    display: block;
+    margin: -1px;
+    font-size: 16px;
+}
+.item-checkbox .checkbox {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    left: 0px;
+    z-index: 3;
+    margin-top: -21px;
+}
+    .middle-title {
+      font-size: 12px;
+      color: #3b3b3b;
+      text-transform: uppercase;
+    }
     .upper-text {
       color: #3b3b3b;
       text-transform: uppercase;

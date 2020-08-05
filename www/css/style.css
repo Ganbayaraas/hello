@@ -73,7 +73,9 @@
   width: 100%;
   padding: 20px 0px 20px 0px;
 }
-
+.button {
+  border: none;
+}
 .btn {
   background: rgb(162, 209, 52);
   background: -moz-linear-gradient(45deg, rgba(162, 209, 52, 1) 30%, rgba(59, 193, 249, 1) 77%);
@@ -83,6 +85,7 @@
   color: white;
   width: 70%;
   border-radius: 10px;
+  font-weight: 600;
 }
 .btn:hover {
   color: white;

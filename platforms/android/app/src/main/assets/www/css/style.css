@@ -55,9 +55,12 @@
   border-width: 0px 0px 2px 0px !important;
   border-style: solid;
 }
+<<<<<<< HEAD
 .tab-item.tab-item-active {
   color: #add321 !important;
 }
+=======
+>>>>>>> d261de428abd2a489398deada11fc4c0704733c0
 .home-tab .tabs {
   width: 100% !important;
   top: unset !important;
@@ -83,6 +86,10 @@
   color: white;
   width: 70%;
   border-radius: 10px;
+<<<<<<< HEAD
+=======
+  font-weight: 600;
+>>>>>>> d261de428abd2a489398deada11fc4c0704733c0
 }
 .btn:hover {
   color: white;

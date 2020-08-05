@@ -27,6 +27,7 @@
         <div class="money-input">
           <input type="text" placeholder="3,100,000.00" name="loanAdvance" />
         </div>
+<<<<<<< HEAD
         <label class="toggle toggle-calm">
           <input type="checkbox" />
           <div class="track">
@@ -38,12 +39,178 @@
   </ion-content>
 </ion-view>
 <style>
+=======
+        <ul class="list-group">
+          <li>
+            <span class="gray-title">ҮХХ барьцаалах эсэх</span>
+            <span class="badge">
+              <label class="toggle toggle-assertive">
+                <input type="checkbox" />
+                <div class="track">
+                  <div class="handle">Тийм</div>
+                </div>
+              </label>
+            </span>
+          </li>
+          <li class="line" />
+          <li>
+            <span class="gray-title">Монгол банкны лавлагаа <br />авахыг зөвшөөрөх эсэх</span>
+            <span class="badge">
+              <label class="toggle toggle-assertive" ng-model="customText" ng-checked="customText">
+                <input type="checkbox" />
+                <div class="track">
+                  <div class="handle"><span>{{customText ? "YES" : "ҮГҮЙ"}}</span></div>
+                </div>
+              </label>
+            </span>
+          </li>
+          <div>
+            <p class="upper-text">Барааны мэдээлэл</p>
+            <img src="/www/img/car.jpg" class="img" />
+          </div>
+            <li><span class="gray-title">Барааны төрөл</span><span class="badge">Машин</span></li> <li class="line" />
+            <li class="gray-title">Үйлдвэр<span class="badge">toyota</span></li> <li class="line" />
+            <li class="gray-title">Загвар<span class="badge">land cruise</span></li> <li class="line" />
+            <li class="gray-title">Үнэ<span class="badge">245,000,000</span></li> <li class="line" />
+          </div>
+        </ul>
+      </div>
+    </div>
+    <div class="container-padding">
+        <p class="upper-text">Боломжит банк санхүү</p>
+        <ul style="columns: 4;">
+            <li><div class="banks"><img class="bank-logo" src="/www/img/khanbank-mn.png" /></div><p class="bank-title">Ариг банк</p></li>
+            <li><div class="banks"><img class="bank-logo" src="/www/img/khanbank-mn.png" /></div><p class="bank-title">Ариг банк</p></li>
+            <li><div class="banks"><img class="bank-logo" src="/www/img/khanbank-mn.png" /></div><p class="bank-title">Ариг банк</p></li>
+            <li><div class="banks"><img class="bank-logo" src="/www/img/khanbank-mn.png" /></div><p class="bank-title">Ариг банк</p></li>
+        </ul>
+        <p class="upper-text red">Боломжгүй банк санхүү</p>
+        <ul style="columns: 4;">
+            <li><div class="banks"><img class="bank-logo" src="/www/img/khanbank-mn.png" /></div><p class="bank-title">Ариг банк</p></li>
+            <li><div class="banks"><img class="bank-logo" src="/www/img/khanbank-mn.png" /></div><p class="bank-title">Ариг банк</p></li>
+            <li><div class="banks"><img class="bank-logo" src="/www/img/khanbank-mn.png" /></div><p class="bank-title">Ариг банк</p></li>
+            <li><div class="banks"><img class="bank-logo" src="/www/img/khanbank-mn.png" /></div><p class="bank-title">Ариг банк</p></li>
+        </ul>
+    </div>
+    <div class="btn-container" style="margin-bottom: 20%;">
+        <button class="button btn register-next-button" id="Next" ui-sref="autoleasing-3">
+          Үргэлжлүүлэх
+        </button>
+      </div>
+  </ion-content>
+</ion-view>
+<style>
+    .badge {
+    background-color: transparent;
+    color: #000658cf;
+    z-index: 1;
+    display: inline-block;
+    padding: 3px 8px;
+    min-width: 10px;
+    border-radius: 10px;
+    vertical-align: baseline;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    }
+    .red {
+        color: red !important;
+    }
+    .banks {
+        margin-bottom: 10px;
+        display: flex; 
+        align-items: center;
+    }
+    .bank-logo {
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        width: 30px;
+        height: 30px;
+    }
+    .bank-title {
+        font-size: 11px;
+        color: gray; 
+        text-align: center;
+    }
+    .gray-title {
+        color: grey;
+    }
+  .img {
+    max-width: 300px;
+    max-height: 200px;
+  }
+  .toggle .track {
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-property: background-color, border;
+    transition-property: background-color, border;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 75px;
+    height: 23px;
+    border: solid 2px #e5e5e5;
+    border-radius: 10px;
+    background-color: #e5e5e5;
+    content: " ";
+    cursor: pointer;
+    pointer-events: none;
+  }
+  .toggle .handle {
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+    position: absolute;
+    display: block;
+    width: 42px;
+    height: 25px;
+    border-radius: 10px;
+    background-color: yellowgreen;
+    top: 5px;
+    left: 7px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .toggle input:checked + .track .handle {
+    -webkit-transform: translate3d(30px, 0, 0);
+    transform: translate3d(30px, 0, 0);
+    background-color: #fff;
+    color: #000;
+  }
+  .toggle.toggle-assertive input:checked + .track {
+    border-color: #cecdcd;
+    background-color: #cecdcd;
+  }
+  .line {
+    border-top: 1px solid #cccbcb;
+    margin: 5px 0 5px 0;
+  }
+  .list-group li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0 5px 0;
+  }
+  .container-padding {
+    margin: 20px 15px 0px 15px;
+    padding: 20px;
+  }
+>>>>>>> d261de428abd2a489398deada11fc4c0704733c0
   .bg-container {
     border-radius: 10px;
     padding: 20px;
     height: 100%;
     margin: 20px 15px 0px 15px;
     background-color: #fff;
+<<<<<<< HEAD
+=======
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+>>>>>>> d261de428abd2a489398deada11fc4c0704733c0
   }
   .money-input {
     border: 1px solid;
@@ -126,6 +293,7 @@
   .progressbar .step-li-2.active:after {
     transition: all 0.8s;
     background: rgb(170, 212, 38);
+<<<<<<< HEAD
     background: -moz-linear-gradient(
       45deg,
       rgba(170, 212, 38, 1) 15%,
@@ -141,6 +309,11 @@
       rgba(170, 212, 38, 1) 15%,
       rgba(104, 201, 166, 1) 77%
     );
+=======
+    background: -moz-linear-gradient(45deg, rgba(170, 212, 38, 1) 15%, rgba(104, 201, 166, 1) 77%);
+    background: -webkit-linear-gradient(45deg, rgba(170, 212, 38, 1) 15%, rgba(104, 201, 166, 1) 77%);
+    background: linear-gradient(45deg, rgba(170, 212, 38, 1) 15%, rgba(104, 201, 166, 1) 77%);
+>>>>>>> d261de428abd2a489398deada11fc4c0704733c0
   }
   .progressbar .step-li-3.active:before {
     border-color: #41c1f2;
@@ -150,6 +323,7 @@
   .progressbar .step-li-3.active:after {
     transition: all 0.8s;
     background: rgb(104, 201, 166);
+<<<<<<< HEAD
     background: -moz-linear-gradient(
       45deg,
       rgba(104, 201, 166, 1) 30%,
@@ -165,6 +339,11 @@
       rgba(104, 201, 166, 1) 30%,
       rgba(65, 193, 242, 1) 77%
     );
+=======
+    background: -moz-linear-gradient(45deg, rgba(104, 201, 166, 1) 30%, rgba(65, 193, 242, 1) 77%);
+    background: -webkit-linear-gradient(45deg, rgba(104, 201, 166, 1) 30%, rgba(65, 193, 242, 1) 77%);
+    background: linear-gradient(45deg, rgba(104, 201, 166, 1) 30%, rgba(65, 193, 242, 1) 77%);
+>>>>>>> d261de428abd2a489398deada11fc4c0704733c0
   }
   .progressbar .step-li-4.active:before {
     border-color: #41c1f2;
@@ -174,6 +353,7 @@
   .progressbar .step-li-4.active:after {
     transition: all 0.8s;
     background: rgb(104, 201, 166);
+<<<<<<< HEAD
     background: -moz-linear-gradient(
       45deg,
       rgba(104, 201, 166, 1) 30%,
@@ -189,6 +369,11 @@
       rgba(104, 201, 166, 1) 30%,
       rgba(65, 193, 242, 1) 77%
     );
+=======
+    background: -moz-linear-gradient(45deg, rgba(104, 201, 166, 1) 30%, rgba(65, 193, 242, 1) 77%);
+    background: -webkit-linear-gradient(45deg, rgba(104, 201, 166, 1) 30%, rgba(65, 193, 242, 1) 77%);
+    background: linear-gradient(45deg, rgba(104, 201, 166, 1) 30%, rgba(65, 193, 242, 1) 77%);
+>>>>>>> d261de428abd2a489398deada11fc4c0704733c0
   }
 
   .input-text {

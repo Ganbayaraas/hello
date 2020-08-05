@@ -1,0 +1,288 @@
+<ion-view id="loanPages">
+    <link href="views/loan/autoleasing.css" rel="stylesheet" />
+    <ion-content scroll="true" style="background-color: ghostwhite;">
+      <div class="bg-container">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <ul id="progress-bar" class="progressbar">
+                <li class="active step-li-1"></li>
+                <li class="active step-li-2"></li>
+                <li class="active step-li-3"></li>
+                <li class="step-li-4"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="input-text">
+          <p class="middle-title">Анхан шатны шалгуур хангасан банкууд</p>
+          <ul class="list-group"> 
+            <li>
+                <ion-checkbox >
+                    <div class="bank-logo-container">
+                        <img class="logo-size" src="/www/img/khanbank-mn.png" />
+                    </div>
+                    <div class="ml-42">
+                        <span class="bank-middle-title">Хаан банк</span>
+                        <br/ >
+                        <p class="bank-desc-green">Тэнцсэн банк</p>
+                        <span class="right-btn" ui-sref="auto-leasing-bank-info">Дэлгэрэнгүй >>></span>
+                    </div>
+                </ion-checkbox>
+            </li>
+            <li class="line" />
+            <li>
+                <ion-checkbox >
+                    <div class="bank-logo-container">
+                        <img class="logo-size" src="/www/img/khanbank-mn.png" />
+                    </div>
+                    <div class="ml-42">
+                        <span class="bank-middle-title">Хас банк</span>
+                        <br/ >
+                        <p class="bank-desc-green">Тэнцсэн банк</p>
+                    </div>
+                    <span  class="right-btn">Дэлгэрэнгүй >>></span>
+                </ion-checkbox>
+            </li>
+            <li class="line" />
+            </div>
+          </ul>
+          <!-- Shalguur hangaagui bankuud -->
+          <p class="middle-title" style="margin-top: 30px;">Анхан шатны шалгуур хангасан банкууд</p>
+          <ul class="list-group"> 
+            <li>
+                <ion-checkbox >
+                    <div class="bank-logo-container">
+                        <img class="logo-size" src="/www/img/khanbank-mn.png" />
+                    </div>
+                    <div class="ml-42">
+                        <span class="bank-middle-title">Хаан банк</span>
+                        <br/ >
+                        <p class="bank-desc-red">Тэнцээгүй банк</p>
+                    </div>
+                </ion-checkbox>
+            </li>
+            <li class="line" />
+            <li>
+                <ion-checkbox >
+                    <div class="bank-logo-container">
+                        <img class="logo-size" src="/www/img/khanbank-mn.png" />
+                    </div>
+                    <div class="ml-42">
+                        <span class="bank-middle-title">Хас банк</span>
+                        <br/ >
+                        <p class="bank-desc-red">Тэнцээгүй банк</p>
+                    </div>
+                </ion-checkbox>
+            </li>
+            <li class="line" />
+            </div>
+          </ul>
+        </div>
+        </div>
+        
+
+      <div class="btn-container" style="">
+          <button class="button btn register-next-button" id="Next" ui-sref="auto-leasing-bank-info">
+            Үргэлжлүүлэх
+          </button>
+        </div>
+    </ion-content>
+  </ion-view>
+  <style>
+.bank-logo-container {
+    display: flex; 
+    position: relative; 
+    float: left;
+}
+.logo-size {width: 35px;height: 35px;}
+.ml-42 {margin-left: 42px;margin-top: -5px;}
+.bank-middle-title {
+    margin-top: -5px;
+    font-size: 19px;
+    font-weight: 900;
+    color: #000658cf;
+}
+.bank-desc-green {
+    color: #aad426 !important;
+    font-size: 13px !important;
+    bottom: 0px;
+}
+.bank-desc-red {
+    color: #f7574c !important;
+    font-size: 13px !important;
+    bottom: 0px;
+}
+.right-btn {
+    position: absolute;
+    bottom: 14px;
+    right: 0px; color: #aaaaaa; z-index: 1; display: inline-block;font-size: 14px;
+}
+.checkbox input, .checkbox-icon {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    display: block;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+.checkbox input:before, .checkbox-icon:before {
+    display: table;
+    width: 100%;
+    height: 100%;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    background: #fff;
+    content: " ";
+    -webkit-transition: background-color 20ms ease-in-out;
+    transition: background-color 20ms ease-in-out;
+}
+.checkbox input:checked:before, .checkbox input:checked + .checkbox-icon:before {
+    background: yellowgreen;
+    border-color: yellowgreen;
+}
+.item {
+    padding: 15px 15px 15px 45px;
+    width: 100%;
+    border-color: #ddd;
+    border: none;
+    background-color: #fff;
+    color: #444;
+    position: relative;
+    z-index: 2;
+    display: block;
+    margin: -1px;
+    font-size: 16px;
+}
+.item-checkbox .checkbox {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    left: 0px;
+    z-index: 3;
+    margin-top: -21px;
+}
+    .middle-title {
+      font-size: 12px;
+      color: #3b3b3b;
+      text-transform: uppercase;
+    }
+    .upper-text {
+      color: #3b3b3b;
+      text-transform: uppercase;
+    }
+    .progressbar {
+      margin: 10px 0 10px 0;
+      counter-reset: step;
+    }
+    .progressbar li {
+      z-index: 0;
+      list-style-type: none;
+      width: 25%;
+      float: left;
+      font-size: 12px;
+      position: relative;
+      text-align: center;
+      text-transform: uppercase;
+      color: #7d7d7d;
+    }
+    .progressbar li:before {
+      z-index: 1;
+      width: 15px;
+      height: 15px;
+      content: "";
+      line-height: 30px;
+      border: 2px solid #7d7d7d;
+      background-color: #7d7d7d;
+      display: block;
+      text-align: center;
+      margin: 0 auto 10px auto;
+      border-radius: 50%;
+      transition: all 0.8s;
+    }
+    .progressbar li:after {
+      width: 100%;
+      height: 2px;
+      content: "";
+      position: absolute;
+      background-color: #7d7d7d;
+      top: 7px;
+      left: -50%;
+      z-index: -1;
+      transition: all 0.8s;
+    }
+    .progressbar li:first-child:after {
+      content: none;
+    }
+    .progressbar .step-li-1.active:before {
+      z-index: 9;
+      border-color: #aad426;
+      background-color: #aad426;
+      transition: all 0.8s;
+    }
+    .progressbar .step-li-2.active:before {
+      border-color: #68c9a6;
+      background-color: #68c9a6;
+      transition: all 0.8s;
+    }
+    .progressbar .step-li-2.active:after {
+      transition: all 0.8s;
+      background: rgb(170, 212, 38);
+      background: -moz-linear-gradient(45deg, rgba(170, 212, 38, 1) 15%, rgba(104, 201, 166, 1) 77%);
+      background: -webkit-linear-gradient(45deg, rgba(170, 212, 38, 1) 15%, rgba(104, 201, 166, 1) 77%);
+      background: linear-gradient(45deg, rgba(170, 212, 38, 1) 15%, rgba(104, 201, 166, 1) 77%);
+    }
+    .progressbar .step-li-3.active:before {
+      border-color: #41c1f2;
+      background-color: #41c1f2;
+      transition: all 0.8s;
+    }
+    .progressbar .step-li-3.active:after {
+      transition: all 0.8s;
+      background: rgb(104, 201, 166);
+      background: -moz-linear-gradient(45deg, rgba(104, 201, 166, 1) 30%, rgba(65, 193, 242, 1) 77%);
+      background: -webkit-linear-gradient(45deg, rgba(104, 201, 166, 1) 30%, rgba(65, 193, 242, 1) 77%);
+      background: linear-gradient(45deg, rgba(104, 201, 166, 1) 30%, rgba(65, 193, 242, 1) 77%);
+    }
+    .progressbar .step-li-4.active:before {
+      border-color: #41c1f2;
+      background-color: #41c1f2;
+      transition: all 0.8s;
+    }
+    .progressbar .step-li-4.active:after {
+      transition: all 0.8s;
+      background: rgb(104, 201, 166);
+      background: -moz-linear-gradient(45deg, rgba(104, 201, 166, 1) 30%, rgba(65, 193, 242, 1) 77%);
+      background: -webkit-linear-gradient(45deg, rgba(104, 201, 166, 1) 30%, rgba(65, 193, 242, 1) 77%);
+      background: linear-gradient(45deg, rgba(104, 201, 166, 1) 30%, rgba(65, 193, 242, 1) 77%);
+    }
+  
+    .input-text {
+      padding: 20px 0px 0px 0px;
+    }
+  
+    .qr-button {
+      background: none;
+      border-top: 1px solid;
+      border-bottom: 1px solid;
+      border-radius: 10px;
+      border-color: yellowgreen;
+      padding: 0 15px 0 20px;
+    }
+    .bank-container {
+      background-color: #fff;
+      width: 100%;
+      padding: 5px 40px 0px 40px;
+      box-shadow: 0 2px 5px -2px gray;
+    }
+    .bank-container img {
+      margin: 10px;
+      width: 40px;
+      height: 40px;
+      border-radius: 10%;
+    }
+  </style>
+  

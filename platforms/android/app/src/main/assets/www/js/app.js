@@ -107,5 +107,18 @@ angular
       templateUrl: "views/loan/autoleasing/step2.html",
       controller: "autoleasingCtrl",
     });
+<<<<<<< HEAD
+=======
+    $stateProvider.state("autoleasing-3", {
+      url: "/views/autoleasing-3",
+      templateUrl: "views/loan/autoleasing/step3.html",
+      controller: "autoleasingCtrl",
+    });
+    $stateProvider.state("auto-leasing-bank-info", {
+      url: "/views/auto-leasing-bank-info",
+      templateUrl: "views/loan/autoleasing/step3-bank-info.html",
+      controller: "autoleasingCtrl",
+    });
+>>>>>>> d261de428abd2a489398deada11fc4c0704733c0
     $urlRouterProvider.otherwise("/views/home ");
   });
