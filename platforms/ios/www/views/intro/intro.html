@@ -1,0 +1,17 @@
+<ion-view>
+  <link href="views/intro/intro.css" rel="stylesheet" />
+  <ion-content scroll="false">
+    <div ng-controller="introCtrl as vm" class="intro-slider-container">
+      <ion-slide-box delegate-handle="slider2" show-pager="true" on-slide-changed="vm.onSlideChanged($index)">
+        <ion-slide ng-repeat="item in vm.items">
+          <div class="box">
+            <h2 class="slider-text">{{item.title}}</h2>
+            <img class="slider-img" src="{{item.img}}" />
+            <button class="button slider-next-button1" ng-click="slider2_next()">Дараах</button>
+            <button class="button slider-next-button2" ui-sref="intro2">Алгасах</button>
+          </div>
+        </ion-slide>
+      </ion-slide-box>
+    </div>
+  </ion-content>
+</ion-view>

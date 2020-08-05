@@ -1,0 +1,14 @@
+<ion-view>
+  <link href="views/search/search.css" rel="stylesheet" />
+  <ion-content scroll="false">
+    <div class="search-container">
+      <div ng-controller="searchCtrl">
+        <label for="lastDayOfWeek">Example of preselecting Angular drop-down:</label>
+        <select id="lastDayOfWeek" ng-model="endDay" ng-options="endDays.indexOf(i) as i for i in endDays"> </select>
+      </div>
+    </div>
+    <select name="" id="">
+      <option value="dd">ddd</option>
+    </select>
+  </ion-content>
+</ion-view>

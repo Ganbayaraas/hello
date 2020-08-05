@@ -55,3 +55,12 @@
   border-width: 0px 0px 2px 0px !important;
   border-style: solid;
 }
+.home-tab .tabs {
+  width: 100% !important;
+  top: unset !important;
+  left: unset !important;
+  height: 49px !important;
+}
+.home-tab .tabs a {
+  border: unset !important;
+}
