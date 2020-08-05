@@ -55,6 +55,9 @@
   border-width: 0px 0px 2px 0px !important;
   border-style: solid;
 }
+.tab-item.tab-item-active {
+  color: #add321 !important;
+}
 .home-tab .tabs {
   width: 100% !important;
   top: unset !important;

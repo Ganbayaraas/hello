@@ -1,50 +1,50 @@
 <ion-view view-title="Tabs" class="">
   <link href="views/profile/profile.css" rel="stylesheet" />
-  <ion-pane class="profile-avatar">
-    <div class="profile-avatar">
-      <img src="/www/img/icon/winnerCup.png" width="100px" height="100px" />
-    </div>
-  </ion-pane>
   <ion-pane class="profile-info-container">
+    <div class="profile-avatar">
+      <div class="profile-avatar">
+        <img src="img/icon/winnerCup.png" width="100px" height="100px" />
+      </div>
+    </div>
     <ion-tabs class="tabs-striped tabs-top profile-card-tabs">
       <!-- Tab 1 -->
       <ion-tab title="Хувь">
         <ion-nav-view>
-          <ion-content scroll="false" class="profile-content">
+          <ion-content scroll="true" class="profile-content">
             <div class="list">
-              <label class="item item-input">
+              <label class="item item-input profile-label">
                 <p>Овог</p>
                 <input type="text" placeholder="Овог" name="firstName" />
               </label>
-              <label class="item item-input">
+              <label class="item item-input profile-label">
                 <p>Нэр</p>
                 <input type="text" placeholder="Нэр" name="lastName" />
               </label>
-              <label class="item item-input">
+              <label class="item item-input profile-label">
                 <p>Регситр</p>
                 <input type="text" placeholder="Регситр" name="uniqueIdentifier" />
               </label>
-              <label class="item item-input">
+              <label class="item item-input profile-label">
                 <p>Хаяг</p>
                 <input type="text" placeholder="Хаяг" name="address" />
               </label>
-              <label class="item item-input">
+              <label class="item item-input profile-label">
                 <p>Утасны дугаар</p>
                 <input type="text" placeholder="Утасны дугаар" name="mobileNumber" />
               </label>
-              <label class="item item-input">
+              <label class="item item-input profile-label">
                 <p>Гэрлэсэн эсэх</p>
                 <input type="text" placeholder="Гэрлэсэн эсэх" name="isMarried" />
               </label>
-              <label class="item item-input">
+              <label class="item item-input profile-label">
                 <p>Ажилласан жил</p>
                 <input type="text" placeholder="Ажилласан жил" name="workYear" />
               </label>
-              <label class="item item-input">
+              <label class="item item-input profile-label">
                 <p style="padding: 6px 0px;">Иргэний үнэмлэхний зураг</p>
                 <i class="icon ion-camera profile-camera-icon"></i>
               </label>
-              <label class="item item-input">
+              <label class="item item-input profile-label">
                 <div class="profile-card-front col-50">
                   <p style="padding: 6px 0px;">Урд тал</p>
                   <i class="icon ion-camera ion-float-left profile-card-icon"></i>
@@ -61,40 +61,40 @@
       <!-- Tab 2 -->
       <ion-tab title="Орлого">
         <ion-nav-view>
-          <ion-content scroll="false" class="profile-content">
+          <ion-content scroll="true" class="profile-content">
             <div class="list">
-              <label class="item item-input">
+              <label class="item item-input profile-label">
                 <p>Орлогын эх үүсвэр</p>
                 <select type="text" placeholder="Овог" name="incomeType"></select>
               </label>
-              <label class="item item-input">
+              <label class="item item-input profile-label">
                 <p>Сарын орлого</p>
                 <input type="text" placeholder="Сарын орлого" name="monthlyIncome" />
               </label>
-              <label class="item item-input">
+              <label class="item item-input profile-label">
                 <p>Өрхийн нийт орлого</p>
                 <input type="text" placeholder="Өрхийн нийт орлого" name="totalIncome" />
               </label>
-              <label class="item item-input">
+              <label class="item item-input profile-label">
                 <p>Төлж буй зээл</p>
                 <input type="text" placeholder="Төлж буй зээл" name="payLoan" />
               </label>
-              <label class="item"> <p>Харьцдаг банк</p></label>
+              <label class="item profile-label"> <p>Харьцдаг банк</p></label>
               <div class="item profile-bank-list">
                 <div class="col">
-                  <img src="/www/img/khanbank-mn.png" />
+                  <img src="img/khanbank-mn.png" />
                   <p>Хаан банк</p>
                 </div>
                 <div class="col">
-                  <img src="/www/img/khanbank-mn.png" />
+                  <img src="img/khanbank-mn.png" />
                   <p>Хаан банк</p>
                 </div>
                 <div class="col">
-                  <img src="/www/img/khanbank-mn.png" />
+                  <img src="img/khanbank-mn.png" />
                   <p>Хаан банк</p>
                 </div>
                 <div class="col">
-                  <img src="/www/img/khanbank-mn.png" />
+                  <img src="img/khanbank-mn.png" />
                   <p>Хаан банк</p>
                 </div>
               </div>
@@ -105,25 +105,25 @@
       <!-- Tab 3 -->
       <ion-tab title="Хөрөнгө">
         <ion-nav-view>
-          <ion-content scroll="false" class="profile-content">
+          <ion-content scroll="true" class="profile-content">
             <div class="list">
-              <label class="item item-input">
+              <label class="item item-input profile-label">
                 <p>Автомашин</p>
                 <input type="text" placeholder="Автомашин" name="car" />
               </label>
-              <label class="item item-input">
+              <label class="item item-input profile-label">
                 <p>Орон сууц</p>
                 <input type="text" placeholder="Орон сууц" name="apartment" />
               </label>
-              <label class="item item-input">
+              <label class="item item-input profile-label">
                 <p>Хашаа байшин</p>
                 <select type="text" placeholder="Хашаа байшин" name="house"></select>
               </label>
-              <label class="item item-input">
+              <label class="item item-input profile-label">
                 <p>Цахилгаан бараа</p>
                 <select type="text" placeholder="Цахилгаан бараа" name="electric"></select>
               </label>
-              <label class="item item-input">
+              <label class="item item-input profile-label">
                 <p>Тавилга</p>
                 <select type="text" placeholder="Тавилга" name="furniture"></select>
               </label>
@@ -134,9 +134,9 @@
       <!-- Tab 4 -->
       <ion-tab title="QR">
         <ion-nav-view>
-          <ion-content scroll="false" class="profile-content">
+          <ion-content scroll="true" class="profile-content">
             <div>
-              <img src="/www/img/qr.png" class="profile-qr" />
+              <img src="img/qr.png" class="profile-qr" />
             </div>
           </ion-content>
         </ion-nav-view>

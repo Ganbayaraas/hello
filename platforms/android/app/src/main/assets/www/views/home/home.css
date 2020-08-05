@@ -53,3 +53,54 @@
 .home-card {
   width: 100%;
 }
+.loan-card-1 {
+  background: #3cc1f9;
+  color: #fff;
+  height: 110px;
+}
+.loan-card-2 {
+  background: #3cc1f9;
+  color: #fff;
+  height: 110px;
+}
+.loan-card-3 {
+  background-image: linear-gradient(-160deg, #42c2ee, #68c8a5);
+  color: #fff;
+  height: 110px;
+}
+.loan-card-4 {
+  background-image: linear-gradient(-160deg, #56c5c7, #87cd68);
+  color: #fff;
+  height: 110px;
+}
+.loan-card-5 {
+  background-image: linear-gradient(-120deg, #74ca8c, #a7d22a);
+  color: #fff;
+  height: 110px;
+}
+.loan-card-first-row {
+  margin-bottom: 25px;
+}
+.loan-card-2-first-row {
+  padding-bottom: 25px;
+}
+.loan-card-icon-container {
+  position: absolute;
+  left: 5px;
+  top: 35px;
+  z-index: -1;
+}
+.loan-card-icon {
+  margin-left: 0;
+  margin-right: auto;
+  zoom: 4;
+  color: #808080;
+}
+.loan-card-text {
+  text-align: right;
+  word-break: break-word;
+  font-size: 14px;
+}
+.has-tabs-top {
+  margin-bottom: 50px;
+}

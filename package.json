@@ -17,6 +17,7 @@
     "cordova-browser": "^6.0.0",
     "cordova-ios": "^5.1.1",
     "cordova-plugin-browsersync": "^1.1.0",
+    "cordova-plugin-console": "^1.1.0",
     "font-awesome": "^4.7.0"
   },
   "devDependencies": {
@@ -25,7 +26,8 @@
   "cordova": {
     "plugins": {
       "cordova-plugin-whitelist": {},
-      "cordova-plugin-browsersync": {}
+      "cordova-plugin-browsersync": {},
+      "cordova-plugin-console": {}
     },
     "platforms": [
       "browser"

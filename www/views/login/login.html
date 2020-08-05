@@ -3,12 +3,12 @@
   <ion-content scroll="false" class="login-content">
     <div ng-controller="loginCtrl" class="login-container">
       <div class="box">
-        <img class="login-favicon" src="/www/img/logoomn.png" />
+        <img class="login-favicon" src="img/logoomn.png" />
         <input type="text" placeholder="Утасны дугаар" name="mobileNumber" class="login-mobile" />
         <div class="login-password-container">
           <input type="{{inputType}}" class="login-password" placeholder="Нууц үг" name="password" id="myInput" />
           <button class="button button-icon show-pass-btn" style="zoom: 1;" ng-click="hideShowPassword()">
-            <i class="fa fa-eye" id="eye-icon"></i>
+            <i class="ion-eye" id="eye-icon"></i>
           </button>
         </div>
         <a href="#" class="login-forgot">Нууц үг мартсан?</a>
@@ -26,7 +26,7 @@
         </div>
 
         <div class="sign-class">
-          <button class="button login-button ion-color-green" ui-sref="profile">Нэвтрэх</button>
+          <button class="button login-button" ui-sref="profile">Нэвтрэх</button>
         </div>
       </div>
     </div>

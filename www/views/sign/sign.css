@@ -7,7 +7,7 @@
 }
 .box {
   height: 100%;
-  padding: 100px 60px 100px 60px;
+  padding: 10% 10% 20% 10%;
 }
 .sign-login-button {
   width: 100%;
@@ -36,10 +36,10 @@
   padding-bottom: 60px;
 }
 .slider-img {
-  width: 100%;
-  height: auto;
-  padding-top: 60px;
-  padding-bottom: 20px;
+  width: 240px;
+  height: 300px;
+  margin: 0 auto;
+  display: flex;
 }
 .sign-text {
   font-size: 14px;
@@ -65,4 +65,10 @@
 }
 .sign-reg-button:hover {
   color: #fff;
+}
+.sign-class {
+  bottom: 90px;
+  position: absolute;
+  width: 80%;
+  padding: 0px 25px;
 }

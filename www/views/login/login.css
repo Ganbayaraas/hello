@@ -1,8 +1,9 @@
 .login-button {
   background: #fff;
   color: #000;
-  min-height: 35px;
-  line-height: 35px;
+  border-color: #fff;
+  min-height: 40px;
+  line-height: 40px;
   width: 100%;
   border-radius: 10px;
 }
@@ -69,6 +70,9 @@
   cursor: pointer;
   padding: 0;
   color: #fff;
+  width: 100%;
+  margin: auto 0;
+  display: flex;
 }
 .styled-checkbox + label:before {
   content: "";
@@ -141,4 +145,8 @@ li {
 }
 .login-mobile {
   text-align: left !important;
+}
+.button.activated {
+  background-color: #fff;
+  border-color: #fff;
 }

@@ -2,7 +2,7 @@
 
 platform :ios, '10.0'
 
-target 'C:\Users\eTR\Desktop\ion\hello\platforms\ios\HelloWorld' do
-	project 'C:\Users\eTR\Desktop\ion\hello\platforms\ios\HelloWorld.xcodeproj'
+target 'C:\Users\eTR\Desktop\ion\hello\platforms\ios\foobar' do
+	project 'C:\Users\eTR\Desktop\ion\hello\platforms\ios\foobar.xcodeproj'
 
 end

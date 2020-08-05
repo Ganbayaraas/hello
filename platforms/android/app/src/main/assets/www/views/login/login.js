@@ -3,13 +3,13 @@ angular.module("login.Ctrl", []).controller("loginCtrl", function ($scope) {
 
   $scope.hideShowPassword = function () {
     if ($scope.inputType == "password") {
-      $("#eye-icon").removeClass("fa fa-eye");
-      $("#eye-icon").addClass("fa fa-eye-slash");
+      $("#eye-icon").removeClass("ion-eye");
+      $("#eye-icon").addClass("ion-eye-disabled");
       $scope.inputType = "text";
     } else {
       $scope.inputType = "password";
-      $("#eye-icon").removeClass("fa fa-eye-slash");
-      $("#eye-icon").addClass("fa fa-eye");
+      $("#eye-icon").removeClass("ion-eye-disabled");
+      $("#eye-icon").addClass("ion-eye");
     }
   };
 });
