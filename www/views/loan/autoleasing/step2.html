@@ -46,7 +46,7 @@
               <label class="toggle toggle-assertive" ng-model="customText" ng-checked="customText">
                 <input type="checkbox" />
                 <div class="track">
-                  <div class="handle"><span>{{customText ? "YES" : "ҮГҮЙ"}}</span></div>
+                  <div class="handle"><span>{{customText ? "YES" : "Үгүй"}}</span></div>
                 </div>
               </label>
             </span>
@@ -161,6 +161,8 @@
     color: #fff;
     justify-content: center;
     align-items: center;
+    line-height: 25px;
+    font-size: 12px;
     align-content: center;
   }
   .toggle input:checked + .track .handle {
