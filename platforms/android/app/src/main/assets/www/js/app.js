@@ -4,7 +4,6 @@ angular
     "ngCordova",
     // modules
     "home.Ctrl",
-    "loan.Ctrl",
     "intro.Ctrl",
     "intro2.Ctrl",
     "profile.Ctrl",
@@ -13,6 +12,7 @@ angular
     "register.Ctrl",
     "sign.Ctrl",
     "login.Ctrl",
+    "autoleasing.Ctrl",
   ])
   .run(function ($ionicPlatform, $state, $cordovaSplashscreen) {
     $ionicPlatform.ready(function () {
@@ -90,6 +90,26 @@ angular
       url: "/views/login",
       templateUrl: "views/login/login.html",
       controller: "loginCtrl",
+    });
+    $stateProvider.state("autoleasing-1", {
+      url: "/views/autoleasing-1",
+      templateUrl: "views/loan/autoleasing/step1.html",
+      controller: "autoleasingCtrl",
+    });
+    $stateProvider.state("autoleasing-2", {
+      url: "/views/autoleasing-2",
+      templateUrl: "views/loan/autoleasing/step2.html",
+      controller: "autoleasingCtrl",
+    });
+    $stateProvider.state("autoleasing-3", {
+      url: "/views/autoleasing-3",
+      templateUrl: "views/loan/autoleasing/step3.html",
+      controller: "autoleasingCtrl",
+    });
+    $stateProvider.state("auto-leasing-bank-info", {
+      url: "/views/auto-leasing-bank-info",
+      templateUrl: "views/loan/autoleasing/step3-bank-info.html",
+      controller: "autoleasingCtrl",
     });
     $urlRouterProvider.otherwise("/views/home ");
   });
