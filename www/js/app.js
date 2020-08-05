@@ -22,13 +22,7 @@ angular
       }
     });
   })
-  .config(function (
-    $stateProvider,
-    $urlRouterProvider,
-    $ionicConfigProvider,
-    $cordovaInAppBrowserProvider,
-    $httpProvider
-  ) {
+  .config(function ($stateProvider, $urlRouterProvider, $ionicConfigProvider, $cordovaInAppBrowserProvider, $httpProvider) {
     if (!window.cordova) {
       var appID = 1234567890;
       var version = "v2.0";
@@ -105,6 +99,11 @@ angular
     $stateProvider.state("autoleasing-2", {
       url: "/views/autoleasing-2",
       templateUrl: "views/loan/autoleasing/step2.html",
+      controller: "autoleasingCtrl",
+    });
+    $stateProvider.state("autoleasing-3", {
+      url: "/views/autoleasing-3",
+      templateUrl: "views/loan/autoleasing/step3.html",
       controller: "autoleasingCtrl",
     });
     $urlRouterProvider.otherwise("/views/home ");
