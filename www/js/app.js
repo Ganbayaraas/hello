@@ -4,7 +4,6 @@ angular
     "ngCordova",
     // modules
     "home.Ctrl",
-    "loan.Ctrl",
     "intro.Ctrl",
     "intro2.Ctrl",
     "profile.Ctrl",
@@ -13,6 +12,7 @@ angular
     "register.Ctrl",
     "sign.Ctrl",
     "login.Ctrl",
+    "autoleasing.Ctrl",
   ])
   .run(function ($ionicPlatform, $state, $cordovaSplashscreen) {
     $ionicPlatform.ready(function () {
@@ -22,7 +22,13 @@ angular
       }
     });
   })
-  .config(function ($stateProvider, $urlRouterProvider, $ionicConfigProvider, $cordovaInAppBrowserProvider, $httpProvider) {
+  .config(function (
+    $stateProvider,
+    $urlRouterProvider,
+    $ionicConfigProvider,
+    $cordovaInAppBrowserProvider,
+    $httpProvider
+  ) {
     if (!window.cordova) {
       var appID = 1234567890;
       var version = "v2.0";
@@ -90,6 +96,16 @@ angular
       url: "/views/login",
       templateUrl: "views/login/login.html",
       controller: "loginCtrl",
+    });
+    $stateProvider.state("autoleasing-1", {
+      url: "/views/autoleasing-1",
+      templateUrl: "views/loan/autoleasing/step1.html",
+      controller: "autoleasingCtrl",
+    });
+    $stateProvider.state("autoleasing-2", {
+      url: "/views/autoleasing-2",
+      templateUrl: "views/loan/autoleasing/step2.html",
+      controller: "autoleasingCtrl",
     });
     $urlRouterProvider.otherwise("/views/home ");
   });
