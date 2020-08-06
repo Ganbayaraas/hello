@@ -1,0 +1,72 @@
+<ion-view ng-app="car_collateral.Ctrl">
+  <link href="views/car_collateral/car_collateral.css" rel="stylesheet" />
+  <ion-content scroll="true" class="car-col-content">
+    <div class="list car-collateral-list">
+      <button ng-click="$ionicGoBack()" class="button back-button buttons button-clear header-item car-back-nav">
+        <i class="ion-chevron-left"></i>
+        <span class="back-text" style="transform: translate3d(0px, 0px, 0px);"><span class="default-title hide">Back</span><span class="previous-title">Хүсэлт илгээх</span></span>
+      </button>
+      <div class="card car-step2-card">
+        <span class="step2-card-span">Зээлийн хүсэлтийн мэдээлэл</span>
+        <p class="step2-card-p">Зээлийн хэмжээ</p>
+        <div class="step2-input-container">
+          <span class="step2-input-icon">₮</span>
+          <input type="text" placeholder="Зээлийн хэмжээ" name="requestAmount" class="car-step2-input" />
+        </div>
+        <label class="item item-input step2-loam-month">
+          <p>Хугацаа сараар</p>
+          <select type="text" placeholder="Хугацаа сараар" name="loanMonth" class="loan-month-input"></select>
+        </label>
+        <label class="item item-input">
+          <p>Зээлийн хүү (vараар)</p>
+          <select type="text" placeholder="Зээлийн хүү (сараар)" name="loanFee"></select>
+        </label>
+        <label class="item item-input step2-description-field">
+          <p>Тайлбар</p>
+          <textarea type="text" placeholder="Тайлбар" name="description"></textarea>
+        </label>
+      </div>
+      <span class="step2-bank-span"> Боломжит банк санхүү</span>
+      <div class="step2-bank-container">
+        <div class="col">
+          <img src="img/khanbank-mn.png" />
+          <p>Хаан банк</p>
+        </div>
+        <div class="col">
+          <img src="img/khanbank-mn.png" />
+          <p>Хаан банк</p>
+        </div>
+        <div class="col">
+          <img src="img/khanbank-mn.png" />
+          <p>Хаан банк</p>
+        </div>
+        <div class="col">
+          <img src="img/khanbank-mn.png" />
+          <p>Хаан банк</p>
+        </div>
+      </div>
+      <span class="bank-title-red step2-bank-span"> Боломжгүй банк санхүү</span>
+      <div class="step2-bank-container">
+        <div class="col">
+          <img src="img/khanbank-mn.png" />
+          <p>Хаан банк</p>
+        </div>
+        <div class="col">
+          <img src="img/khanbank-mn.png" />
+          <p>Хаан банк</p>
+        </div>
+        <div class="col">
+          <img src="img/khanbank-mn.png" />
+          <p>Хаан банк</p>
+        </div>
+        <div class="col">
+          <img src="img/khanbank-mn.png" />
+          <p>Хаан банк</p>
+        </div>
+      </div>
+      <button class="button btn car-next-button" id="Next" ui-sref="car_coll3">
+        Үргэлжлүүлэх
+      </button>
+    </div>
+  </ion-content>
+</ion-view>

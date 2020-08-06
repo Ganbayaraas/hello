@@ -13,6 +13,8 @@ angular
     "sign.Ctrl",
     "login.Ctrl",
     "autoleasing.Ctrl",
+    "collateral_loan.Ctrl",
+    "car_collateral.Ctrl",
   ])
   .run(function ($ionicPlatform, $state, $cordovaSplashscreen) {
     $ionicPlatform.ready(function () {
@@ -115,6 +117,26 @@ angular
       url: "/views/autoleasing-4",
       templateUrl: "views/loan/autoleasing/step4.html",
       controller: "autoleasingCtrl",
+    });
+    $stateProvider.state("coll", {
+      url: "/views/collateral_loan",
+      templateUrl: "views/collateral_loan/collateral_loan.html",
+      controller: "collateral_loanCtrl",
+    });
+    $stateProvider.state("car_coll", {
+      url: "/views/car_collateral",
+      templateUrl: "views/car_collateral/car_collateral.html",
+      controller: "car_collateralCtrl",
+    });
+    $stateProvider.state("car_coll2", {
+      url: "/views/car_collateral2",
+      templateUrl: "views/car_collateral/car_collateral2.html",
+      controller: "car_collateralCtrl",
+    });
+    $stateProvider.state("car_coll3", {
+      url: "/views/car_collateral3",
+      templateUrl: "views/car_collateral/car_collateral3.html",
+      controller: "car_collateralCtrl",
     });
     $urlRouterProvider.otherwise("/views/home ");
   });

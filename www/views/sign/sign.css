@@ -10,6 +10,7 @@
   padding: 10% 10% 20% 10%;
 }
 .sign-login-button {
+  border: 1px solid;
   width: 100%;
   font-size: 14px;
   border-radius: 10px;

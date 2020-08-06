@@ -91,7 +91,6 @@ input[type="text"] {
   color: #444 !important;
   position: relative !important;
   z-index: 2 !important;
-  display: flex !important;
   margin: -1px !important;
   padding: 6px 0 5px 16px !important;
   border-width: 1px !important;

@@ -1,0 +1,230 @@
+.car-collateral-list input {
+  text-align: right;
+  color: #7e82a5 !important;
+  /* padding-right: 0px; */
+}
+.car-col-content {
+  margin-bottom: 50px;
+  background: #f6f5fc;
+}
+.car-collateral-list {
+  height: 100% !important;
+}
+
+.car-collateral-list p {
+  color: #c4c8d1 !important;
+}
+.car-collateral-label {
+  width: 100%;
+  border-left: none;
+  border-right: none;
+  background: #f6f5fc;
+  /* padding-left: 0px; */
+}
+.car-img img {
+  width: 100%;
+  height: 100%;
+}
+.car-collateral-img-list {
+  border: 0px;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  background: #f6f5fc;
+}
+.bottom-bank-container {
+  background: #fff;
+  box-shadow: 1px 0px 7px -1px grey;
+  padding: 0 10px;
+  left: 0;
+  /* position: absolute; */
+}
+.bottom-bank-container img {
+  height: 10%;
+  width: 10%;
+  margin: 0 5px;
+}
+.car-next-button {
+  display: block;
+  margin: 20px auto;
+  line-height: 36px !important;
+  width: 65%;
+  min-height: 36px !important;
+}
+.car-back-nav {
+  width: 100%;
+  text-align: left;
+}
+.previous-title {
+  padding-left: 10px;
+}
+.car-step2-card label {
+  border: 0px !important;
+  padding-left: 20px !important;
+}
+.car-step2-card select {
+  margin-right: 20px !important;
+  right: 0;
+  position: absolute;
+}
+.car-step2-input {
+  text-align: left !important;
+  border: 1px solid #d5d5d5 !important;
+  border-radius: 10px;
+  margin: 0 auto;
+  width: 90%;
+  padding: 0 10px 0 35px !important;
+}
+.step2-card-span {
+  color: #505783;
+  padding: 10px 0px 0px 15px;
+  display: flex;
+}
+.step2-card-p {
+  margin: 10px 0px 0px 20px !important;
+}
+.step2-loam-month {
+  margin-top: 5px !important;
+}
+.step2-bank-container {
+  padding: 0 10px;
+  left: 0;
+  display: flex !important;
+  /* position: absolute; */
+}
+.step2-bank-container img {
+  height: 40%;
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.step2-bank-container p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+.bank-title-red {
+  color: red !important;
+}
+.step2-bank-span {
+  color: #505783;
+  padding-left: 20px !important;
+}
+.step2-description-field {
+  display: block !important;
+}
+.step2-description-field textarea {
+  min-height: 100px;
+}
+.step2-input-icon {
+  padding: 8px 8px 8px 30px;
+  font-weight: bold;
+  min-width: 50px;
+  position: absolute;
+  text-align: center;
+  font-size: 18px;
+  color: #b2b2b2;
+}
+.bank-logo-container {
+  display: flex;
+  position: relative;
+  float: left;
+}
+.ml-42 {
+  margin-left: 42px;
+  margin-top: -5px;
+}
+.bank-middle-title {
+  margin-top: -5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000658cf;
+}
+.checkbox-square {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  left: 8px;
+  z-index: 3;
+  margin-top: -21px;
+}
+.logo-size {
+  width: 35px;
+  height: 35px;
+}
+.checkbox-icon {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  display: block;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.checkbox-icon::before {
+  border-radius: 2px;
+  width: 72%;
+  height: 72%;
+  margin-top: 14%;
+  margin-left: 14%;
+  border-width: 2px;
+}
+
+.checkbox-icon::after {
+  border-width: 2px;
+  top: 19%;
+  left: 25%;
+  width: 13px;
+  height: 7px;
+}
+.car-step3-card.step3-checkbox-container {
+  padding-left: 45px !important;
+}
+
+.car-step3-card label {
+  border: 0px !important;
+  padding-bottom: 10px !important;
+  padding-top: 10px !important;
+}
+.checkbox input:checked:before,
+.checkbox input:checked + .checkbox-icon:before {
+  background: yellowgreen;
+  border-color: yellowgreen;
+}
+.platform-android .checkbox-platform input:after,
+.platform-android .checkbox-platform .checkbox-icon:after,
+.checkbox-square input:after,
+.checkbox-square .checkbox-icon:after {
+  border-width: 2px;
+  top: 16%;
+  left: 25%;
+  width: 13px;
+  height: 7px;
+}
+.checkbox input:before,
+.checkbox .checkbox-icon:before {
+  border-color: #d0ee88;
+  border-width: 1px;
+}
+.car-step3-card .item.item-input input {
+  padding-right: 24px !important;
+  width: 100px;
+  position: absolute;
+  right: 0;
+}
+.step3-container .scroll {
+  height: 100% !important;
+}
+.step3-next-btn {
+}
+.step3-btn-container {
+}
+.item-checkbox {
+  padding-left: 50px !important;
+}
+.bank-desc-green {
+  color: #badf63 !important;
+}
