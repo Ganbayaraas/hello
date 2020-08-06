@@ -1,34 +1,27 @@
 <ion-view id="loanPages">
   <link href="views/loan/autoleasing.css" rel="stylesheet" />
-  <ion-content scroll="false" style="background-color: ghostwhite;">
-    <div class="bg-container">
-    <div class="head-text"><p>Та хайх гэж буй үйлдвэрээ сонгох эсвэл бичиж оруулна уу.</p></div>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <ul id="progress-bar" class="progressbar">
-            <li class="active step-li-1"></li>
-            <li class="step-li-2"></li>
-            <li class="step-li-3"></li>
-            <li class="step-li-4"></li>
-          </ul>
-        </div>
+  <ion-content scroll="false">
+    <div class="ghostwhite-noscroll-container">
+      <p class="margin-lr-20">Та хайх гэж буй үйлдвэрээ сонгох эсвэл бичиж оруулна уу.</p>
+      <div class="progressbar-container">
+        <ul id="progress-bar" class="progressbar">
+          <li class="active step-li-1"></li>
+          <li class="step-li-2"></li>
+          <li class="step-li-3"></li>
+          <li class="step-li-4"></li>
+        </ul>
       </div>
-    </div>
-    <div class="input-text">
-      <div class="bottom-border-input-text">
+      <div class="bottom-border-input-text margin-lr-20">
         <p>Код оруулна уу</p>
-        <input type="text" placeholder="DCC0001" name="carCode" class="step1-car-code"/>
+        <input type="text" placeholder="DCC0001" name="carCode" class="step1-car-code" />
       </div>
       <div class="btn-container">
         <button class="button qr-button" id="qr">
           QR уншуулах боломжтой
         </button>
       </div>
-    </div>
-    <div class="bottom-container">
       <div class="bank-container">
-        <p></p>
+        <p>
           Та дурын банк болон ББСБ -ын зээлээр захиалан авах боломжтой
         </p>
         <img
@@ -44,164 +37,11 @@
           src="data:image/png;base64,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"
         />
       </div>
-      <div class="btn-container">
-        <button class="button btn register-next-button" id="Next" ui-sref="autoleasing-2">
+      <div class="bottom-btn-container margin-lr-20">
+        <button class="button btn" id="Next" ui-sref="autoleasing-2">
           Үргэлжлүүлэх
         </button>
       </div>
     </div>
-  </div>
   </ion-content>
 </ion-view>
-<style>
-  .head-text {
-    margin: 10px 40px 0px 40px;
-  }
-  .bottom-container {
-    position: absolute;
-    bottom: 10%;
-  }
-  .progressbar {
-    margin: 50px 0 50px 0;
-    counter-reset: step;
-  }
-  .progressbar li {
-    list-style-type: none;
-    width: 25%;
-    float: left;
-    font-size: 12px;
-    position: relative;
-    text-align: center;
-    text-transform: uppercase;
-    color: #c5c8d3;
-  }
-  .progressbar li:before {
-    width: 15px;
-    height: 15px;
-    content: "";
-    line-height: 30px;
-    border: 2px solid #c5c8d3;
-    background-color: #c5c8d3;
-    display: block;
-    text-align: center;
-    margin: 0 auto 10px auto;
-    border-radius: 50%;
-    transition: all 0.8s;
-  }
-  .progressbar li:after {
-    width: 100%;
-    height: 2px;
-    content: "";
-    position: absolute;
-    background-color: #c5c8d3;
-    top: 7px;
-    left: -50%;
-    z-index: -1;
-    transition: all 0.8s;
-  }
-  .progressbar li:first-child:after {
-    content: none;
-  }
-  .progressbar .step-li-1.active:before {
-    border-color: #aad426;
-    background-color: #aad426;
-    transition: all 0.8s;
-  }
-  .progressbar .step-li-2.active:before {
-    border-color: #68c9a6;
-    background-color: #68c9a6;
-    transition: all 0.8s;
-  }
-  .progressbar .step-li-2.active:after {
-    transition: all 0.8s;
-    background: rgb(170, 212, 38);
-    background: -moz-linear-gradient(
-      45deg,
-      rgba(170, 212, 38, 1) 15%,
-      rgba(104, 201, 166, 1) 77%
-    );
-    background: -webkit-linear-gradient(
-      45deg,
-      rgba(170, 212, 38, 1) 15%,
-      rgba(104, 201, 166, 1) 77%
-    );
-    background: linear-gradient(
-      45deg,
-      rgba(170, 212, 38, 1) 15%,
-      rgba(104, 201, 166, 1) 77%
-    );
-  }
-  .progressbar .step-li-3.active:before {
-    border-color: #41c1f2;
-    background-color: #41c1f2;
-    transition: all 0.8s;
-  }
-  .progressbar .step-li-3.active:after {
-    transition: all 0.8s;
-    background: rgb(104, 201, 166);
-    background: -moz-linear-gradient(
-      45deg,
-      rgba(104, 201, 166, 1) 30%,
-      rgba(65, 193, 242, 1) 77%
-    );
-    background: -webkit-linear-gradient(
-      45deg,
-      rgba(104, 201, 166, 1) 30%,
-      rgba(65, 193, 242, 1) 77%
-    );
-    background: linear-gradient(
-      45deg,
-      rgba(104, 201, 166, 1) 30%,
-      rgba(65, 193, 242, 1) 77%
-    );
-  }
-  .progressbar .step-li-4.active:before {
-    border-color: #41c1f2;
-    background-color: #41c1f2;
-    transition: all 0.8s;
-  }
-  .progressbar .step-li-4.active:after {
-    transition: all 0.8s;
-    background: rgb(104, 201, 166);
-    background: -moz-linear-gradient(
-      45deg,
-      rgba(104, 201, 166, 1) 30%,
-      rgba(65, 193, 242, 1) 77%
-    );
-    background: -webkit-linear-gradient(
-      45deg,
-      rgba(104, 201, 166, 1) 30%,
-      rgba(65, 193, 242, 1) 77%
-    );
-    background: linear-gradient(
-      45deg,
-      rgba(104, 201, 166, 1) 30%,
-      rgba(65, 193, 242, 1) 77%
-    );
-  }
-
-  .input-text {
-    padding: 20px 40px 0px 40px;
-  }
-
-  .qr-button {
-    background: none;
-    border-top: 1px solid;
-    border-bottom: 1px solid;
-    border-radius: 10px;
-    border-color: yellowgreen;
-    padding: 0 15px 0 20px;
-  }
-  .bank-container {
-    background-color: #fff;
-    width: 100%;
-    padding: 5px 40px 0px 40px;
-    box-shadow: 0 2px 5px -2px gray;
-  }
-  .bank-container img {
-    margin: 10px;
-    width: 40px;
-    height: 40px;
-    border-radius: 10%;
-  }
-</style>

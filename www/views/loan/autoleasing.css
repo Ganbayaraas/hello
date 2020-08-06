@@ -1,51 +1,446 @@
-﻿.loan-card-1 {
-  background: #3cc1f9;
-  color: #fff;
-  height: 110px;
+﻿.progressbar-container {
+  margin: 10% 0 20% 0;
 }
-.loan-card-2 {
-  background: #3cc1f9;
-  color: #fff;
-  height: 110px;
+.progressbar-wrapper {
+  background: #7d7d7d;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 5px;
 }
-.loan-card-3 {
-  background-image: linear-gradient(-160deg, #42c2ee, #68c8a5);
-  color: #fff;
-  height: 110px;
+.progressbar li {
+  list-style-type: none;
+  width: 25%;
+  float: left;
+  font-size: 12px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  color: #7d7d7d;
 }
-.loan-card-4 {
-  background-image: linear-gradient(-160deg, #56c5c7, #87cd68);
-  color: #fff;
-  height: 110px;
+.progressbar li:before {
+  width: 15px;
+  height: 15px;
+  content: "";
+  line-height: 15px;
+  border: 2px solid #7d7d7d;
+  display: block;
+  text-align: center;
+  margin: 0 auto 3px auto;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+  background-color: #7d7d7d;
 }
-.loan-card-5 {
-  background-image: linear-gradient(-120deg, #74ca8c, #a7d22a);
-  color: #fff;
-  height: 110px;
-}
-.loan-card-first-row {
-  margin-bottom: 25px;
-}
-.loan-card-2-first-row {
-  padding-bottom: 25px;
-}
-.loan-card-icon-container {
+.progressbar li:after {
+  width: 100%;
+  height: 2px;
+  content: "";
   position: absolute;
-  left: 5px;
-  top: 35px;
-  z-index: -1;
+  background-color: #7d7d7d;
+  top: 7px;
+  left: -50%;
+  z-index: 0;
 }
-.loan-card-icon {
-  margin-left: 0;
+.progressbar li:first-child:after {
+  content: none;
+}
+.progressbar li.active {
+  color: green;
+  font-weight: bold;
+}
+.progressbar li.active:before {
+  border-color: #55b776;
+  background: green;
+}
+.progressbar li.active + li:after {
+  background-color: #55b776;
+}
+.progressbar li.active:before {
+  background: #55b776;
+  background-size: 60%;
+}
+.progressbar li::before {
+  background: #7d7d7d;
+  background-size: 60%;
+}
+.progressbar {
+  counter-reset: step;
+}
+.progressbar .step-li-1.active:before {
+  z-index: 2;
+  border-color: #aad426;
+  background-color: #aad426;
+  transition: all 0.8s;
+}
+.progressbar .step-li-2.active:before {
+  border-color: #68c9a6;
+  background-color: #68c9a6;
+  transition: all 0.8s;
+}
+.progressbar .step-li-2.active:after {
+  transition: all 0.8s;
+  background: rgb(170, 212, 38);
+  background: -moz-linear-gradient(45deg, rgba(170, 212, 38, 1) 15%, rgba(104, 201, 166, 1) 77%);
+  background: -webkit-linear-gradient(45deg, rgba(170, 212, 38, 1) 15%, rgba(104, 201, 166, 1) 77%);
+  background: linear-gradient(45deg, rgba(170, 212, 38, 1) 15%, rgba(104, 201, 166, 1) 77%);
+}
+.progressbar .step-li-3.active:before {
+  border-color: #41c1f2;
+  background-color: #41c1f2;
+  transition: all 0.8s;
+}
+.progressbar .step-li-3.active:after {
+  transition: all 0.8s;
+  background: rgb(104, 201, 166);
+  background: -moz-linear-gradient(45deg, rgba(104, 201, 166, 1) 30%, rgba(65, 193, 242, 1) 77%);
+  background: -webkit-linear-gradient(45deg, rgba(104, 201, 166, 1) 30%, rgba(65, 193, 242, 1) 77%);
+  background: linear-gradient(45deg, rgba(104, 201, 166, 1) 30%, rgba(65, 193, 242, 1) 77%);
+}
+.progressbar .step-li-4.active:before {
+  border-color: #41c1f2;
+  background-color: #41c1f2;
+  transition: all 0.8s;
+}
+.progressbar .step-li-4.active:after {
+  transition: all 0.8s;
+  background: rgb(104, 201, 166);
+  background: -moz-linear-gradient(45deg, rgba(104, 201, 166, 1) 30%, rgba(65, 193, 242, 1) 77%);
+  background: -webkit-linear-gradient(45deg, rgba(104, 201, 166, 1) 30%, rgba(65, 193, 242, 1) 77%);
+  background: linear-gradient(45deg, rgba(104, 201, 166, 1) 30%, rgba(65, 193, 242, 1) 77%);
+}
+.bottom-border-input-text input {
+  background: none;
+  border-bottom: 1px solid;
+  border-radius: 10px;
+  border-color: yellowgreen;
+  padding: 0 15px 0 20px;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 0px 20px 0px;
+}
+.ghostwhite-noscroll-container {
+  background-color: ghostwhite;
+  height: 100%;
+  padding: 10% 0 20% 0;
+}
+.ghostwhite-background {
+  background-color: ghostwhite;
+}
+.margin-lr-20 {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.bottom-btn-container {
+  bottom: 10%;
+  position: absolute;
+  width: 80%;
+  padding: 0px 25px;
+}
+.input-text {
+  padding: 20px 40px 0px 40px;
+}
+.btn-container .qr-button {
+  background: none;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-radius: 10px;
+  border-color: yellowgreen;
+  padding: 0 15px 0 20px;
+}
+.bank-container {
+  bottom: 20%;
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  padding: 5px 40px 0px 40px;
+  box-shadow: 0 2px 5px -2px gray;
+}
+.bank-container img {
+  margin: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10%;
+}
+/* step 2 */
+.step2-btn-container {
+  margin-bottom: 25%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.red {
+  color: red !important;
+}
+.bank-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.bank {
+  margin: 10px;
+  align-items: center;
+  text-align: center;
+}
+.bank img {
+  margin-left: auto;
   margin-right: auto;
-  zoom: 4;
-  color: #808080;
+  position: relative;
+  width: 30px;
+  height: 30px;
 }
-.loan-card-text {
-  text-align: right;
-  word-break: break-word;
+.bank p {
+  font-size: 11px;
+  color: gray;
+  text-align: center;
+}
+.item-info {
+  margin-top: 25px;
+}
+.item-info li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: grey;
+  border-bottom: 1px solid #cccbcb78;
+  margin: 8px 0 8px 0 !important;
+}
+.item-info li span {
+  background-color: transparent;
+  color: #000658cf;
+  z-index: 1;
+  display: inline-block;
+  padding: 3px 8px;
+  min-width: 10px;
+  border-radius: 10px;
+  vertical-align: baseline;
+  text-align: center;
+  white-space: nowrap;
+  font-weight: 400;
   font-size: 14px;
+  line-height: 16px;
 }
-.step1-car-code {
-  text-align: left !important;
+.car-img {
+  width: 100%;
+  height: auto;
+}
+.toggle .track {
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-property: background-color, border;
+  transition-property: background-color, border;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 75px;
+  height: 23px;
+  border: solid 2px #e5e5e5;
+  border-radius: 10px;
+  background-color: #e5e5e5;
+  content: " ";
+  cursor: pointer;
+  pointer-events: none;
+}
+.toggle .handle {
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  position: absolute;
+  display: block;
+  width: 42px;
+  height: 25px;
+  border-radius: 10px;
+  background-color: yellowgreen;
+  top: 5px;
+  left: 7px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  line-height: 25px;
+  font-size: 12px;
+  align-content: center;
+}
+.toggle input:checked + .track .handle {
+  -webkit-transform: translate3d(30px, 0, 0);
+  transform: translate3d(30px, 0, 0);
+  background-color: #fff;
+  color: #000;
+}
+.toggle.toggle-assertive input:checked + .track {
+  border-color: #cecdcd;
+  background-color: #cecdcd;
+}
+.line {
+  border-top: 1px solid #cccbcb;
+  margin: 5px 0 5px 0;
+}
+.switch-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0 5px 0;
+  color: gray;
+}
+.switch-list li span {
+  background-color: transparent;
+  color: #000658cf;
+  z-index: 1;
+  display: inline-block;
+  padding: 3px 8px;
+  min-width: 10px;
+  border-radius: 10px;
+  vertical-align: baseline;
+  text-align: center;
+  white-space: nowrap;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+.container-padding {
+  margin: 20px 15px 0px 15px;
+  padding: 20px;
+}
+.bg-container {
+  border-radius: 10px;
+  padding: 20px;
+  height: 100%;
+  margin: 20px 15px 0px 15px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+.money-input input {
+  border: 1px solid;
+  color: #0b124c;
+  background: none;
+  border-radius: 5px;
+  border-color: #cdcdcd;
+  padding: 0 15px 0 20px;
+}
+.middle-title {
+  font-size: 12px;
+  color: #3b3b3b;
+  text-transform: uppercase;
+}
+.padding-null {
+  margin: 0;
+  margin-left: 10px;
+  color: #3b3b3b;
+}
+/* step 3 */
+.bank-list-container {
+  display: flex;
+  position: relative;
+  float: left;
+  margin-top: 3px;
+  font-size: 14px;
+  font-weight: 900;
+  color: #000658cf;
+}
+.bank-list-container img {
+  width: 35px;
+  height: 35px;
+}
+.item {
+  padding: 12px 0px 18px 37px;
+  width: 70%;
+  border-color: #ddd;
+  border: none;
+  background-color: #fff;
+  color: #444;
+  position: relative;
+  z-index: 2;
+  display: block;
+  margin: -1px;
+  font-size: 16px;
+  border-bottom: 1px solid #cccbcb;
+}
+.item-checkbox .checkbox {
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  left: 0px;
+  z-index: 3;
+  margin-top: -21px;
+}
+.logo-size {
+  width: 35px;
+  height: 35px;
+}
+.ml-42 {
+  margin-left: 42px;
+  margin-top: -5px;
+}
+.bank-middle-title {
+  margin-top: -5px;
+  font-size: 14px;
+  font-weight: 900;
+  color: #000658cf;
+}
+.bank-desc-green {
+  margin-left: 42px;
+  color: #aad426 !important;
+  font-size: 13px !important;
+  bottom: 0px;
+}
+.bank-desc-red {
+  margin-left: 42px;
+  color: #f7574c !important;
+  font-size: 13px !important;
+  bottom: 0px;
+}
+.switch-list li {
+  border-bottom: 1px solid #cccbcb;
+}
+.switch-list button {
+  background: none;
+  border: none;
+  color: #aaaaaa;
+  z-index: 1;
+  display: inline-block;
+  font-size: 12px;
+  margin-top: 20px;
+}
+.checkbox input,
+.checkbox-icon {
+  position: relative;
+  width: 22px;
+  height: 22px;
+  display: block;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+.checkbox input:before,
+.checkbox-icon:before {
+  display: table;
+  width: 100%;
+  height: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  background: #fff;
+  content: " ";
+  -webkit-transition: background-color 20ms ease-in-out;
+  transition: background-color 20ms ease-in-out;
+}
+.checkbox input:checked:before,
+.checkbox input:checked + .checkbox-icon:before {
+  background: yellowgreen;
+  border-color: yellowgreen;
+}
+.bank-container {
+  background-color: #fff;
+  width: 100%;
+  padding: 5px 40px 0px 40px;
+  box-shadow: 0 2px 5px -2px gray;
+}
+.bank-container img {
+  margin: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10%;
+}
+.step3-btn-container {
+  margin: 10%;
 }

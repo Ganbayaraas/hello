@@ -1,36 +1,25 @@
 <ion-view id="loanPages">
   <link href="views/loan/autoleasing.css" rel="stylesheet" />
-  <ion-content scroll="true" style="background-color: ghostwhite;">
+  <ion-content scroll="true" class="ghostwhite-background">
     <div class="bg-container">
-      <div class="head-text">
-        <p>Та хайх гэж буй үйлдвэрээ сонгох эсвэл бичиж оруулна уу.</p>
+      <div style="margin-top: 10px; margin-bottom: 55px;">
+        <ul id="progress-bar" class="progressbar">
+          <li class="active step-li-1"></li>
+          <li class="active step-li-2"></li>
+          <li class="step-li-3"></li>
+          <li class="step-li-4"></li>
+        </ul>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <ul id="progress-bar" class="progressbar">
-              <li class="active step-li-1"></li>
-              <li class="active step-li-2"></li>
-              <li class="step-li-3"></li>
-              <li class="step-li-4"></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="input-text">
-        <p class="upper-text">Зээлийн хүсэлтийн мэдээлэл</p>
+      <div class="money-input">
+        <p class="middle-title">Зээлийн хүсэлтийн мэдээлэл</p>
         <p class="padding-null">Зээлийн хэмжээ</p>
-        <div class="money-input">
-          <input type="text" placeholder="6,230,000.00" name="loanSize" />
-        </div>
+        <input type="text" placeholder="6,230,000.00" name="loanSize" />
         <p class="padding-null" style="margin-top: 10px;">Урьдчилгаа</p>
-        <div class="money-input">
-          <input type="text" placeholder="3,100,000.00" name="loanAdvance" />
-        </div>
-        <ul class="list-group">
+        <input type="text" placeholder="3,100,000.00" name="loanAdvance" />
+        <ul class="switch-list">
           <li>
-            <span class="gray-title">ҮХХ барьцаалах эсэх</span>
-            <span class="badge">
+            ҮХХ барьцаалах эсэх
+            <span>
               <label class="toggle toggle-assertive">
                 <input type="checkbox" />
                 <div class="track">
@@ -41,294 +30,65 @@
           </li>
           <li class="line" />
           <li>
-            <span class="gray-title">Монгол банкны лавлагаа <br />авахыг зөвшөөрөх эсэх</span>
-            <span class="badge">
+            Монгол банкны лавлагаа <br />авахыг зөвшөөрөх эсэх
+            <span>
               <label class="toggle toggle-assertive" ng-model="customText" ng-checked="customText">
                 <input type="checkbox" />
                 <div class="track">
-                  <div class="handle"><span>{{customText ? "YES" : "Үгүй"}}</span></div>
+                  <div class="handle">{{customText ? "YES" : "Үгүй"}}</div>
                 </div>
               </label>
             </span>
           </li>
-          <div>
-            <p class="upper-text">Барааны мэдээлэл</p>
-            <img src="/www/img/car.jpg" class="img" />
-          </div>
-            <li><span class="gray-title">Барааны төрөл</span><span class="badge">Машин</span></li> <li class="line" />
-            <li class="gray-title">Үйлдвэр<span class="badge">toyota</span></li> <li class="line" />
-            <li class="gray-title">Загвар<span class="badge">land cruise</span></li> <li class="line" />
-            <li class="gray-title">Үнэ<span class="badge">245,000,000</span></li> <li class="line" />
-          </div>
+        </ul>
+      </div>
+      <div class="item-info">
+        <p class="middle-title">Барааны мэдээлэл</p>
+        <img src="/www/img/car.jpg" class="car-img" />
+        <ul>
+          <li>Барааны төрөл <span>Машин</span></li>
+          <li>Үйлдвэр <span>toyota</span></li>
+          <li>Загвар <span>land cruise</span></li>
+          <li>Үнэ <span>245,000,000</span></li>
         </ul>
       </div>
     </div>
     <div class="container-padding">
-        <p class="upper-text">Боломжит банк санхүү</p>
-        <ul style="columns: 4;">
-            <li><div class="banks"><img class="bank-logo" src="/www/img/khanbank-mn.png" /></div><p class="bank-title">Ариг банк</p></li>
-            <li><div class="banks"><img class="bank-logo" src="/www/img/khanbank-mn.png" /></div><p class="bank-title">Ариг банк</p></li>
-            <li><div class="banks"><img class="bank-logo" src="/www/img/khanbank-mn.png" /></div><p class="bank-title">Ариг банк</p></li>
-            <li><div class="banks"><img class="bank-logo" src="/www/img/khanbank-mn.png" /></div><p class="bank-title">Ариг банк</p></li>
-        </ul>
-        <p class="upper-text red">Боломжгүй банк санхүү</p>
-        <ul style="columns: 4;">
-            <li><div class="banks"><img class="bank-logo" src="/www/img/khanbank-mn.png" /></div><p class="bank-title">Ариг банк</p></li>
-            <li><div class="banks"><img class="bank-logo" src="/www/img/khanbank-mn.png" /></div><p class="bank-title">Ариг банк</p></li>
-            <li><div class="banks"><img class="bank-logo" src="/www/img/khanbank-mn.png" /></div><p class="bank-title">Ариг банк</p></li>
-            <li><div class="banks"><img class="bank-logo" src="/www/img/khanbank-mn.png" /></div><p class="bank-title">Ариг банк</p></li>
-        </ul>
-    </div>
-    <div class="btn-container" style="margin-bottom: 20%;">
-        <button class="button btn register-next-button" id="Next" ui-sref="autoleasing-3">
-          Үргэлжлүүлэх
-        </button>
+      <p class="middle-title">Боломжит банк санхүү</p>
+      <div class="bank-grid">
+        <div class="bank">
+          <img src="/www/img/khanbank-mn.png" />
+          <p>Хаан банк</p>
+        </div>
+        <div class="bank">
+          <img src="/www/img/khanbank-mn.png" />
+          <p>Ариг банк</p>
+        </div>
+        <div class="bank">
+          <img src="/www/img/khanbank-mn.png" />
+          <p>Ариг банк</p>
+        </div>
+        <div class="bank">
+          <img src="/www/img/khanbank-mn.png" />
+          <p>Ариг банк</p>
+        </div>
+        <div class="bank">
+          <img src="/www/img/khanbank-mn.png" />
+          <p>Ариг банк</p>
+        </div>
       </div>
+      <p class="middle-title red">Боломжгүй банк санхүү</p>
+      <div class="bank-grid">
+        <div class="bank">
+          <img src="/www/img/khanbank-mn.png" />
+          <p>Хаан банк</p>
+        </div>
+      </div>
+    </div>
+    <div class="step2-btn-container">
+      <button class="button btn" id="Next" ui-sref="autoleasing-3">
+        Үргэлжлүүлэх
+      </button>
+    </div>
   </ion-content>
 </ion-view>
-<style>
-    .badge {
-    background-color: transparent;
-    color: #000658cf;
-    z-index: 1;
-    display: inline-block;
-    padding: 3px 8px;
-    min-width: 10px;
-    border-radius: 10px;
-    vertical-align: baseline;
-    text-align: center;
-    white-space: nowrap;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    }
-    .red {
-        color: red !important;
-    }
-    .banks {
-        margin-bottom: 10px;
-        display: flex; 
-        align-items: center;
-    }
-    .bank-logo {
-        margin-left: auto;
-        margin-right: auto;
-        position: relative;
-        width: 30px;
-        height: 30px;
-    }
-    .bank-title {
-        font-size: 11px;
-        color: gray; 
-        text-align: center;
-    }
-    .gray-title {
-        color: grey;
-    }
-  .img {
-    max-width: 300px;
-    max-height: 200px;
-  }
-  .toggle .track {
-    -webkit-transition-timing-function: ease-in-out;
-    transition-timing-function: ease-in-out;
-    -webkit-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    -webkit-transition-property: background-color, border;
-    transition-property: background-color, border;
-    display: inline-block;
-    box-sizing: border-box;
-    width: 75px;
-    height: 23px;
-    border: solid 2px #e5e5e5;
-    border-radius: 10px;
-    background-color: #e5e5e5;
-    content: " ";
-    cursor: pointer;
-    pointer-events: none;
-  }
-  .toggle .handle {
-    -webkit-transition: 0.2s ease-in-out;
-    transition: 0.2s ease-in-out;
-    position: absolute;
-    display: block;
-    width: 42px;
-    height: 25px;
-    border-radius: 10px;
-    background-color: yellowgreen;
-    top: 5px;
-    left: 7px;
-    color: #fff;
-    justify-content: center;
-    align-items: center;
-    line-height: 25px;
-    font-size: 12px;
-    align-content: center;
-  }
-  .toggle input:checked + .track .handle {
-    -webkit-transform: translate3d(30px, 0, 0);
-    transform: translate3d(30px, 0, 0);
-    background-color: #fff;
-    color: #000;
-  }
-  .toggle.toggle-assertive input:checked + .track {
-    border-color: #cecdcd;
-    background-color: #cecdcd;
-  }
-  .line {
-    border-top: 1px solid #cccbcb;
-    margin: 5px 0 5px 0;
-  }
-  .list-group li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 5px 0 5px 0;
-  }
-  .container-padding {
-    margin: 20px 15px 0px 15px;
-    padding: 20px;
-  }
-  .bg-container {
-    border-radius: 10px;
-    padding: 20px;
-    height: 100%;
-    margin: 20px 15px 0px 15px;
-    background-color: #fff;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-  }
-  .money-input {
-    border: 1px solid;
-    color: #0b124c;
-    background: none;
-    border-radius: 10px;
-    border-color: #cdcdcd;
-    padding: 0 15px 0 20px;
-  }
-  .upper-text {
-    color: #3b3b3b;
-    text-transform: uppercase;
-  }
-  .padding-null {
-    margin: 0;
-    margin-left: 10px;
-    color: #3b3b3b;
-  }
-  .head-text {
-    margin: 10px 10px 0px 10px;
-  }
-  .bottom-container {
-    position: absolute;
-    bottom: 10%;
-  }
-  .progressbar {
-    margin: 10px 0 10px 0;
-    counter-reset: step;
-  }
-  .progressbar li {
-    z-index: 0;
-    list-style-type: none;
-    width: 25%;
-    float: left;
-    font-size: 12px;
-    position: relative;
-    text-align: center;
-    text-transform: uppercase;
-    color: #c5c8d3;
-  }
-  .progressbar li:before {
-    z-index: 1;
-    width: 15px;
-    height: 15px;
-    content: "";
-    line-height: 30px;
-    border: 2px solid #c5c8d3;
-    background-color: #c5c8d3;
-    display: block;
-    text-align: center;
-    margin: 0 auto 10px auto;
-    border-radius: 50%;
-    transition: all 0.8s;
-  }
-  .progressbar li:after {
-    width: 100%;
-    height: 2px;
-    content: "";
-    position: absolute;
-    background-color: #c5c8d3;
-    top: 7px;
-    left: -50%;
-    z-index: -1;
-    transition: all 0.8s;
-  }
-  .progressbar li:first-child:after {
-    content: none;
-  }
-  .progressbar .step-li-1.active:before {
-    z-index: 9;
-    border-color: #aad426;
-    background-color: #aad426;
-    transition: all 0.8s;
-  }
-  .progressbar .step-li-2.active:before {
-    border-color: #68c9a6;
-    background-color: #68c9a6;
-    transition: all 0.8s;
-  }
-  .progressbar .step-li-2.active:after {
-    transition: all 0.8s;
-    background: rgb(170, 212, 38);
-    background: -moz-linear-gradient(45deg, rgba(170, 212, 38, 1) 15%, rgba(104, 201, 166, 1) 77%);
-    background: -webkit-linear-gradient(45deg, rgba(170, 212, 38, 1) 15%, rgba(104, 201, 166, 1) 77%);
-    background: linear-gradient(45deg, rgba(170, 212, 38, 1) 15%, rgba(104, 201, 166, 1) 77%);
-  }
-  .progressbar .step-li-3.active:before {
-    border-color: #41c1f2;
-    background-color: #41c1f2;
-    transition: all 0.8s;
-  }
-  .progressbar .step-li-3.active:after {
-    transition: all 0.8s;
-    background: rgb(104, 201, 166);
-    background: -moz-linear-gradient(45deg, rgba(104, 201, 166, 1) 30%, rgba(65, 193, 242, 1) 77%);
-    background: -webkit-linear-gradient(45deg, rgba(104, 201, 166, 1) 30%, rgba(65, 193, 242, 1) 77%);
-    background: linear-gradient(45deg, rgba(104, 201, 166, 1) 30%, rgba(65, 193, 242, 1) 77%);
-  }
-  .progressbar .step-li-4.active:before {
-    border-color: #41c1f2;
-    background-color: #41c1f2;
-    transition: all 0.8s;
-  }
-  .progressbar .step-li-4.active:after {
-    transition: all 0.8s;
-    background: rgb(104, 201, 166);
-    background: -moz-linear-gradient(45deg, rgba(104, 201, 166, 1) 30%, rgba(65, 193, 242, 1) 77%);
-    background: -webkit-linear-gradient(45deg, rgba(104, 201, 166, 1) 30%, rgba(65, 193, 242, 1) 77%);
-    background: linear-gradient(45deg, rgba(104, 201, 166, 1) 30%, rgba(65, 193, 242, 1) 77%);
-  }
-
-  .input-text {
-    padding: 20px 0px 0px 0px;
-  }
-
-  .qr-button {
-    background: none;
-    border-top: 1px solid;
-    border-bottom: 1px solid;
-    border-radius: 10px;
-    border-color: yellowgreen;
-    padding: 0 15px 0 20px;
-  }
-  .bank-container {
-    background-color: #fff;
-    width: 100%;
-    padding: 5px 40px 0px 40px;
-    box-shadow: 0 2px 5px -2px gray;
-  }
-  .bank-container img {
-    margin: 10px;
-    width: 40px;
-    height: 40px;
-    border-radius: 10%;
-  }
-</style>
