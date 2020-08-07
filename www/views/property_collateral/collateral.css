@@ -1,7 +1,7 @@
 .ghostwhite-noscroll-container {
   background-color: ghostwhite;
   height: 100%;
-  padding: 10% 0 20% 0;
+  padding: 0 0 20% 0;
 }
 .margin-lr-2d0 {
   margin-left: 10%;
@@ -19,11 +19,11 @@
   position: absolute;
   background-color: #fff;
   width: 100%;
-  padding: 5px 40px 0px 40px;
+  padding: 5px 10px 0px 10px;
   box-shadow: 0 2px 5px -2px gray;
 }
 .bank-container img {
-  margin: 10px;
+  margin-right: 10px;
   width: 40px;
   height: 40px;
   border-radius: 10%;
@@ -31,7 +31,7 @@
 .bottom-btn-container {
   bottom: 10%;
   position: absolute;
-  width: 80%;
+  width: 100%;
   padding: 0px 25px;
 }
 .blue-card {
@@ -48,4 +48,24 @@
   margin-top: 10px;
   text-align: end;
   width: 90%;
+}
+.selection {
+  background: none;
+  border: none;
+  width: 100%;
+  color: gray;
+}
+.open-image {
+  background: rgba(59, 193, 249, 1);
+  color: white;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+}
+.blue-btn-container {
+  padding: 10px;
+  position: absolute;
+  width: 100%;
+  bottom: 40%;
 }

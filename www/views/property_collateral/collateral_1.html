@@ -2,33 +2,42 @@
   <link href="views/property_collateral/collateral.css" rel="stylesheet" />
   <ion-content scroll="false">
     <div class="ghostwhite-noscroll-container">
-      <p class="margin-lr-20">Үл хөдлөх хөрөнгө барьцаалсан зээл</p>
-      <div class="card blue-card margin-lr-20">
+      <button ng-click="$ionicGoBack()" class="button back-button buttons button-clear header-item car-back-nav">
+        <i class="ion-chevron-left"></i>
+        <span class="back-text" style="transform: translate3d(0px, 0px, 0px);"><span class="default-title hide">Back</span><span class="previous-title">Автомашин барьцаат зээл</span></span>
+      </button>
+      <p class="">Үл хөдлөх хөрөнгө барьцаалсан зээл</p>
+      <div class="card blue-card">
         <span class="ion-float-right title">Барьцаат зээл</span>
         <span class="ion-float-right desc">Бүх төрлийн цахилгаан бараа, тавилга гар утас худалдан авах зах зээлийн хүсэлт илгээх боломжтой</span>
       </div>
-      <div>
-        <select>
-          <option>Option 1</option>
-          <option selected>Option 2</option>
+      <div class="">
+        <select class="selection">
+          <option selected>Хөрөнгийн төрөл</option>
+          <option>Option 2</option>
           <option>Option 3</option>
         </select>
       </div>
-      <div class="bottom-line-input margin-lr-20">
+      <div class="bottom-line-input">
         <input type="text" placeholder="Үнэлгээ" name="" />
         <input type="text" placeholder="Хэмжээ" name="" />
+      </div>
+      <div class="blue-btn-container">
+        <button class="open-image" id="Next">
+          Зураг оруулах
+        </button>
       </div>
       <div class="bank-container">
         <p>
           Та дурын банк болон ББСБ -ын зээлээр захиалан авах боломжтой
         </p>
-        <img src="https://lh3.googleusercontent.com/KYQyVTgP4ZV60gxNOsKYssScNe17NMgHpO_nRY4WRBYj_4YTZ0e8t6zwh38sTFmyCco" />
-        <img src="https://lh3.googleusercontent.com/p7hXFskPhLktF-tlcwlZ62WlOKP3i4nJ3iIhMNGXJT28vHdCheSw228PgRuu8Q7WejoY" />
-        <img src="https://lh3.googleusercontent.com/XdgGl-1W5nsU5vl-qyq1QaaHifnq-SgEh6Dh_DdJ4hEtMfGSgjpQIkOq7Ly3zfG3zA8" />
-        <img src="https://lh3.googleusercontent.com/tz0ee5jEozKCbjOusR_cesg4-RDQ1OYiDDEduRj225V7rytxKhcEifs6PFTWKgDAOYs" />
+        <img src="img/khanbank-mn.png" />
+        <img src="img/golomt.png" />
+        <img src="img/khanbank-mn.png" />
+        <img src="img/khanbank-mn.png" />
       </div>
-      <div class="bottom-btn-container margin-lr-20">
-        <button class="button btn" id="back" ui-sref="2">
+      <div class="bottom-btn-container">
+        <button class="button btn" id="back" ng-click="$ionicGoBack()">
           Буцах
         </button>
       </div>
