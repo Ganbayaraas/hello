@@ -1,0 +1,54 @@
+<ion-view ng-app="car_collateral.Ctrl">
+  <link href="views/car_collateral/car_collateral.css" rel="stylesheet" />
+  <ion-content scroll="true" class="car-col-content step3-container">
+    <div class="list car-collateral-list">
+      <button ng-click="$ionicGoBack()" class="button back-button buttons button-clear header-item car-back-nav">
+        <i class="ion-chevron-left"></i>
+        <span class="back-text" style="transform: translate3d(0px, 0px, 0px);"><span class="default-title hide">Back</span><span class="previous-title">Банк сонгох</span></span>
+      </button>
+      <div class="card car-step3-card">
+        <span class="step2-card-span">Анхан шатны шалгуур хангасан банк</span>
+        <ion-checkbox class="step3-checkbox-container">
+          <div class="bank-logo-container">
+            <img class="logo-size" src="/www/img/khanbank-mn.png" />
+          </div>
+          <div class="ml-42">
+            <span class="bank-middle-title">Хаан банк</span>
+          </br >
+            <p class="bank-desc-green" style="color: #badf63 !important">Тэнцсэн банк</p>
+          </div>
+        </ion-checkbox>
+        <span class="step2-card-span">Банкны дэлгэрэнгүй мэдээлэл</span>
+        <label class="item item-input profile-label">
+          <p>Сарын хүү</p>
+          <input type="text" placeholder="-" name="monthFee" />
+        </label>
+        <label class="item item-input profile-label">
+          <p>Зээл олгосон шимтгэл</p>
+          <input type="text" placeholder="-" name="loanfee" />
+        </label>
+        <label class="item item-input profile-label">
+          <p>Нотариатын төлбөр</p>
+          <input type="text" placeholder="-" name="notaryFee" />
+        </label>
+        <label class="item item-input profile-label">
+          <p>Нэр шилжүүлэхэд гарах зардал</p>
+          <input type="text" placeholder="-" name="renamingCost" />
+        </label>
+        <label class="item item-input profile-label">
+          <p>Өргөдлийн хураамж</p>
+          <input type="text" placeholder="-" name="applicationFee" />
+        </label>
+        <label class="item item-input profile-label">
+          <p>ЖХАЖДаатгалын төлбөр</p>
+          <input type="text" placeholder="-" name="insurPayment" />
+        </label>
+      </div>
+      <div class="step3-btn-container">
+        <button class="button btn car-next-button step3-next-btn" id="Next" ui-sref="#">
+          Үргэлжлүүлэх
+        </button>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

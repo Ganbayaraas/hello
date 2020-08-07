@@ -59,6 +59,7 @@ input[type="text"] {
 }
 .profile-bank-list {
   display: grid;
+  border-top: 0px !important;
   grid-template-columns: auto auto auto;
 }
 .profile-bank-list img {
@@ -81,6 +82,18 @@ input[type="text"] {
   margin-left: auto;
   margin-right: auto;
 }
-.label {
-  border-top: 0px;
+.profile-label {
+  width: auto !important;
+}
+.profile-list .item {
+  border-color: #ddd !important;
+  background-color: #fff !important;
+  color: #444 !important;
+  position: relative !important;
+  z-index: 2 !important;
+  margin: -1px !important;
+  padding: 6px 0 5px 16px !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  font-size: 16px !important;
 }

@@ -145,4 +145,24 @@ angular
       controller: "property_collateralCtrl",
     });
     $urlRouterProvider.otherwise("/views/home ");
-  });
+  })
+  .directive("format", [
+    "$filter",
+    function toAmount($filter) {
+      return {
+        require: "?ngModel",
+        link: function (scope, elem, attrs, ctrl) {
+          if (!ctrl) return;
+
+          ctrl.$formatters.unshift(function (a) {
+            return $filter(attrs.format)(ctrl.$modelValue, attrs.format == "currency" ? "€" : "");
+          });
+
+          elem.bind("keyup", function (event) {
+            var plainNumber = elem.val().replace(/[^\d|\-+|\.+]/g, "");
+            elem.val($filter(attrs.format)(plainNumber));
+          });
+        },
+      };
+    },
+  ]);

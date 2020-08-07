@@ -2,161 +2,37 @@
   <link href="views/loan/autoleasing.css" rel="stylesheet" />
   <ion-content scroll="true" style="background-color: ghostwhite; min-height: 100vh;">
     <div class="bg-container">
-      <p class="middle-title">Анхан шатны шалгуур хангасан банк</p>
-      <ul class="list-group">
-        <li>
-          <ion-checkbox>
-            <div class="bank-logo-container">
-              <img class="logo-size" src="/www/img/khanbank-mn.png" />
-            </div>
-            <div class="ml-42">
-              <span class="bank-middle-title">Хаан банк</span>
-              <br/ >
+      <div class="bank-list">
+        <p class="middle-title">Анхан шатны шалгуур хангасан банкууд</p>
+        <ul class="switch-list">
+          <li>
+            <ion-checkbox>
+              <div class="bank-list-container">
+                <img src="/www/img/khanbank-mn.png" />
+              </div>
+              <span class="bank-middle-title">Хаfdsfdssdан банк</span>
               <p class="bank-desc-green">Тэнцсэн банк</p>
-            </div>
-          </ion-checkbox>
-        </li>
-      </ul>
-      <p class="middle-title" style="margin-top: 30px;">Банкны дэлгэрэнгүй мэдээлэл</p>
-      <ul class="list-group">
-        <li class="list-title-gray">Сарын хүү<span class="badge">0.8%</Сарын></li>
-        <li class="line" />
-        <li class="list-title-gray">Зээл олгосон шимтгэл<span class="badge">0.3%</span></li>
-        <li class="line" />
-        <li class="list-title-gray">Нотариатын төлбөр<span class="badge">300,000₮</span></li>
-        <li class="line" />
-        <li class="list-title-gray">Нэр шилжүүлэхэд гарах зардал<span class="badge">20,000,000</span></li>
-        <li class="line" />
-        <li class="list-title-gray">Өргөдлийн хураамж<span class="badge">15,000,000</span></li>
-        <li class="line" />
-        <li class="list-title-gray">ЖХАЖДаатгалын төлбөр<span class="badge">15,000,000</span></li>
-        <li class="line" />
-      </ul>
+            </ion-checkbox>
+          </li>
+        </ul>
+      </div>
+      <div class="item-info">
+        <p class="middle-title">Банкны дэлгэрэнгүй мэдээлэл</p>
+        <ul>
+          <li>Сарын хүү <span>0.8%</span></li>
+          <li>Зээл олгосон шимтгэл <span>0.3%</span></li>
+          <li>Загвар <span>land cruise</span></li>
+          <li>Нотариатын төлбөр <span>300,000₮</span></li>
+          <li>Нэр шилжүүлэхэд гарах зардал<span>20,000,000</span></li>
+          <li>Өргөдлийн хураамж<span>15,000,000</span></li>
+          <li>ЖХАЖДаатгалын төлбөр<span>15,000,000</span></li>
+        </ul>
+      </div>
     </div>
-
-    <div class="btn-container">
+    <div class="scroll-container-bottom-button">
       <button class="button btn register-next-button" id="Next" ui-sref="autoleasing-3">
         Буцах
       </button>
     </div>
   </ion-content>
 </ion-view>
-<style>
-.list-title-gray {
-    color: gray;
-    margin-top: 12px !important;
-    }
-  .bank-logo-container {
-    display: flex;
-    position: relative;
-    float: left;
-  }
-  .logo-size {
-    width: 35px;
-    height: 35px;
-  }
-  .ml-42 {
-    margin-left: 42px;
-    margin-top: -5px;
-  }
-  .bank-middle-title {
-    margin-top: -5px;
-    font-size: 19px;
-    font-weight: 900;
-    color: #000658cf;
-  }
-  .bank-desc-green {
-    color: #aad426 !important;
-    font-size: 13px !important;
-    bottom: 0px;
-  }
-  .bank-desc-red {
-    color: #f7574c !important;
-    font-size: 13px !important;
-    bottom: 0px;
-  }
-  .right-btn {
-    position: absolute;
-    bottom: 14px;
-    right: 0px;
-    color: #aaaaaa;
-    z-index: 1;
-    display: inline-block;
-    font-size: 14px;
-  }
-  .checkbox input,
-  .checkbox-icon {
-    position: relative;
-    width: 25px;
-    height: 25px;
-    display: block;
-    border: 0;
-    background: transparent;
-    cursor: pointer;
-    -webkit-appearance: none;
-  }
-  .checkbox input:before,
-  .checkbox-icon:before {
-    display: table;
-    width: 100%;
-    height: 100%;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 5px;
-    background: #fff;
-    content: " ";
-    -webkit-transition: background-color 20ms ease-in-out;
-    transition: background-color 20ms ease-in-out;
-  }
-  .checkbox input:checked:before,
-  .checkbox input:checked + .checkbox-icon:before {
-    background: yellowgreen;
-    border-color: yellowgreen;
-  }
-  .item {
-    padding: 15px 15px 15px 45px;
-    width: 100%;
-    border-color: #ddd;
-    border: none;
-    background-color: #fff;
-    color: #444;
-    position: relative;
-    z-index: 2;
-    display: block;
-    margin: -1px;
-    font-size: 16px;
-  }
-  .item-checkbox .checkbox {
-    position: absolute;
-    top: 50%;
-    right: 0px;
-    left: 0px;
-    z-index: 3;
-    margin-top: -21px;
-  }
-  .middle-title {
-    font-size: 12px;
-    color: #3b3b3b;
-    text-transform: uppercase;
-  }
-  .upper-text {
-    color: #3b3b3b;
-    text-transform: uppercase;
-  }
-
-  .input-text {
-    padding: 20px 0px 0px 0px;
-  }
-  .bank-container {
-    background-color: #fff;
-    width: 100%;
-    padding: 5px 40px 0px 40px;
-    box-shadow: 0 2px 5px -2px gray;
-  }
-  .bank-container img {
-    margin: 10px;
-    width: 40px;
-    height: 40px;
-    border-radius: 10%;
-  }
-</style>

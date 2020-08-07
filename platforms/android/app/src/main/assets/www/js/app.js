@@ -13,6 +13,8 @@ angular
     "sign.Ctrl",
     "login.Ctrl",
     "autoleasing.Ctrl",
+    "collateral_loan.Ctrl",
+    "car_collateral.Ctrl",
   ])
   .run(function ($ionicPlatform, $state, $cordovaSplashscreen) {
     $ionicPlatform.ready(function () {
@@ -22,13 +24,7 @@ angular
       }
     });
   })
-  .config(function (
-    $stateProvider,
-    $urlRouterProvider,
-    $ionicConfigProvider,
-    $cordovaInAppBrowserProvider,
-    $httpProvider
-  ) {
+  .config(function ($stateProvider, $urlRouterProvider, $ionicConfigProvider, $cordovaInAppBrowserProvider, $httpProvider) {
     if (!window.cordova) {
       var appID = 1234567890;
       var version = "v2.0";
@@ -107,18 +103,60 @@ angular
       templateUrl: "views/loan/autoleasing/step2.html",
       controller: "autoleasingCtrl",
     });
-<<<<<<< HEAD
-=======
     $stateProvider.state("autoleasing-3", {
       url: "/views/autoleasing-3",
       templateUrl: "views/loan/autoleasing/step3.html",
       controller: "autoleasingCtrl",
     });
-    $stateProvider.state("auto-leasing-bank-info", {
-      url: "/views/auto-leasing-bank-info",
+    $stateProvider.state("autoleasing-bank-info", {
+      url: "/views/autoleasing-bank-info",
       templateUrl: "views/loan/autoleasing/step3-bank-info.html",
       controller: "autoleasingCtrl",
     });
->>>>>>> d261de428abd2a489398deada11fc4c0704733c0
+    $stateProvider.state("autoleasing-4", {
+      url: "/views/autoleasing-4",
+      templateUrl: "views/loan/autoleasing/step4.html",
+      controller: "autoleasingCtrl",
+    });
+    $stateProvider.state("coll", {
+      url: "/views/collateral_loan",
+      templateUrl: "views/collateral_loan/collateral_loan.html",
+      controller: "collateral_loanCtrl",
+    });
+    $stateProvider.state("car_coll", {
+      url: "/views/car_collateral",
+      templateUrl: "views/car_collateral/car_collateral.html",
+      controller: "car_collateralCtrl",
+    });
+    $stateProvider.state("car_coll2", {
+      url: "/views/car_collateral2",
+      templateUrl: "views/car_collateral/car_collateral2.html",
+      controller: "car_collateralCtrl",
+    });
+    $stateProvider.state("car_coll3", {
+      url: "/views/car_collateral3",
+      templateUrl: "views/car_collateral/car_collateral3.html",
+      controller: "car_collateralCtrl",
+    });
     $urlRouterProvider.otherwise("/views/home ");
-  });
+  })
+  .directive("format", [
+    "$filter",
+    function toAmount($filter) {
+      return {
+        require: "?ngModel",
+        link: function (scope, elem, attrs, ctrl) {
+          if (!ctrl) return;
+
+          ctrl.$formatters.unshift(function (a) {
+            return $filter(attrs.format)(ctrl.$modelValue, attrs.format == "currency" ? "€" : "");
+          });
+
+          elem.bind("keyup", function (event) {
+            var plainNumber = elem.val().replace(/[^\d|\-+|\.+]/g, "");
+            elem.val($filter(attrs.format)(plainNumber));
+          });
+        },
+      };
+    },
+  ]);
