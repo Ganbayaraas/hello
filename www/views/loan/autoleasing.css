@@ -114,6 +114,7 @@
   border-radius: 10px;
   border-color: yellowgreen;
   padding: 0 15px 0 20px;
+  text-align: left !important;
 }
 .btn-container {
   display: flex;
@@ -178,7 +179,6 @@
   grid-template-columns: repeat(4, 1fr);
 }
 .bank {
-  margin: 10px;
   align-items: center;
   text-align: center;
 }
@@ -315,6 +315,7 @@
   border-radius: 5px;
   border-color: #cdcdcd;
   padding: 0 15px 0 20px;
+  text-align: left !important;
 }
 .middle-title {
   font-size: 12px;
@@ -340,9 +341,9 @@
   width: 35px;
   height: 35px;
 }
-.item {
+.switch-list .item {
   padding: 12px 0px 18px 37px;
-  width: 70%;
+  /* width: 70%; */
   border-color: #ddd;
   border: none;
   background-color: #fff;
