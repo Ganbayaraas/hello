@@ -1,0 +1,71 @@
+.ghostwhite-noscroll-container {
+  background-color: ghostwhite;
+  height: 100%;
+  padding: 0 0 20% 0;
+}
+.margin-lr-2d0 {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.bottom-line-input input {
+  background: none;
+  border-bottom: 1px solid;
+  border-color: #7d7d7d45;
+  padding: 0 10px 0 10px;
+  margin-bottom: 10px;
+}
+.bank-container {
+  bottom: 20%;
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  padding: 5px 10px 0px 10px;
+  box-shadow: 0 2px 5px -2px gray;
+}
+.bank-container img {
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 10%;
+}
+.bottom-btn-container {
+  bottom: 10%;
+  position: absolute;
+  width: 100%;
+  padding: 0px 25px;
+}
+.blue-card {
+  background-color: rgba(61, 192, 250, 1);
+  /* background: -webkit-linear-gradient(49deg, rgba(89, 199, 194, 1) 0%, rgba(61, 192, 250, 1) 45%); */
+  padding: 20px;
+  color: #fff;
+}
+.blue-card .title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.blue-card .desc {
+  margin-top: 10px;
+  text-align: end;
+  width: 90%;
+}
+.selection {
+  background: none;
+  border: none;
+  width: 100%;
+  color: gray;
+}
+.open-image {
+  background: rgba(59, 193, 249, 1);
+  color: white;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+}
+.blue-btn-container {
+  padding: 10px;
+  position: absolute;
+  width: 100%;
+  bottom: 40%;
+}

@@ -1,0 +1,126 @@
+.basket-content {
+  background: #000;
+}
+.basket-item-count {
+  position: absolute;
+  left: 55%;
+  top: 35%;
+  color: #fff !important;
+  font-weight: bold;
+}
+.basket-item {
+  padding: 0px 0px 0px 30px !important;
+  background: #000;
+}
+.checkbox input:checked + .checkbox-icon:before {
+  background: yellowgreen;
+  border-color: yellowgreen;
+}
+.checkbox-icon:before {
+  border-radius: 5px !important;
+  background: #000 !important;
+}
+.checkbox .checkbox-icon:before {
+  border-color: #b6e752;
+}
+.basket-item-left-text {
+  float: left;
+}
+.basket-item-left-text h2 {
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+}
+.basket-item-left-text p {
+  font-size: 12px;
+  color: #a5a5a5;
+}
+.basket-item-right-text {
+  float: right;
+}
+
+.basket-item-right-text h2 {
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+}
+.basket-item-right-text p {
+  font-size: 12px;
+  color: #a5a5a5;
+}
+.checkbox-icon {
+  width: 20px !important;
+  height: 20px !important;
+}
+.item-complex.item-icon-right .item-content {
+  padding-right: 20px !important;
+  padding-left: 65px !important;
+  background: #000;
+}
+.checkbox-icon:after {
+  top: 24% !important;
+  left: 25% !important;
+  width: 11px !important;
+  height: 5px !important;
+}
+.basket-total-price {
+  color: #fff;
+  font-weight: bold;
+}
+.total-price-title {
+  float: left;
+}
+.total-price-amount {
+  float: right;
+}
+.basket-btn-1 {
+  left: 50px;
+  background: rgb(162, 209, 52);
+  background: -moz-linear-gradient(60deg, rgba(162, 209, 52, 1) 30%, rgba(59, 193, 249, 1) 77%);
+  background: -webkit-linear-gradient(60deg, rgba(162, 209, 52, 1) 30%, rgba(59, 193, 249, 1) 77%);
+  background: linear-gradient(60deg, rgba(162, 209, 52, 1) 50%, rgba(59, 193, 249, 1) 77%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a2d134",endColorstr="#3bc1f9",GradientType=1);
+  color: white;
+  border-radius: 10px;
+  width: 120px;
+  height: 35px;
+  min-height: 35px !important;
+  line-height: 35px !important;
+  font-size: 14px !important;
+}
+.basket-btn-2 {
+  right: 50px;
+  background: rgb(162, 209, 52);
+  background: -moz-linear-gradient(60deg, rgba(162, 209, 52, 1) 30%, rgba(59, 193, 249, 1) 77%);
+  background: -webkit-linear-gradient(60deg, rgba(162, 209, 52, 1) 30%, rgba(59, 193, 249, 1) 77%);
+  background: linear-gradient(60deg, rgba(162, 209, 52, 1) 50%, rgba(59, 193, 249, 1) 77%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a2d134",endColorstr="#3bc1f9",GradientType=1);
+  color: white;
+  border-radius: 10px;
+  width: 120px;
+  height: 35px;
+  min-height: 35px !important;
+  line-height: 35px !important;
+  font-size: 14px !important;
+  left: 30%;
+}
+.basket-btn-container {
+  display: inline-flex;
+  padding-top: 50px;
+}
+.basket-content > .scroll {
+  padding-bottom: 100px !important;
+}
+.basket-add-item {
+  width: 100%;
+  display: flow-root;
+}
+.basket-add-item i {
+  font-size: 25px !important;
+}
+.basket-content label {
+  border-color: #656565 !important;
+}
+.item-content img {
+  top: 20% !important;
+}

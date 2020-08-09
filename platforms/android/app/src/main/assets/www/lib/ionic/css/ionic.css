@@ -3307,6 +3307,9 @@ html {
 body {
   margin: 0;
   line-height: 1;
+  height: 100%;
+  width: 100%;
+  position: sticky;
 }
 
 /**
@@ -3581,6 +3584,12 @@ html {
   overflow: hidden;
   -ms-touch-action: pan-y;
   touch-action: pan-y;
+  /* padding-left: 20px !important; */
+  /* padding-right: 20px !important; */
+  padding: 0 20px;
+  position: fixed;
+  height: 100%;
+  width: 100%;
 }
 
 body,
@@ -3603,7 +3612,7 @@ body,
   left: 0;
   overflow: hidden;
   margin: 0;
-  padding: 0;
+  /* padding: 0 20px !important; */
   color: #000;
   word-wrap: break-word;
   font-size: 14px;

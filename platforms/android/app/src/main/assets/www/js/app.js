@@ -1,4 +1,4 @@
-angular
+var app = angular
   .module("index", [
     "ionic",
     "ngCordova",
@@ -15,6 +15,7 @@ angular
     "autoleasing.Ctrl",
     "collateral_loan.Ctrl",
     "car_collateral.Ctrl",
+    "property_collateral.Ctrl",
   ])
   .run(function ($ionicPlatform, $state, $cordovaSplashscreen) {
     $ionicPlatform.ready(function () {
@@ -138,6 +139,16 @@ angular
       templateUrl: "views/car_collateral/car_collateral3.html",
       controller: "car_collateralCtrl",
     });
+    $stateProvider.state("property_collateral", {
+      url: "/views/property_collateral",
+      templateUrl: "views/property_collateral/collateral_1.html",
+      controller: "property_collateralCtrl",
+    });
+    $stateProvider.state("basket", {
+      url: "/views/basket",
+      templateUrl: "views/basket/basket.html",
+      controller: "basketCtrl",
+    });
     $urlRouterProvider.otherwise("/views/home ");
   })
   .directive("format", [
@@ -160,3 +171,4 @@ angular
       };
     },
   ]);
+app.controller("basketCtrl", function ($scope, $ionicPlatform) {});
