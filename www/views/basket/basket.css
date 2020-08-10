@@ -1,5 +1,5 @@
 .basket-content {
-  background: #000;
+  /* background: #000; */
 }
 .basket-item-count {
   position: absolute;
@@ -10,7 +10,7 @@
 }
 .basket-item {
   padding: 0px 0px 0px 30px !important;
-  background: #000;
+  /* background: #000; */
 }
 .checkbox input:checked + .checkbox-icon:before {
   background: yellowgreen;
@@ -18,7 +18,7 @@
 }
 .checkbox-icon:before {
   border-radius: 5px !important;
-  background: #000 !important;
+  /* background: #000 !important; */
 }
 .checkbox .checkbox-icon:before {
   border-color: #b6e752;
@@ -29,7 +29,7 @@
 .basket-item-left-text h2 {
   font-size: 12px;
   font-weight: bold;
-  color: #fff;
+  /* color: #fff; */
 }
 .basket-item-left-text p {
   font-size: 12px;
@@ -42,7 +42,7 @@
 .basket-item-right-text h2 {
   font-size: 12px;
   font-weight: bold;
-  color: #fff;
+  /* color: #fff; */
 }
 .basket-item-right-text p {
   font-size: 12px;
@@ -55,7 +55,7 @@
 .item-complex.item-icon-right .item-content {
   padding-right: 20px !important;
   padding-left: 65px !important;
-  background: #000;
+  /* background: #000; */
 }
 .checkbox-icon:after {
   top: 24% !important;
@@ -119,7 +119,7 @@
   font-size: 25px !important;
 }
 .basket-content label {
-  border-color: #656565 !important;
+  border-color: #e7e7e7 !important;
 }
 .item-content img {
   top: 20% !important;

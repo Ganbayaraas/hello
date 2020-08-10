@@ -3307,9 +3307,9 @@ html {
 body {
   margin: 0;
   line-height: 1;
-  height: 100%;
+  /* height: 100%;
   width: 100%;
-  position: sticky;
+  position: sticky; */
 }
 
 /**
@@ -3586,10 +3586,10 @@ html {
   touch-action: pan-y;
   /* padding-left: 20px !important; */
   /* padding-right: 20px !important; */
-  padding: 0 20px;
+  /* padding: 0 20px;
   position: fixed;
   height: 100%;
-  width: 100%;
+  width: 100%; */
 }
 
 body,
