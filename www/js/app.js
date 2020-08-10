@@ -159,6 +159,7 @@ var app = angular
       url: "/views/request-detail/request_detail",
       templateUrl: "views/request-list/request-detail/request_detail.html",
       controller: "request_detailCtrl",
+    });
     $stateProvider.state("consumer_loan", {
       url: "/views/loan/consumer_loan",
       templateUrl: "views/loan/consumer_loan/consumer.html",

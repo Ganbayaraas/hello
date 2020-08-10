@@ -1,27 +1,27 @@
 <ion-view id="request_listPage">
   <ion-pane>
     <link href="views/request-list/request_list.css" rel="stylesheet" />
-    <ion-nav-view>
-      <ion-content scroll="false">
-        <div class="card">
-          <div class="item bank-card card-body item-text-wrap">
-            <div class="expandcollapse-item" ng-click="active = !active" ng-class="{'expandcollapse-heading-collapsed': active, 'expandcollapse-heading-expanded': !active}">
-              <div class="row">
-                <div class="col">
-                  <span class="ion-float-left">Land Cruiser 200</span>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <span class="ion-color-blue"><span class="ion-text-bold">16,000,000</span>.00 ₮</span>
-                </div>
-                <div class="col">
-                  <span class="ion-float-right">Авто лизинг</span>
-                </div>
+    <ion-content scroll="false">
+      <div class="card">
+        <div class="item bank-card card-body item-text-wrap">
+          <div class="expandcollapse-item" ng-click="growDiv()">
+            <div class="row">
+              <div class="col">
+                <span class="ion-float-left">Land Cruiser 200</span>
               </div>
             </div>
-            <div class="list row slideDown" ng-hide="active">
-              <a class="item item-thumbnail-left bank-card-expand" ui-sref="request_detail">
+            <div class="row">
+              <div class="col">
+                <span class="ion-color-blue"><span class="ion-text-bold">16,000,000</span>.00 ₮</span>
+              </div>
+              <div class="col">
+                <span class="ion-float-right">Авто лизинг</span>
+              </div>
+            </div>
+          </div>
+          <div class="list fix-list" ng-hide="active" id="grow">
+            <div class="measuringWrapper">
+              <a class="item item-thumbnail-left" ui-sref="request_detail">
                 <img src="img/khanbank-mn.png" />
                 <div class="row">
                   <div class="col">
@@ -41,10 +41,10 @@
                 </div>
               </a>
             </div>
-            <span class="badge badge-assertive loan-card-badge">1</span>
           </div>
+          <span class="badge badge-assertive loan-card-badge">1</span>
         </div>
-      </ion-content>
-    </ion-nav-view>
+      </div>
+    </ion-content>
   </ion-pane>
 </ion-view>
