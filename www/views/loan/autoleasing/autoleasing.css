@@ -125,14 +125,13 @@
 .ghostwhite-noscroll-container {
   background-color: ghostwhite;
   height: 100%;
-  padding: 10% 0 20% 0;
 }
 .ghostwhite-background {
   background-color: ghostwhite;
 }
 .margin-lr-20 {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .bottom-btn-container {
   bottom: 10%;
@@ -152,8 +151,6 @@
   padding: 0 15px 0 20px;
 }
 .bank-container {
-  bottom: 20%;
-  position: absolute;
   background-color: #fff;
   width: 100%;
   padding: 5px 40px 0px 40px;
@@ -303,7 +300,6 @@
 .bg-container {
   border-radius: 10px;
   padding: 20px;
-  height: 100%;
   margin: 20px 15px 0px 15px;
   background-color: #fff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
