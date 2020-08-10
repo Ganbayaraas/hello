@@ -13,7 +13,7 @@ var app = angular
     "sign.Ctrl",
     "login.Ctrl",
     "autoleasing.Ctrl",
-    "collateral_loan.Ctrl",
+    "business_loan.Ctrl",
     "car_collateral.Ctrl",
     "property_collateral.Ctrl",
     "consumer_loan.Ctrl",
@@ -120,10 +120,10 @@ var app = angular
       templateUrl: "views/loan/autoleasing/step4.html",
       controller: "autoleasingCtrl",
     });
-    $stateProvider.state("coll", {
-      url: "/views/collateral_loan",
-      templateUrl: "views/collateral_loan/collateral_loan.html",
-      controller: "collateral_loanCtrl",
+    $stateProvider.state("business_loan", {
+      url: "/views/business_loan",
+      templateUrl: "views/loan/business_loan/business_loan.html",
+      controller: "business_loanCtrl",
     });
     $stateProvider.state("car_coll", {
       url: "/views/car_collateral",
