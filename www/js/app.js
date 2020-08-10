@@ -149,6 +149,16 @@ var app = angular
       templateUrl: "views/basket/basket.html",
       controller: "basketCtrl",
     });
+    $stateProvider.state("loan_success", {
+      url: "/views/loan_success",
+      templateUrl: "views/loan_success/loan_success.html",
+      controller: "loan_successCtrl",
+    });
+    $stateProvider.state("request_detail", {
+      url: "/views/request-detail/request_detail",
+      templateUrl: "views/request-list/request-detail/request_detail.html",
+      controller: "request_detailCtrl",
+    });
     $urlRouterProvider.otherwise("/views/home ");
   })
   .directive("format", [
@@ -172,3 +182,5 @@ var app = angular
     },
   ]);
 app.controller("basketCtrl", function ($scope, $ionicPlatform) {});
+app.controller("loan_successCtrl", function ($scope, $ionicPlatform) {});
+app.controller("request_detailCtrl", function ($scope, $ionicPlatform) {});

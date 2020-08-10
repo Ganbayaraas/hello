@@ -1,0 +1,31 @@
+<ion-view>
+  <link href="views/loan_success/loan_success.css" rel="stylesheet" />
+  <ion-content scroll="true" class="loan_success-content">
+    <div ng-controller="loan_successCtrl" class="success-container">
+      <div class="col">
+        <div class="row">
+          <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+            <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+            <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+          </svg>
+        </div>
+        <div class="row"><span class="row-2-text">Амжилттай илгээгдлээ</span></div>
+        <div class="row success-bank-list">
+          <img src="img/khanbank-mn.png" width="35px" height="35px" />
+          <span>
+            Хаан банк
+          </span>
+        </div>
+        <div class="row"><span class="row-4-text">Танд баярлалаа</span></div>
+        <div class="row success-btm-text">
+          <span class="row-5-text">
+            Зээлийн хүсэлт илгээгдсэн банкуудаас таньруу холбогдох болно.
+          </span>
+        </div>
+        <div class="row success-btn-container">
+          <button class="button success-btn" ui-sref="home">Нүүр хуудасруу буцах</button>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

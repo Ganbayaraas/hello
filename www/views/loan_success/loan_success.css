@@ -1,0 +1,106 @@
+.checkmark__circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #add321;
+  fill: none;
+  animation: stroke 0.5s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: #add321;
+  stroke-miterlimit: 10;
+  margin: 10% auto;
+  box-shadow: inset 0px 0px 0px #fff;
+  animation: fill 0.2s ease-in-out 0.3s forwards, scale 0.2s ease-in-out 0.2s both;
+}
+
+.checkmark__check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.2s cubic-bezier(0.4, 0, 0.4, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes scale {
+  0%,
+  100% {
+    transform: none;
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px #fff;
+  }
+}
+.row-2-text {
+  text-align: center;
+  margin: 0 auto;
+  color: #add321;
+}
+.success-bank-list {
+  display: grid;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px !important;
+  padding-top: 30px !important;
+}
+.success-bank-list img {
+  margin: 0 auto;
+}
+.success-bank-list span {
+  color: #afafaf;
+}
+.row-4-text {
+  text-align: center;
+  margin: 0 auto;
+  color: #add321;
+}
+.row-5-text {
+  text-align: center;
+  color: #afafaf;
+}
+.success-btn {
+  line-height: 20px !important;
+  color: #fff !important;
+  border-radius: 10px !important;
+  background: rgb(162, 209, 52);
+  background: -moz-linear-gradient(45deg, rgba(162, 209, 52, 1) 30%, rgba(59, 193, 249, 1) 77%);
+  background: -webkit-linear-gradient(45deg, rgba(162, 209, 52, 1) 30%, rgba(59, 193, 249, 1) 77%);
+  background: linear-gradient(45deg, rgba(162, 209, 52, 1) 30%, rgba(59, 193, 249, 1) 77%);
+  font-size: 12px !important;
+  width: 65%;
+  padding: 5px 40px;
+  margin: auto;
+  display: block;
+  min-height: 35px !important;
+}
+.loan_success-content {
+  height: 100%;
+}
+.loan_success-content > .scroll {
+  height: 100%;
+}
+.success-btn-container {
+  position: absolute;
+  bottom: 20%;
+}
+.success-btm-text {
+  width: 80%;
+  margin: 0 auto;
+}

@@ -97,3 +97,63 @@ input[type="text"] {
   border-style: solid !important;
   font-size: 16px !important;
 }
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 2;
+  cursor: pointer;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+}
+
+#text {
+  padding: 25px;
+  border-radius: 10px;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  display: grid;
+  width: 60%;
+  /* font-size: 50px; */
+  color: white;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  border-top: 1px solid #a9d229;
+  border-bottom: 1px solid #3ec1f4;
+  background-image: linear-gradient(#a9d229, #3ec1f4), linear-gradient(#a9d229, #3ec1f4);
+  background-size: 1px 100%;
+  background-position: 0 0, 100% 0;
+  background-repeat: no-repeat;
+}
+#text span {
+  text-align: center;
+  font-size: 12px !important;
+}
+.overlay-title-text {
+  padding-bottom: 20px;
+}
+.overlay-btn-container {
+  position: relative;
+  top: 85%;
+}
+.overlay-btn-container button {
+  line-height: 20px !important;
+  color: #fff !important;
+  border-radius: 10px !important;
+  background: rgb(162, 209, 52);
+  background: -moz-linear-gradient(45deg, rgba(162, 209, 52, 1) 30%, rgba(59, 193, 249, 1) 77%);
+  background: -webkit-linear-gradient(45deg, rgba(162, 209, 52, 1) 30%, rgba(59, 193, 249, 1) 77%);
+  background: linear-gradient(45deg, rgba(162, 209, 52, 1) 30%, rgba(59, 193, 249, 1) 77%);
+  font-size: 12px !important;
+  width: 65%;
+  padding: 5px 40px;
+  margin: auto;
+  display: block;
+}

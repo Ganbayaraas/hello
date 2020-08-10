@@ -1,5 +1,14 @@
 <ion-view view-title="Tabs" class="">
   <link href="views/profile/profile.css" rel="stylesheet" />
+  <div id="overlay">
+    <div class="overlay-content" id="text">
+      <span class="overlay-title-text"> АНХААРУУЛГА!!! </span>
+      <span class="overlay-body-text"> Таны хувийн мэдээлэл дутуу байгаа тул хүсэлт илгээх боломжгүй байна.</span>
+    </div>
+    <div class="overlay-btn-container">
+      <button class="button overlay-btn-1" ng-click="overlayOff()">Хувийн мэдээллээ оруулах бол ЭНД дарна уу.</button>
+    </div>
+  </div>
   <ion-pane class="profile-info-container">
     <div class="profile-avatar">
       <div class="profile-avatar">
