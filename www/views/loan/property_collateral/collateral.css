@@ -11,7 +11,7 @@
   background: none;
   border-bottom: 1px solid;
   border-color: #7d7d7d45;
-  padding: 0 10px 0 10px;
+  padding: 0 2px 0 2px;
   margin-bottom: 10px;
 }
 .bank-container {
@@ -19,7 +19,7 @@
   position: absolute;
   background-color: #fff;
   width: 100%;
-  padding: 5px 10px 0px 10px;
+  padding: 10px 20px 10px 20px;
   box-shadow: 0 2px 5px -2px gray;
 }
 .bank-container img {
@@ -51,6 +51,10 @@
 }
 .selection {
   background: none;
+  border-bottom: 1px solid;
+  border-color: #7d7d7d45;
+  padding: 0 0px 10px 0px;
+  margin-top: 10px;
   border: none;
   width: 100%;
   color: gray;
@@ -64,7 +68,7 @@
   padding: 10px;
 }
 .blue-btn-container {
-  padding: 10px;
+  padding: 20px;
   position: absolute;
   width: 100%;
   bottom: 40%;

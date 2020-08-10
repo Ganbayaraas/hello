@@ -1,69 +1,77 @@
 <ion-view id="loanPages">
-  <link href="views/loan/autoleasing.css" rel="stylesheet" />
-  <ion-content scroll="true" style="background-color: ghostwhite;">
-    <div class="bg-container">
-      <div style="margin-top: 10px; margin-bottom: 55px;">
-        <ul id="progress-bar" class="progressbar">
-          <li class="active step-li-1"></li>
-          <li class="active step-li-2"></li>
-          <li class="active step-li-3"></li>
-          <li class="step-li-4"></li>
-        </ul>
+  <link href="views/loan/autoleasing/autoleasing.css" rel="stylesheet" />
+  <ion-content class="ion-modified-content">
+    <div class="big-container">
+      <div class="magic-container">
+        <button ng-click="$ionicGoBack()" class="button back-button buttons button-clear header-item car-back-nav">
+          <i class="ion-chevron-left"></i>
+          <span class="back-text" style="transform: translate3d(0px, 0px, 0px);"><span class="default-title hide">Back</span><span class="previous-title">Банк сонгох</span></span>
+        </button>
+        <div class="bg-container">
+          <div style="margin-top: 10px; margin-bottom: 55px;">
+            <ul id="progress-bar" class="progressbar">
+              <li class="active step-li-1"></li>
+              <li class="active step-li-2"></li>
+              <li class="active step-li-3"></li>
+              <li class="step-li-4"></li>
+            </ul>
+          </div>
+          <div class="bank-list">
+            <p class="middle-title">Анхан шатны шалгуур хангасан банкууд</p>
+            <ul class="switch-list">
+              <li>
+                <ion-checkbox>
+                  <div class="bank-list-container">
+                    <img src="img/khanbank-mn.png" />
+                  </div>
+                  <span class="bank-middle-title">Хаан банк</span>
+                  <p class="bank-desc-green">Тэнцсэн банк</p>
+                </ion-checkbox>
+                <button class="right-btn" ui-sref="autoleasing-bank-info">Дэлгэрэнгүй</button>
+              </li>
+              <li>
+                <ion-checkbox>
+                  <div class="bank-list-container">
+                    <img src="img/khanbank-mn.png" />
+                  </div>
+                  <span class="bank-middle-title">Хаан банк</span>
+                  <p class="bank-desc-green">Тэнцсэн банк</p>
+                </ion-checkbox>
+                <button class="right-btn" ui-sref="autoleasing-bank-info">Дэлгэрэнгүй</button>
+              </li>
+            </ul>
+          </div>
+          <!-- Shalguur hangaagui bankuud -->
+          <div class="bank-list">
+            <p class="middle-title" style="margin-top: 50px;">Анхан шатны шалгуур хангаагүй банкууд</p>
+            <ul class="switch-list">
+              <li>
+                <ion-checkbox>
+                  <div class="bank-list-container">
+                    <img src="img/khanbank-mn.png" />
+                  </div>
+                  <span class="bank-middle-title">Хаан банк</span>
+                  <p class="bank-desc-red">Тэнцээгүй банк</p>
+                </ion-checkbox>
+              </li>
+              <li>
+                <ion-checkbox>
+                  <div class="bank-list-container">
+                    <img src="img/golomt.png" />
+                  </div>
+                  <span class="bank-middle-title">Голомт банк</span>
+                  <p class="bank-desc-red">Тэнцээгүй банк</p>
+                </ion-checkbox>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="bank-list">
-        <p class="middle-title">Анхан шатны шалгуур хангасан банкууд</p>
-        <ul class="switch-list">
-          <li>
-            <ion-checkbox>
-              <div class="bank-list-container">
-                <img src="img/khanbank-mn.png" />
-              </div>
-              <span class="bank-middle-title">Хаан банк</span>
-              <p class="bank-desc-green">Тэнцсэн банк</p>
-            </ion-checkbox>
-            <button class="right-btn" ui-sref="autoleasing-bank-info">Дэлгэрэнгүй</button>
-          </li>
-          <li>
-            <ion-checkbox>
-              <div class="bank-list-container">
-                <img src="img/khanbank-mn.png" />
-              </div>
-              <span class="bank-middle-title">Хаан банк</span>
-              <p class="bank-desc-green">Тэнцсэн банк</p>
-            </ion-checkbox>
-            <button class="right-btn" ui-sref="autoleasing-bank-info">Дэлгэрэнгүй</button>
-          </li>
-        </ul>
-      </div>
-      <!-- Shalguur hangaagui bankuud -->
-      <div class="bank-list">
-        <p class="middle-title" style="margin-top: 50px;">Анхан шатны шалгуур хангаагүй банкууд</p>
-        <ul class="switch-list">
-          <li>
-            <ion-checkbox>
-              <div class="bank-list-container">
-                <img src="img/khanbank-mn.png" />
-              </div>
-              <span class="bank-middle-title">Хаан банк</span>
-              <p class="bank-desc-red">Тэнцээгүй банк</p>
-            </ion-checkbox>
-          </li>
-          <li>
-            <ion-checkbox>
-              <div class="bank-list-container">
-                <img src="img/golomt.png" />
-              </div>
-              <span class="bank-middle-title">Голомт банк</span>
-              <p class="bank-desc-red">Тэнцээгүй банк</p>
-            </ion-checkbox>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="scroll-container-bottom-button">
-      <button class="button btn" id="Next" ui-sref="autoleasing-bank-info">
-        Үргэлжлүүлэх
-      </button>
+      <ion-footer class="bottom-footer">
+        <button class="button btn" id="Next" ui-sref="autoleasing-4">
+          Үргэлжлүүлэх
+        </button>
+      </ion-footer>
     </div>
   </ion-content>
 </ion-view>

@@ -16,6 +16,7 @@ var app = angular
     "collateral_loan.Ctrl",
     "car_collateral.Ctrl",
     "property_collateral.Ctrl",
+    "consumer_loan.Ctrl",
   ])
   .run(function ($ionicPlatform, $state, $cordovaSplashscreen) {
     $ionicPlatform.ready(function () {
@@ -141,7 +142,7 @@ var app = angular
     });
     $stateProvider.state("property_collateral", {
       url: "/views/property_collateral",
-      templateUrl: "views/property_collateral/collateral_1.html",
+      templateUrl: "views/loan/property_collateral/collateral.html",
       controller: "property_collateralCtrl",
     });
     $stateProvider.state("basket", {
@@ -158,6 +159,10 @@ var app = angular
       url: "/views/request-detail/request_detail",
       templateUrl: "views/request-list/request-detail/request_detail.html",
       controller: "request_detailCtrl",
+    $stateProvider.state("consumer_loan", {
+      url: "/views/loan/consumer_loan",
+      templateUrl: "views/loan/consumer_loan/consumer.html",
+      controller: "consumer_loanCtrl",
     });
     $urlRouterProvider.otherwise("/views/home ");
   })
