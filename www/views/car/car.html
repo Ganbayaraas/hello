@@ -1,0 +1,45 @@
+<ion-view id="loanPages">
+  <link href="views/car/car.css" rel="stylesheet" />
+  <ion-content class="ion-modified-content">
+    <div class="big-container">
+      <div class="magic-container margin-lr-20">
+        <button ng-click="$ionicGoBack()" class="button back-button buttons button-clear header-item car-back-nav">
+          <i class="ion-chevron-left"></i>
+          <span class="back-text" style="transform: translate3d(0px, 0px, 0px);"><span class="default-title hide">Back</span><span class="previous-title">Авто машин</span></span>
+        </button>
+        <p>Та хайх гэж буй машины брэндийг сонгох эсвэл бичнэ үү</p>
+        <div class="search-input">
+          <span class="icon ion-search"></span>
+          <input type="text" placeholder="Хайх" name="" />
+        </div>
+        <div class="brand-tags">
+          <ul>
+            <li class="tags" ui-sref="car-brandlist">Toyota</li>
+            <li class="tags">Lamborghini</li>
+            <li class="tags">Mercedes</li>
+            <li class="tags">Tesla</li>
+            <li class="tags">Bugatti</li>
+            <li class="tags">Lexus</li>
+            <li class="tags">BMW</li>
+            <li class="tags">Hyundai</li>
+            <li class="tags">Бүгд</li>
+          </ul>
+        </div>
+        <div class="cars">
+          <ul>
+            <li class="car-detail" ui-sref="car-info">
+              <div class="car-img"><img src="img/car.jpg" /></div>
+              <div class="desc">
+                <p class="car-title">Lexus ls310</p>
+                <span>2019/2020</span>
+                <span>Да хүрээ</span>
+                <p class="car-price">29,000,000₮</p>
+                <span>BLG00021</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

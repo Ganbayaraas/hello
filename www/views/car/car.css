@@ -1,0 +1,72 @@
+.search-input .icon {
+  padding: 8px;
+  font-weight: bold;
+  min-width: 10px;
+  position: absolute;
+  text-align: center;
+  font-size: 18px;
+  color: #b2b2b2;
+}
+.search-input input {
+  background: none;
+  border-bottom: 1px solid;
+  border-color: #7d7d7d45;
+  padding: 0 15px 0 30px;
+  margin-bottom: 10px;
+}
+.brand-tags ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.brand-tags .tags {
+  color: #141b64;
+  width: auto;
+  padding: 10px;
+  background-color: #f8f8fe;
+  margin: 5px;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px 0px rgb(0 0 0 / 29%);
+}
+.brand-tags .series {
+  color: #141b64;
+  width: auto;
+  padding: 10px;
+  margin: 5px;
+  text-align: left;
+}
+.cars {
+  margin: 20px 0 20px 0;
+}
+.cars .car-detail {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 2px;
+  box-shadow: 1px 1px 3px 0px rgb(0 0 0 / 29%);
+  height: 120px;
+  margin-bottom: 10px;
+}
+.cars .desc {
+  display: grid;
+}
+.cars .car-img {
+  display: flex;
+  position: relative;
+  float: left;
+  margin-right: 10px;
+}
+.cars img {
+  max-height: 100px;
+}
+.cars .desc span {
+  font-size: 12px;
+  color: gray;
+}
+.car-title {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+}
+.car-price {
+  margin: 0;
+}
