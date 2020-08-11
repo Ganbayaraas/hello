@@ -39,3 +39,6 @@
   padding-left: 60px !important;
   min-height: 0px !important;
 }
+.item.activated {
+  background-color: #fff;
+}

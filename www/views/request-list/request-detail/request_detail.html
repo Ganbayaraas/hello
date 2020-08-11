@@ -6,8 +6,39 @@
         <i class="ion-chevron-left"></i>
         <span class="back-text" style="transform: translate3d(0px, 0px, 0px);"><span class="default-title hide">Back</span><span class="previous-title">Хүсэлт илгээх</span></span>
       </button>
-      <div class="card car-step2-card">
-        <span class="step2-card-span">Зээлийн хүсэлтийн мэдээлэл</span>
+      <div class="request-detail-container">
+        <div class="car-detail">
+          <img src="img/car.jpg" />
+          <p>Land Criuser 200</p>
+          <span>Toyota Таван Богд</span></br>
+          <span>2019.02.20 -2020.05.15</span>
+        </div>
+        <div class="bank-detail">
+          <span class="bant-detail-title"> Банкны санал</span>
+          <label class="item item-input bank-detail-label">
+            <p>Банк</p>
+            <input type="text" placeholder="Банк" name="bank" />
+          </label>
+          <label class="item item-input bank-detail-label">
+            <p>Хүү</p>
+            <input type="text" placeholder="Хүү" name="fee" />
+          </label>
+          <label class="item item-input bank-detail-label">
+            <p>Хугацаа</p>
+            <input type="text" placeholder="Хугацаа" name="month" />
+          </label>
+          <label class="item item-input bank-detail-label">
+            <p>Үнэ</p>
+            <input type="text" placeholder="Үнэ" name="price" />
+          </label>
+          <ion-checkbox class="detail-checkbox">
+            <span>Батлагдсан зээлийг зөвшөөрөх эсэх</span>
+          </ion-checkbox>
+          <div class="detail-btn-container">
+            <button class="button bottom-first-button" ui-sref="#">Цуцлах</button>
+            <button class="button bottom-second-button" ui-sref="#">Илгээх</button>
+          </div>
+        </div>
       </div>
     </div>
   </ion-content>

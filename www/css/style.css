@@ -79,9 +79,11 @@
   color: white;
   width: 100%;
   border-radius: 10px;
-  font-weight: 600;
+  font-weight: normal;
   text-transform: uppercase;
   font-size: 14px;
+  min-height: 35px;
+  line-height: 35px;
 }
 .btn:hover {
   color: white;
@@ -129,4 +131,37 @@ h4 {
   padding: 30px 50px 10px 50px;
   flex-shrink: 0;
   background: none;
+}
+.bottom-first-button {
+  background: rgb(148, 207, 79);
+  background: -moz-linear-gradient(90deg, rgba(148, 207, 79, 1) 55%, rgba(102, 200, 174, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(148, 207, 79, 1) 55%, rgba(102, 200, 174, 1) 100%);
+  background: linear-gradient(90deg, rgba(148, 207, 79, 1) 55%, rgba(102, 200, 174, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#94cf4f",endColorstr="#66c8ae",GradientType=1);
+  color: white;
+  border-radius: 10px;
+  width: 150px;
+  height: 35px;
+  min-height: 35px !important;
+  line-height: 35px !important;
+  font-size: 14px !important;
+  margin: 0 auto;
+}
+.bottom-second-button {
+  background: rgb(86, 197, 198);
+  background: -moz-linear-gradient(119deg, rgba(86, 197, 198, 1) 55%, rgba(61, 192, 250, 1) 100%);
+  background: -webkit-linear-gradient(119deg, rgba(86, 197, 198, 1) 55%, rgba(61, 192, 250, 1) 100%);
+  background: linear-gradient(119deg, rgba(86, 197, 198, 1) 55%, rgba(61, 192, 250, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#56c5c6",endColorstr="#3dc0fa",GradientType=1);
+  color: white;
+  border-radius: 10px;
+  width: 150px;
+  height: 35px;
+  min-height: 35px !important;
+  line-height: 35px !important;
+  font-size: 14px !important;
+  margin: 0 auto;
+}
+.scroll-content {
+  margin-bottom: 50px !important;
 }

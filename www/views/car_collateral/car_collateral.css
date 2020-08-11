@@ -165,50 +165,13 @@
   background: transparent;
   cursor: pointer;
 }
-.checkbox-icon::before {
-  border-radius: 2px;
-  width: 72%;
-  height: 72%;
-  margin-top: 14%;
-  margin-left: 14%;
-  border-width: 2px;
-}
-
-.checkbox-icon::after {
-  border-width: 2px;
-  top: 19%;
-  left: 25%;
-  width: 13px;
-  height: 7px;
-}
 .car-step3-card.step3-checkbox-container {
   padding-left: 45px !important;
 }
-
 .car-step3-card label {
   border: 0px !important;
   padding-bottom: 10px !important;
   padding-top: 10px !important;
-}
-.checkbox input:checked:before,
-.checkbox input:checked + .checkbox-icon:before {
-  background: yellowgreen;
-  border-color: yellowgreen;
-}
-.platform-android .checkbox-platform input:after,
-.platform-android .checkbox-platform .checkbox-icon:after,
-.checkbox-square input:after,
-.checkbox-square .checkbox-icon:after {
-  border-width: 2px;
-  top: 16%;
-  left: 25%;
-  width: 13px;
-  height: 7px;
-}
-.checkbox input:before,
-.checkbox .checkbox-icon:before {
-  border-color: #d0ee88;
-  border-width: 1px;
 }
 .car-step3-card .item.item-input input {
   padding-right: 24px !important;
@@ -219,13 +182,50 @@
 .step3-container .scroll {
   height: 100% !important;
 }
-.step3-next-btn {
-}
-.step3-btn-container {
-}
 .item-checkbox {
   padding-left: 50px !important;
 }
 .bank-desc-green {
   color: #badf63 !important;
+}
+.step3-checkbox-container > .checkbox input:checked + .checkbox-icon:before {
+  border-radius: 5px !important;
+  background: #fff !important;
+  background-color: #fff !important;
+  border-color: #b6e752 !important;
+}
+.checkbox input:checked + .checkbox-icon::after {
+  border-radius: 5px !important;
+}
+.checkbox .checkbox-icon:before {
+  border-radius: 5px !important;
+  border-color: #b6e752;
+}
+.checkbox-icon {
+  width: 20px !important;
+  height: 20px !important;
+}
+.checkbox-icon::after {
+  width: 20px !important;
+  height: 20px !important;
+}
+.checkbox-icon::before {
+  width: 20px !important;
+  height: 20px !important;
+  margin-top: 0px !important;
+  margin-left: 0px !important;
+}
+.checkbox input[type="checkbox"]:checked + i:after {
+  content: "\2713";
+  transform: rotate(0);
+  top: 0% !important;
+  left: 20% !important;
+  border: none !important;
+  display: flex;
+  text-align: center;
+  color: #b6e752;
+}
+.detail-btn-container {
+  display: inline-flex;
+  padding-top: 50px;
 }

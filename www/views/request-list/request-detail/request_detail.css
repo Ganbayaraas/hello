@@ -1,0 +1,88 @@
+.car-detail img {
+  width: 120px;
+  height: 80px;
+  float: left;
+  margin: 0 10px 0 20px;
+}
+.car-detail p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #263667 !important;
+  margin: 0 0 20px !important;
+}
+.car-detail span {
+  font-size: 12px;
+  color: #b8b8b8 !important;
+}
+.bank-detail {
+  margin-top: 20px;
+}
+.bant-detail-title {
+  padding-left: 16px;
+  padding-bottom: 10px;
+  display: block;
+  color: #263667 !important;
+}
+.bank-detail p {
+  color: #c4c8d1 !important;
+}
+.bank-detail-label input {
+  text-align: right;
+  color: #263667 !important;
+}
+.bank-detail > .item-checkbox span {
+  font-size: 14px;
+  color: #263667 !important;
+}
+.bank-detail > .item-checkbox .checkbox {
+  left: unset !important;
+  right: 15px !important;
+  padding: 10px 7px !important;
+}
+.bank-detail > .item-checkbox {
+  padding-left: 16px !important;
+}
+.detail-checkbox > .checkbox input:checked + .checkbox-icon:before {
+  border-radius: 5px !important;
+  background: #fff !important;
+  background-color: #fff !important;
+  border-color: #b6e752 !important;
+}
+.checkbox input:checked + .checkbox-icon::after {
+  border-radius: 5px !important;
+}
+.checkbox .checkbox-icon:before {
+  border-radius: 5px !important;
+}
+.checkbox-icon {
+  width: 20px !important;
+  height: 20px !important;
+}
+.checkbox-icon::after {
+  width: 20px !important;
+  height: 20px !important;
+}
+.checkbox-icon::before {
+  width: 20px !important;
+  height: 20px !important;
+  margin-top: 0px !important;
+  margin-left: 0px !important;
+}
+.checkbox input[type="checkbox"]:checked + i:after {
+  content: "\2713";
+  transform: rotate(0);
+  top: 0% !important;
+  left: 20% !important;
+  border: none !important;
+  display: flex;
+  text-align: center;
+  color: #b6e752;
+}
+.detail-btn-container {
+  display: flex;
+  padding-top: 50px;
+  width: 100%;
+  padding: 0 20px;
+  bottom: 20%;
+  position: fixed;
+}

@@ -1,4 +1,8 @@
-﻿.home-card-1 {
+﻿.home-card-container {
+  width: 100%;
+  display: flex;
+}
+.home-card-1 {
   color: #fff;
   background-size: cover;
   background: url(../../img/line_home.png) repeat, rgb(125, 204, 123); /* Old browsers */
@@ -105,5 +109,9 @@
 .has-tabs-top {
   margin-bottom: 50px;
 }
-.home-card-1-line {
+.card-body {
+  display: grid;
+}
+.card-body i {
+  float: right;
 }
