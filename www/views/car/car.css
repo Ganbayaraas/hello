@@ -18,7 +18,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-.brand-tags ul li {
+.brand-tags .tags {
   color: #141b64;
   width: auto;
   padding: 10px;
@@ -27,6 +27,13 @@
   text-align: center;
   border-radius: 3px;
   box-shadow: 1px 1px 3px 0px rgb(0 0 0 / 29%);
+}
+.brand-tags .series {
+  color: #141b64;
+  width: auto;
+  padding: 10px;
+  margin: 5px;
+  text-align: left;
 }
 .cars {
   margin: 20px 0 20px 0;
