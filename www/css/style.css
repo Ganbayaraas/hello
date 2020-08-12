@@ -96,6 +96,7 @@
   background: -moz-linear-gradient(45deg, rgba(162, 209, 52, 1) 30%, rgba(59, 193, 249, 1) 77%) !important;
   background: -webkit-linear-gradient(45deg, rgba(162, 209, 52, 1) 30%, rgba(59, 193, 249, 1) 77%) !important;
   background: linear-gradient(45deg, rgba(162, 209, 52, 1) 30%, rgba(59, 193, 249, 1) 77%) !important;
+  color: #fff;
 }
 .margin-lr-20 {
   margin-left: 20px !important;
@@ -164,4 +165,10 @@ h4 {
 }
 .scroll-content {
   margin-bottom: 50px !important;
+}
+.ion-select-gen {
+  right: 0;
+  position: absolute;
+  margin-right: 25px;
+  border: none !important;
 }

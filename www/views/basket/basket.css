@@ -118,6 +118,7 @@
 .basket-add-item {
   width: 100%;
   display: flow-root;
+  padding: 0 10px;
 }
 .basket-add-item i {
   font-size: 25px !important;

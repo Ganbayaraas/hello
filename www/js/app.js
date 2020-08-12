@@ -182,6 +182,10 @@ var app = angular
       templateUrl: "views/car/car-info.html",
       controller: "carinfoCtrl",
     });
+    $stateProvider.state("request_car_detail", {
+      url: "/views/request-detail/request_detail/car-detail",
+      templateUrl: "views/request-list/request-detail/request_car_detail.html",
+    });
     $urlRouterProvider.otherwise("/views/home ");
   })
   .directive("format", [
@@ -206,4 +210,40 @@ var app = angular
   ]);
 app.controller("basketCtrl", function ($scope, $ionicPlatform) {});
 app.controller("loan_successCtrl", function ($scope, $ionicPlatform) {});
-app.controller("request_detailCtrl", function ($scope, $ionicPlatform) {});
+app.controller("request_detailCtrl", function ($scope, $ionicPlatform, $ionicPopup) {
+  $scope.overlayOnConfirm = function () {
+    if (document.getElementById("confirm-overlay")) {
+      document.getElementById("confirm-overlay").style.display = "block";
+      console.log("1");
+    }
+  };
+  $scope.overlayOffConfirm = function () {
+    if (document.getElementById("confirm-overlay")) {
+      document.getElementById("confirm-overlay").style.display = "none";
+      console.log("2");
+    }
+  };
+  $scope.overlayOnConfirm();
+
+  $scope.data = {
+    model: null,
+    availableOptions: [
+      { id: "1", name: "Баянзүрх дүүрэг" },
+      { id: "2", name: "Багануур дүүрэг" },
+      { id: "3", name: "Сүхбаатар дүүрэг" },
+    ],
+  };
+  var option = "";
+  $scope.data.availableOptions.forEach((element) => {
+    option += "<option value='" + element.name + "'>" + element.name + " </option>";
+  });
+  console.log(option);
+  var customTemplate = "<label for='repeatSelect'></label>" + "<select name='repeatSelect' id='repeatSelect' ng-model='data.model'>" + "<option value=''>Сонгох</option>" + option + "</select>";
+
+  $scope.showAlert = function () {
+    var alertPopup = $ionicPopup.alert({
+      title: "Салбар сонгох",
+      template: customTemplate,
+    });
+  };
+});
