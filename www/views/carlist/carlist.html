@@ -1,0 +1,66 @@
+<ion-view id="loanPages">
+  <link href="views/carlist/carlist.css" rel="stylesheet" />
+  <ion-content class="ion-modified-content">
+    <div class="big-container">
+      <div class="magic-container margin-lr-20">
+        <button ng-click="$ionicGoBack()" class="button back-button buttons button-clear header-item car-back-nav">
+          <i class="ion-chevron-left"></i>
+          <span class="back-text" style="transform: translate3d(0px, 0px, 0px);"><span class="default-title hide">Back</span><span class="previous-title">Автомашин лизинг</span></span>
+        </button>
+        <div class="right-button-container">
+          <button ng-click="grid()" class="changelayoutbutton">
+            <i class="ion-grid"></i>
+          </button>
+          <button ng-click="column()" class="changelayoutbutton">
+            <i class="ion-navicon"></i>
+          </button>
+        </div>
+        <div class="cars">
+          <ul id="glayout">
+            <li class="car-detail-column" ui-sref="car-info" href="#/views/loan/car/info">
+              <div class="car-img"><img src="img/car.jpg" /></div>
+              <div class="desc">
+                <p class="car-title">Lexus ls310</p>
+                <span>2019/2020</span>
+                <span>Да хүрээ</span>
+                <p class="car-price">29,000,000₮</p>
+                <span>BLG00021</span>
+              </div>
+            </li>
+            <li class="car-detail-column" ui-sref="car-info" href="#/views/loan/car/info">
+              <div class="car-img"><img src="img/car.jpg" /></div>
+              <div class="desc">
+                <p class="car-title">Lexus ls310</p>
+                <span>2019/2020</span>
+                <span>Да хүрээ</span>
+                <p class="car-price">29,000,000₮</p>
+                <span>BLG00021</span>
+              </div>
+            </li>
+            <li class="car-detail-column" ui-sref="car-info" href="#/views/loan/car/info">
+              <div class="car-img"><img src="img/car.jpg" /></div>
+              <div class="desc">
+                <p class="car-title">Lexus ls310</p>
+                <span>2019/2020</span>
+                <span>Да хүрээ</span>
+                <p class="car-price">29,000,000₮</p>
+                <span>BLG00021</span>
+              </div>
+            </li>
+            <li class="car-detail-column" ui-sref="car-info" href="#/views/loan/car/info">
+              <div class="car-img"><img src="img/car.jpg" /></div>
+              <div class="desc">
+                <p class="car-title">Lexus ls310</p>
+                <span>2019/2020</span>
+                <span>Да хүрээ</span>
+                <p class="car-price">29,000,000₮</p>
+                <span>BLG00021</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <ion-footer class="bottom-footer"></ion-footer>
+    </div>
+  </ion-content>
+</ion-view>
