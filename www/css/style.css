@@ -116,9 +116,6 @@ h4 {
   flex-direction: column;
   background-color: ghostwhite;
 }
-.scroll {
-  min-height: 100vh;
-}
 .big-container {
   display: flex;
   flex-direction: column;
