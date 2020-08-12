@@ -115,3 +115,6 @@
 .card-body i {
   float: right;
 }
+.home-tab-2-content > .scroll {
+  min-height: 0px !important;
+}

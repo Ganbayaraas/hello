@@ -13,6 +13,9 @@
 .profile-content {
   /* top: 44px !important; */
 }
+.profile-content > .scroll {
+  min-height: 0px !important;
+}
 .profile-avatar {
   height: 20%;
   display: flex;
@@ -24,6 +27,9 @@
   border-radius: 50%;
 }
 input[type="text"] {
+  text-align: right;
+}
+input[type="number"] {
   text-align: right;
 }
 .profile-camera-icon {

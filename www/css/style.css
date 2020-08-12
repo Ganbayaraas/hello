@@ -172,3 +172,7 @@ h4 {
   margin-right: 25px;
   border: none !important;
 }
+.tabs-striped .tab-item.activated {
+  border-color: #add321 !important;
+  color: #add321 !important;
+}

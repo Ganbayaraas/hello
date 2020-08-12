@@ -39,7 +39,7 @@
               </label>
               <label class="item item-input profile-label">
                 <p>Утасны дугаар</p>
-                <input type="text" placeholder="Утасны дугаар" name="mobileNumber" />
+                <input type="number" size="8" pattern="\d*" placeholder="Утасны дугаар" name="mobileNumber" />
               </label>
               <label class="item item-input profile-label">
                 <p>Гэрлэсэн эсэх</p>
@@ -81,15 +81,15 @@
               </label>
               <label class="item item-input profile-label">
                 <p>Сарын орлого</p>
-                <input type="text" placeholder="Сарын орлого" name="monthlyIncome" />
+                <input type="text" format="number" ng-model="monthlyIncome" placeholder="Сарын орлого" name="monthlyIncome" />
               </label>
               <label class="item item-input profile-label">
                 <p>Өрхийн нийт орлого</p>
-                <input type="text" placeholder="Өрхийн нийт орлого" name="totalIncome" />
+                <input type="text" format="number" ng-model="totalIncome" placeholder="Өрхийн нийт орлого" name="totalIncome" />
               </label>
               <label class="item item-input profile-label">
                 <p>Төлж буй зээл</p>
-                <input type="text" placeholder="Төлж буй зээл" name="payLoan" />
+                <input type="text" format="number" ng-model="payLoan." placeholder="Төлж буй зээл" name="payLoan" />
               </label>
               <label class="item profile-label"> <p>Харьцдаг банк</p></label>
               <div class="item profile-bank-list">

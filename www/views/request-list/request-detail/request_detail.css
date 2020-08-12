@@ -156,3 +156,11 @@
 .popup-body option {
   padding: 5px;
 }
+.confirm-overlay-container select {
+  border-radius: 5px;
+  padding: 5px;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 5px;
+  background: #f8f8f8 !important;
+}
