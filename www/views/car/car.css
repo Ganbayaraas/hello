@@ -39,6 +39,7 @@
   margin: 20px 0 20px 0;
 }
 .cars .car-detail {
+  display: flex;
   background-color: #fff;
   padding: 10px;
   border-radius: 2px;
@@ -47,13 +48,15 @@
   margin-bottom: 10px;
 }
 .cars .desc {
+  width: 100%;
   display: grid;
+  margin-left: 10px;
 }
 .cars .car-img {
   display: flex;
   position: relative;
   float: left;
-  margin-right: 10px;
+  width: 170px;
 }
 .cars img {
   max-height: 100px;
@@ -62,12 +65,12 @@
   font-size: 12px;
   color: gray;
 }
-.car-title {
+.cars .car-title {
   font-size: 14px;
   font-weight: 500;
   margin: 0;
 }
-.car-price {
+.cars .car-price {
   margin: 0;
 }
 /* ------------ car-info ------------ */
@@ -115,7 +118,7 @@
   color: gray;
   text-align: center;
 }
-.tabs-top > .tabs {
+#paypopup .tabs-top > .tabs {
   background-color: ghostwhite;
   height: 50px !important;
   width: 100% !important;
@@ -125,7 +128,7 @@
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-.tab-content {
+#paypopup .tab-content {
   background-color: ghostwhite;
   margin-top: 50px;
 }

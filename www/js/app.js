@@ -19,6 +19,7 @@ var app = angular
     "consumer_loan.Ctrl",
     "car.Ctrl",
     "carinfo.Ctrl",
+    "carlist.Ctrl",
   ])
   .run(function ($ionicPlatform, $state, $cordovaSplashscreen) {
     $ionicPlatform.ready(function () {
@@ -185,6 +186,11 @@ var app = angular
     $stateProvider.state("request_car_detail", {
       url: "/views/request-detail/request_detail/car-detail",
       templateUrl: "views/request-list/request-detail/request_car_detail.html",
+    });
+    $stateProvider.state("carlist", {
+      url: "/views/carlist",
+      templateUrl: "views/carlist/carlist.html",
+      controller: "carlistCtrl",
     });
     $urlRouterProvider.otherwise("/views/home ");
   })
