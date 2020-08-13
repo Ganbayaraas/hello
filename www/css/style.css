@@ -8,6 +8,9 @@
   font-family: "Roboto-Regular";
   src: url("../lib/roboto/Roboto-Regular.ttf") format("truetype");
 }
+.big-container {
+  height: 100vh !important;
+}
 .cus-header-icon {
   color: #000 !important;
 }
@@ -115,9 +118,6 @@ h4 {
   min-height: 100vh;
   flex-direction: column;
   background-color: ghostwhite;
-}
-.scroll {
-  min-height: 100vh;
 }
 .big-container {
   display: flex;
