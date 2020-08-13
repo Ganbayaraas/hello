@@ -463,14 +463,14 @@
 #keypad tr td {
   vertical-align: middle;
   text-align: center;
-  /* border: 1px solid #000000; */
+  border-bottom: 1px solid red;
   font-size: 18px;
   font-weight: bold;
   width: 40px;
   height: 30px;
   cursor: pointer;
-  /* background-color: #666666; */
   color: #fff;
+  padding: 0 10px !important;
 }
 
 .display {
@@ -481,7 +481,9 @@
   content: "\2190";
 }
 .keyboard-title {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #fff !important;
+  margin: 0px !important;
+  padding: 8px 0px !important;
 }
 .center-container {
   position: absolute;
@@ -498,11 +500,17 @@
   width: 100%;
   border-bottom: 1px solid #7e7e7e;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 22px;
   color: #747474;
+  text-align: right;
+  padding-bottom: 0px;
+  padding-right: 28%;
+}
+.input-container {
+  padding-top: 20px;
 }
 .input-container span {
-  padding: 8px 8px 8px 8px;
+  padding: 9px 8px 8px 8px;
   font-weight: bold;
   min-width: 50px;
   position: absolute;
@@ -511,4 +519,15 @@
   color: #b2b2b2;
   right: 0;
   text-align: right;
+}
+.keypad-col {
+  text-align: center;
+  border-bottom: 1px solid #fff;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0px 30px;
+  color: #fff;
+}
+.keypad-row {
+  padding: 10px 15px !important;
 }
