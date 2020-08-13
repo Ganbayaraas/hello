@@ -1,14 +1,73 @@
-<ion-view>
+<ion-view id="loanPages">
   <link href="views/search/search.css" rel="stylesheet" />
-  <ion-content scroll="false">
-    <div class="search-container">
-      <div ng-controller="searchCtrl">
-        <label for="lastDayOfWeek">Example of preselecting Angular drop-down:</label>
-        <select id="lastDayOfWeek" ng-model="endDay" ng-options="endDays.indexOf(i) as i for i in endDays"> </select>
+  <ion-content class="ion-modified-content">
+    <div class="big-container">
+      <div class="magic-container margin-lr-20">
+        <button ng-click="$ionicGoBack()" class="button back-button buttons button-clear header-item car-back-nav">
+          <i class="ion-chevron-left"></i>
+          <span class="back-text" style="transform: translate3d(0px, 0px, 0px);"><span class="default-title hide">Back</span><span class="previous-title">Автомашин лизинг</span></span>
+        </button>
+        <p>Та хайх гэж буй үйлдэрээ сонгох эсвэл бичиж оруулна уу</p>
+        <div class="selector-container">
+          <span class="title">Үйлдвэр</span>
+          <select class="search-selection">
+            <option>Хөрөнгийн төрөл</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+        </div>
+        <div class="selector-container">
+          <span class="title">Үйлдвэр</span>
+          <select class="search-selection">
+            <option>Хөрөнгийн төрөл</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+        </div>
+        <div class="selector-container">
+          <span class="title">Үйлдвэр</span>
+          <select class="search-selection">
+            <option>Хөрөнгийн төрөл</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+        </div>
+        <div class="selector-container">
+          <span class="title">Дээд үнэ</span>
+          <div class="search-input-container">
+            <span class="search-input-icon">₮</span>
+            <input
+              type="text"
+              ng-model="requestAmount"
+              pattern="\d*"
+              placeholder="Зээлийн хэмжээ"
+              name=""
+              class="search-input-type ng-pristine ng-untouched ng-valid ng-valid-pattern"
+              format="number"
+            />
+          </div>
+        </div>
+        <div class="selector-container">
+          <span class="title">Дээд үнэ</span>
+          <div class="search-input-container">
+            <span class="search-input-icon">₮</span>
+            <input
+              type="text"
+              ng-model="requestAmount"
+              pattern="\d*"
+              placeholder="Зээлийн хэмжээ"
+              name=""
+              class="search-input-type ng-pristine ng-untouched ng-valid ng-valid-pattern"
+              format="number"
+            />
+          </div>
+        </div>
       </div>
+      <ion-footer class="bottom-footer">
+        <button class="button btn" id="Next" ui-sref="carlist">
+          Хайх
+        </button>
+      </ion-footer>
     </div>
-    <select name="" id="">
-      <option value="dd">ddd</option>
-    </select>
   </ion-content>
 </ion-view>
