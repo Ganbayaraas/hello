@@ -26,10 +26,10 @@
               <li>
                 ҮХХ барьцаалах эсэх
                 <span>
-                  <label class="toggle toggle-assertive">
+                  <label class="toggle toggle-assertive" ng-model="customText" ng-checked="customText">
                     <input type="checkbox" />
                     <div class="track">
-                      <div class="handle">Тийм</div>
+                      <div class="handle">{{!customText ? "Тийм" : "Үгүй"}}</div>
                     </div>
                   </label>
                 </span>
@@ -40,7 +40,7 @@
                   <label class="toggle toggle-assertive" ng-model="customText" ng-checked="customText">
                     <input type="checkbox" />
                     <div class="track">
-                      <div class="handle">{{customText ? "YES" : "Үгүй"}}</div>
+                      <div class="handle">{{!customText ? "Тийм" : "Үгүй"}}</div>
                     </div>
                   </label>
                 </span>
