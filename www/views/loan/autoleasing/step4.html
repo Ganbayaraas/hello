@@ -1,15 +1,47 @@
 <ion-view id="loanPages">
   <link href="views/loan/autoleasing/autoleasing.css" rel="stylesheet" />
-  <ion-content class="ion-modified-content">
-    <div class="big-container">
+  <ion-content scroll="false" class="ion-modified-content">
+    <div class="big-container step-4-container">
       <div class="magic-container margin-lr-20">
         <button ng-click="$ionicGoBack()" class="button back-button buttons button-clear header-item car-back-nav">
           <i class="ion-chevron-left"></i>
           <span class="back-text" style="transform: translate3d(0px, 0px, 0px);"><span class="default-title hide">Back</span><span class="previous-title">Автомашин лизинг</span></span>
         </button>
-        <p>DIGIT KEYBOARD BAIH HESEN</p>
+        <div class="center-container">
+          <span>Та сард төлөх боломжтой дүнгээ оруулна уу</span>
+          <div class="input-container">
+            <span class="step2-input-icon">₮</span>
+            <input type="text" id="inputId" format="number" ng-model="paymentAmount" name="code" value="" placeholder="0" />
+          </div>
+        </div>
       </div>
-      <ion-footer class="bottom-footer">It's footer :D</ion-footer>
+      <ion-footer class="bottom-footer">
+        <table id="keypad" cellpadding="5" cellspacing="3">
+          <tr>
+            <td colspan="3" class="keyboard-title">Хүсэлт илгээх</td>
+          </tr>
+          <tr>
+            <td ng-click="addCode('1')">1</td>
+            <td ng-click="addCode('2')">2</td>
+            <td ng-click="addCode('3')">3</td>
+          </tr>
+          <tr>
+            <td ng-click="addCode('4')">4</td>
+            <td ng-click="addCode('5')">5</td>
+            <td ng-click="addCode('6')">6</td>
+          </tr>
+          <tr>
+            <td ng-click="addCode('7')">7</td>
+            <td ng-click="addCode('8')">8</td>
+            <td ng-click="addCode('9')">9</td>
+          </tr>
+          <tr>
+            <td ng-click="emptyCode()">C</td>
+            <td ng-click="addCode('0')">0</td>
+            <td ng-click="clearD()"><i class="ion-arrow-left-c"></i></td>
+          </tr>
+        </table>
+      </ion-footer>
     </div>
   </ion-content>
 </ion-view>

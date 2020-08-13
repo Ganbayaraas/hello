@@ -176,3 +176,35 @@ h4 {
   border-color: #add321 !important;
   color: #add321 !important;
 }
+
+/* .tab-nav,
+.bar-footer {
+  display: none !important;
+}
+
+.bar.bar-header {
+  display: none;
+}
+
+.has-tabs-top {
+  top: 0px !important;
+}
+.has-tabs-bottom {
+  bottom: 0px !important;
+}
+.has-tabs,
+.bar-footer.has-tabs,
+.has-footer.has-tabs {
+  bottom: 0px;
+}
+.custom-header,
+.custom-footer {
+  display: block !important;
+}
+.is-container-login > .has-header {
+  top: 0px !important;
+}
+
+.is-container-login > .scroll-content {
+  margin-bottom: 0px !important;
+} */

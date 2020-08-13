@@ -444,3 +444,71 @@
 .scroll-container-bottom-button {
   margin: 10% 10% 40% 10%;
 }
+.step-4-container > .bottom-footer {
+  padding: 0px !important;
+}
+#keypad {
+  margin: auto;
+  width: 100%;
+  height: 30vh;
+  border-radius: 10px 10px 0px 0px;
+  margin-top: 20px;
+  background: rgb(159, 209, 58);
+  background: -moz-linear-gradient(24deg, rgba(159, 209, 58, 1) 7%, rgba(63, 194, 243, 1) 100%);
+  background: -webkit-linear-gradient(24deg, rgba(159, 209, 58, 1) 7%, rgba(63, 194, 243, 1) 100%);
+  background: linear-gradient(24deg, rgba(159, 209, 58, 1) 7%, rgba(63, 194, 243, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#9fd13a",endColorstr="#3fc2f3",GradientType=1);
+}
+
+#keypad tr td {
+  vertical-align: middle;
+  text-align: center;
+  /* border: 1px solid #000000; */
+  font-size: 18px;
+  font-weight: bold;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+  /* background-color: #666666; */
+  color: #fff;
+}
+
+.display {
+  width: 130px;
+  margin: 10px auto auto auto;
+}
+.backspace ::before {
+  content: "\2190";
+}
+.keyboard-title {
+  border-bottom: 1px solid #fff;
+}
+.center-container {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.center-container span {
+  color: #7e7e7e;
+}
+.center-container input {
+  background: #f8f8fe;
+  width: 100%;
+  border-bottom: 1px solid #7e7e7e;
+  font-weight: bold;
+  font-size: 16px;
+  color: #747474;
+}
+.input-container span {
+  padding: 8px 8px 8px 8px;
+  font-weight: bold;
+  min-width: 50px;
+  position: absolute;
+  text-align: center;
+  font-size: 18px;
+  color: #b2b2b2;
+  right: 0;
+  text-align: right;
+}
