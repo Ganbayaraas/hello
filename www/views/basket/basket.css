@@ -3,9 +3,9 @@
 }
 .basket-item-count {
   position: absolute;
-  left: 55%;
-  top: 35%;
-  color: #fff !important;
+  left: 60%;
+  top: 30%;
+  color: #000 !important;
   font-weight: bold;
 }
 .basket-item {
@@ -109,7 +109,7 @@
   padding-top: 50px;
   width: 100%;
   padding: 0 20px;
-  bottom: 20%;
+  bottom: 0%;
   position: fixed;
 }
 .basket-content > .scroll {
@@ -131,11 +131,10 @@
 }
 .basket-content .checkbox {
   position: absolute;
-  top: 50% !important;
-  right: 8px !important;
-  left: 8px !important;
+  top: 35% !important;
+  right: 0px !important;
+  left: 0px !important;
   z-index: 3;
-  margin-top: -21px;
 }
 .basket-item > .checkbox input:checked + .checkbox-icon:before {
   border-radius: 5px !important;
@@ -173,4 +172,49 @@
   display: flex;
   text-align: center;
   color: #b6e752;
+}
+.card-list-swiper .item .item-content.activated {
+  background: #fff;
+  border: none;
+}
+.card-list-swiper .custom-class {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.card-list-swiper .custom-class .checkbox input {
+  left: -50px !important;
+}
+.card-list-swiper .item-complex .item-content,
+.card-list-swiper .item-radio .item-content {
+  position: relative;
+  z-index: 2;
+  padding: 15px;
+  border: none;
+  background-color: white;
+}
+.card-list-swiper .item-checkbox {
+  padding-left: 0px;
+}
+.card-list-swiper .item-avatar {
+  padding-left: 35px;
+  min-height: 35px;
+}
+.card-list-swiper .item-options {
+  position: absolute;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  right: 0;
+  z-index: 1;
+  top: 10px;
+  bottom: 10px;
+  height: auto;
+  background: linear-gradient(90deg, rgba(148, 207, 79, 1) 29%, rgb(63 193 245) 100%);
+}
+.card-list-swiper .button.button-light {
+  background: none;
+  color: #fff;
+}
+.card-list-swiper .button.button-light.activated {
+  background: none;
+  color: #fff;
 }

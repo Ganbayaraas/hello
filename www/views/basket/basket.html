@@ -7,25 +7,59 @@
           <i class="ion-plus"></i>
         </button>
       </div>
-      <ion-checkbox class="basket-item">
-        <ion-item class="item-remove-animate item-avatar item-icon-right" type="item-text-wrap" ui-sref="#">
-          <img src="img/icon/winnerCup.png" />
-          <div class="basket-item-left-text">
-            <h2>Land Cruiser</h2>
-            <p>Toyota Tavan Bogd</p>
-          </div>
-          <p class="basket-item-count">X1</p>
-          <!-- <i class="icon ion-chevron-right icon-accessory"></i> -->
-          <div class="basket-item-right-text">
-            <h2>₮ 60,000,000.00</h2>
-            <p>BLG00001</p>
-          </div>
-          <ion-option-button class="button-assertive">
-            Delete
-          </ion-option-button>
-        </ion-item>
-      </ion-checkbox>
-      <div class="basket-total-price"><span class="total-price-title">Нийт үнэ</span><span class="total-price-amount">120,000,000.00 ₮</span></div>
+      <ion-list show-delete="false" can-swipe="true">
+        <div class="card-list-swiper">
+          <ion-item>
+            <ion-checkbox style="background: none; position: absolute; border: none; width: 36px; height: 100%; padding: 10px 0 !important;"></ion-checkbox>
+            <div class="item-avatar">
+              <div class="basket-item-left-text">
+                <img style="width: 40px; margin-right: 10px;" src="img/icon/winnerCup.png" />
+              </div>
+              <div class="basket-item-left-text">
+                <h2>Land Cruiser</h2>
+                <p>Toyota Tavan Bogd</p>
+              </div>
+              <p class="basket-item-count">X1</p>
+              <!-- <i class="icon ion-chevron-right icon-accessory"></i> -->
+              <div class="basket-item-right-text">
+                <h2>₮ 60,000,000.00</h2>
+                <p>BLG00001</p>
+              </div>
+            </div>
+            <ion-option-button class="button-light icon ion-ios7-trash-outline"></ion-option-button>
+            <ion-option-button class="button-light icon ion-minus-round"></ion-option-button>
+            <ion-option-button class="button-light icon ion-plus-round"></ion-option-button>
+          </ion-item>
+        </div>
+        <!-- -- -->
+        <div class="card-list-swiper">
+          <ion-item>
+            <ion-checkbox style="background: none; position: absolute; border: none; width: 36px; height: 100%; padding: 10px 0 !important;"></ion-checkbox>
+            <div class="item-avatar">
+              <div class="basket-item-left-text">
+                <img style="width: 40px; margin-right: 10px;" src="img/icon/winnerCup.png" />
+              </div>
+              <div class="basket-item-left-text">
+                <h2>Land Cruiser</h2>
+                <p>Toyota Tavan Bogd</p>
+              </div>
+              <p class="basket-item-count">X1</p>
+              <!-- <i class="icon ion-chevron-right icon-accessory"></i> -->
+              <div class="basket-item-right-text">
+                <h2>₮ 60,000,000.00</h2>
+                <p>BLG00001</p>
+              </div>
+            </div>
+            <ion-option-button class="button-light icon ion-ios7-trash-outline"></ion-option-button>
+            <ion-option-button class="button-light icon ion-minus-round"></ion-option-button>
+            <ion-option-button class="button-light icon ion-plus-round"></ion-option-button>
+          </ion-item>
+        </div>
+      </ion-list>
+      <div class="basket-total-price">
+        <span class="total-price-title">Нийт үнэ</span>
+        <span class="total-price-amount">120,000,000.00 ₮</span>
+      </div>
       <div class="basket-btn-container">
         <button class="button bottom-first-button" ui-sref="#">Зээлээр авах</button>
         <button class="button bottom-second-button" ui-sref="#">Бэлнээр авах</button>
