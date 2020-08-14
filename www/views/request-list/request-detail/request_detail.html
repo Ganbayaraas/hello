@@ -1,4 +1,4 @@
-<ion-view ng-app="request_detail.Ctrl">
+<ion-view ng-app="request_detail.Ctrl" class="request-detail-view">
   <link href="views/request-list/request-detail/request_detail.css" rel="stylesheet" />
   <ion-content scroll="true" class="request-detail-content">
     <div class="list" ng-controller="request_detailCtrl">
@@ -10,7 +10,7 @@
         <div class="car-detail">
           <img src="img/car.jpg" />
           <p>Land Criuser 200</p>
-          <span>Toyota Таван Богд</span></br>
+          <span>Toyota Таван Богд</span><br />
           <span>2019.02.20 -2020.05.15</span>
         </div>
         <div class="bank-detail">
@@ -34,6 +34,17 @@
           <ion-checkbox class="detail-checkbox">
             <span>Батлагдсан зээлийг зөвшөөрөх эсэх</span>
           </ion-checkbox>
+          <span class="bank-chat-title"> Зурвас</span>
+          <div class="bank-chat-container" ng-click="modal.show()">
+            <div class="bank-chat-income">
+              <span class="income-chat-body">Sain bn u ?</span>
+              <span class="income-chat-time">12:45 pm</span>
+            </div>
+            <div class="bank-chat-send">
+              <span class="send-chat-body">aaaaaaaaaaaaa aaaaaaaa a aaaaaaa a a a a a a a a aa </span>
+              <span class="send-chat-time">12 : 48 pm</span>
+            </div>
+          </div>
           <div class="detail-btn-container">
             <button class="button bottom-first-button" ui-sref="request_car_detail">Цуцлах</button>
             <button class="button bottom-second-button" ui-sref="request_car_detail">Илгээх</button>
@@ -43,3 +54,85 @@
     </div>
   </ion-content>
 </ion-view>
+<script id="templates/modal.html" type="text/ng-template">
+  <ion-modal-view class="bank-chat-modal">
+    <ion-header-bar class="bar bar-header">
+      <h1 class="title">Зурвас</h1>
+      <button class="button button-clear bank-chat-hide-btn" ng-click="modal.hide()"><i class="ion-close-round"></i></button>
+    </ion-header-bar>
+    <ion-content class="padding bank-chat-content">
+      <div class="list modal-chat-body">
+        <div class="bank-chat-income">
+          <span class="income-chat-body">Sain bn u ?</span>
+          <span class="income-chat-time">12:45 pm</span>
+        </div>
+        <div class="bank-chat-send">
+          <span class="send-chat-body">aaaaaaaaaaaaa aaaaaaaa a aaaaaaa a a a a a a a a aa </span>
+          <span class="send-chat-time">12 : 48 pm</span>
+        </div>
+        <div class="bank-chat-income">
+          <span class="income-chat-body">Sain bn u ?</span>
+          <span class="income-chat-time">12:45 pm</span>
+        </div>
+        <div class="bank-chat-send">
+          <span class="send-chat-body">aaaaaaaaaaaaa aaaaaaaa a aaaaaaa a a a a a a a a aa </span>
+          <span class="send-chat-time">12 : 48 pm</span>
+        </div>
+        <div class="bank-chat-income">
+          <span class="income-chat-body">Sain bn u ?</span>
+          <span class="income-chat-time">12:45 pm</span>
+        </div>
+        <div class="bank-chat-send">
+          <span class="send-chat-body">aaaaaaaaaaaaa aaaaaaaa a aaaaaaa a a a a a a a a aa </span>
+          <span class="send-chat-time">12 : 48 pm</span>
+        </div>
+        <div class="bank-chat-income">
+          <span class="income-chat-body">Sain bn u ?</span>
+          <span class="income-chat-time">12:45 pm</span>
+        </div>
+        <div class="bank-chat-send">
+          <span class="send-chat-body">aaaaaaaaaaaaa aaaaaaaa a aaaaaaa a a a a a a a a aa </span>
+          <span class="send-chat-time">12 : 48 pm</span>
+        </div>
+        <div class="bank-chat-income">
+          <span class="income-chat-body">Sain bn u ?</span>
+          <span class="income-chat-time">12:45 pm</span>
+        </div>
+        <div class="bank-chat-send">
+          <span class="send-chat-body">aaaaaaaaaaaaa aaaaaaaa a aaaaaaa a a a a a a a a aa </span>
+          <span class="send-chat-time">12 : 48 pm</span>
+        </div>
+        <div class="bank-chat-income">
+          <span class="income-chat-body">Sain bn u ?</span>
+          <span class="income-chat-time">12:45 pm</span>
+        </div>
+        <div class="bank-chat-send">
+          <span class="send-chat-body">aaaaaaaaaaaaa aaaaaaaa a aaaaaaa a a a a a a a a aa </span>
+          <span class="send-chat-time">12 : 48 pm</span>
+        </div>
+        <div class="bank-chat-income">
+          <span class="income-chat-body">Sain bn u ?</span>
+          <span class="income-chat-time">12:45 pm</span>
+        </div>
+        <div class="bank-chat-send">
+          <span class="send-chat-body">aaaaaaaaaaaaa aaaaaaaa a aaaaaaa a a a a a a a a aa </span>
+          <span class="send-chat-time">12 : 48 pm</span>
+        </div>
+        <div class="bank-chat-income">
+          <span class="income-chat-body">Sain bn u ?</span>
+          <span class="income-chat-time">12:45 pm</span>
+        </div>
+        <div class="bank-chat-send">
+          <span class="send-chat-body">aaaaaaaaaaaaa aaaaaaaa a aaaaaaa a a a a a a a a aa </span>
+          <span class="send-chat-time">12 : 48 pm</span>
+        </div>
+      </div>
+    </ion-content>
+    <ion-footer class="bank-chat-footer">
+      <form class="msger-inputarea">
+        <textarea type="text" class="msger-input" placeholder="Enter your message..."></textarea>
+        <button type="submit" class="msger-send-btn"><i class="ion-paper-airplane"></i></button>
+      </form>
+    </ion-footer>
+  </ion-modal-view>
+</script>

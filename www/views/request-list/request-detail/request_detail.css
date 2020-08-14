@@ -82,9 +82,9 @@
   display: flex;
   padding-top: 50px;
   width: 100%;
-  padding: 0 20px;
-  bottom: 20%;
-  position: fixed;
+  padding: 35px 20px;
+  bottom: 15%;
+  position: relative;
 }
 #confirm-overlay {
   position: fixed;
@@ -163,4 +163,123 @@
   margin: 0 auto;
   border-radius: 5px;
   background: #f8f8f8 !important;
+}
+.request-detail-content > .scroll {
+  height: 100% !important;
+}
+.bank-chat-title {
+  padding-top: 15px;
+  padding-left: 16px;
+  padding-bottom: 10px;
+  display: block;
+  color: #263667 !important;
+}
+.bank-chat-container {
+  border: 1px solid #bebebe;
+  border-radius: 10px;
+  display: flow-root;
+  width: 90%;
+  margin: 0 auto;
+}
+.bank-chat-income {
+  display: grid;
+}
+.bank-chat-send {
+  display: grid;
+  float: right;
+}
+.income-chat-body {
+  background: #dbdbdb;
+  width: fit-content;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px 0px 0px 10px;
+  max-width: 60vw;
+}
+.send-chat-body {
+  background: rgb(86, 197, 198);
+  background: -moz-linear-gradient(119deg, rgba(86, 197, 198, 1) 55%, rgba(61, 192, 250, 1) 100%);
+  background: -webkit-linear-gradient(119deg, rgba(86, 197, 198, 1) 55%, rgba(61, 192, 250, 1) 100%);
+  background: linear-gradient(119deg, rgba(86, 197, 198, 1) 55%, rgba(61, 192, 250, 1) 100%);
+  width: fit-content;
+  border-radius: 5px;
+  padding: 5px;
+  color: #fff;
+  margin: 0px 10px 0px 10px;
+  max-width: 60vw;
+}
+.income-chat-time {
+  font-size: 10px;
+  padding-left: 15px;
+}
+.send-chat-time {
+  font-size: 10px;
+  padding-left: 15px;
+  text-align: right;
+  padding-right: 15px;
+}
+.modal-wrapper {
+  padding: 0 20px;
+  height: 60vh;
+  width: 80vw;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.modal {
+  position: relative !important;
+  border-radius: 10px;
+}
+.modal-chat-body {
+  display: grid;
+}
+.bank-chat-modal > .bar-header {
+  border-bottom: 1px solid #dbdbdb;
+}
+.bank-chat-content {
+  margin-bottom: 70px !important;
+}
+.bank-chat-content > .scroll {
+  height: 100% !important;
+}
+.msger-inputarea {
+  display: flex;
+  padding: 5px 10px;
+  border-top: var(--border);
+  background: #eee;
+}
+.msger-inputarea * {
+  border: none;
+  border-radius: 3px;
+  font-size: 1em;
+}
+.msger-input {
+  flex: 1;
+  background: #ddd;
+  padding: 5px;
+}
+.msger-send-btn {
+  background: rgb(69 194 232);
+  color: #fff !important;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.23s;
+  height: 30px;
+  margin: auto 0 auto 10px;
+  padding: 0 15px;
+  font-size: 20px;
+}
+.msger-send-btn:hover {
+  background: rgb(69 194 232);
+}
+.bank-chat-footer {
+  bottom: 0px;
+  position: absolute;
+  width: 100%;
+}
+.bank-chat-hide-btn {
+  padding: 3px 6px !important;
+  color: #000 !important;
 }

@@ -121,7 +121,7 @@
   transform: rotate(45deg);
 }
 
-li {
+.centered > li {
   margin: 10px 0;
   float: right;
 }

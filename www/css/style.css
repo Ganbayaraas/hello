@@ -13,6 +13,7 @@
 }
 .cus-header-icon {
   color: #000 !important;
+  padding: 0 5px !important;
 }
 .cus-header-title {
   left: 35px !important;
@@ -208,3 +209,12 @@ h4 {
 .is-container-login > .scroll-content {
   margin-bottom: 0px !important;
 } */
+.bar .button.button-clear.icon:before {
+  font-size: 28px !important;
+}
+.bar .button.button-icon {
+  font-size: 22px !important;
+}
+.header-bell-icon {
+  padding-right: 15px !important;
+}
