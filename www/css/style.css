@@ -1,12 +1,11 @@
 /* Empty. Add your own CSS if you like */
-@font-face {
-  font-family: "Roboto-Bold";
-  src: url("../lib/roboto/Roboto-Bold.ttf") format("truetype");
-}
 
 @font-face {
-  font-family: "Roboto-Regular";
-  src: url("../lib/roboto/Roboto-Regular.ttf") format("truetype");
+  font-family: "Helvetica";
+  src: url("../lib/fonts/Helvetica-Font/helvetica-light-587ebe5a59211.ttf") format("truetype");
+}
+* {
+  font-family: Helvetica;
 }
 .big-container {
   height: 100vh !important;
