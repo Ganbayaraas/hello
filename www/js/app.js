@@ -254,7 +254,6 @@ app.controller("request_detailCtrl", function ($scope, $ionicPlatform, $ionicPop
     });
   };
   // MODAL
-  $scope.contacts = [{ name: "Gordon Freeman" }, { name: "Barney Calhoun" }, { name: "Lamarr the Headcrab" }];
 
   $ionicModal
     .fromTemplateUrl("templates/modal.html", {
@@ -263,9 +262,4 @@ app.controller("request_detailCtrl", function ($scope, $ionicPlatform, $ionicPop
     .then(function (modal) {
       $scope.modal = modal;
     });
-
-  $scope.createContact = function (u) {
-    $scope.contacts.push({ name: u.firstName + " " + u.lastName });
-    $scope.modal.hide();
-  };
 });
