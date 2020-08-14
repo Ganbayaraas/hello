@@ -230,7 +230,7 @@
   transition-property: background-color, border;
   display: inline-block;
   box-sizing: border-box;
-  width: 75px;
+  width: 70px;
   height: 23px;
   border: solid 2px #e5e5e5;
   border-radius: 10px;
@@ -244,12 +244,12 @@
   transition: 0.2s ease-in-out;
   position: absolute;
   display: block;
-  width: 42px;
-  height: 25px;
+  width: 40px;
+  height: 23px;
   border-radius: 10px;
   background-color: yellowgreen;
   top: 5px;
-  left: 7px;
+  left: 5px;
   color: #fff;
   justify-content: center;
   align-items: center;
