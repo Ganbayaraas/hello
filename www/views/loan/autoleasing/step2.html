@@ -18,34 +18,62 @@
           </div>
           <div class="money-input">
             <p class="middle-title">Зээлийн хүсэлтийн мэдээлэл</p>
-            <p class="padding-null">Зээлийн хэмжээ</p>
-            <input type="text" ng-model="loanSize" format="number" placeholder="6,230,000.00" name="loanSize" />
-            <p class="padding-null" style="margin-top: 10px;">Урьдчилгаа</p>
-            <input type="text" format="number" ng-model="loanAdvance" placeholder="3,100,000.00" name="loanAdvance" />
-            <ul class="switch-list">
-              <li>
-                ҮХХ барьцаалах эсэх
-                <span>
-                  <label class="toggle toggle-assertive" ng-model="customText" ng-checked="customText">
-                    <input type="checkbox" />
-                    <div class="track">
-                      <div class="handle">{{!customText ? "Тийм" : "Үгүй"}}</div>
-                    </div>
-                  </label>
-                </span>
-              </li>
-              <li>
-                Монгол банкны лавлагаа <br />авахыг зөвшөөрөх эсэх
-                <span>
-                  <label class="toggle toggle-assertive" ng-model="customText" ng-checked="customText">
-                    <input type="checkbox" />
-                    <div class="track">
-                      <div class="handle">{{!customText ? "Тийм" : "Үгүй"}}</div>
-                    </div>
-                  </label>
-                </span>
-              </li>
-            </ul>
+            <div class="tugrug-input">
+              <span class="title">Зээлийн хэмжээ</span>
+              <div class="tugrug-input-container">
+                <span class="input-tugrug-icon">₮</span>
+                <input
+                  type="text"
+                  ng-model="requestAmount"
+                  pattern="\d*"
+                  placeholder="6,230,000.00"
+                  name=""
+                  class="input-tugrug-type ng-pristine ng-untouched ng-valid ng-valid-pattern"
+                  format="number"
+                />
+              </div>
+            </div>
+            <div class="tugrug-input">
+              <span class="title">Урьдчилгаа</span>
+              <div class="tugrug-input-container">
+                <span class="input-tugrug-icon">₮</span>
+                <input
+                  type="text"
+                  ng-model="requestAmount"
+                  pattern="\d*"
+                  placeholder="3,100,000.00"
+                  name=""
+                  class="input-tugrug-type ng-pristine ng-untouched ng-valid ng-valid-pattern"
+                  format="number"
+                />
+              </div>
+            </div>
+            <div class="switch-input-container">
+              <ul class="switch-list">
+                <li>
+                  ҮХХ барьцаалах эсэх
+                  <span>
+                    <label class="toggle toggle-assertive" ng-model="customText" ng-checked="customText">
+                      <input type="checkbox" />
+                      <div class="track">
+                        <div class="handle">{{!customText ? "Тийм" : "Үгүй"}}</div>
+                      </div>
+                    </label>
+                  </span>
+                </li>
+                <li>
+                  Монгол банкны лавлагаа <br />авахыг зөвшөөрөх эсэх
+                  <span>
+                    <label class="toggle toggle-assertive" ng-model="customText" ng-checked="customText">
+                      <input type="checkbox" />
+                      <div class="track">
+                        <div class="handle">{{!customText ? "Тийм" : "Үгүй"}}</div>
+                      </div>
+                    </label>
+                  </span>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="item-info">
             <p class="middle-title">Барааны мэдээлэл</p>
