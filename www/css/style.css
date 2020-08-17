@@ -176,7 +176,27 @@ h4 {
   border-color: #add321 !important;
   color: #add321 !important;
 }
-
+.navbar {
+  background: #f8f8fe;
+}
+.navbar-back-button {
+  left: 0 !important;
+  top: 5px !important;
+}
+.navbar-back-text {
+  margin-left: 5px;
+}
+.navbar-right-icon {
+  right: 5px;
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.margin-top-20 {
+  margin-top: 20px;
+}
 /* .tab-nav,
 .bar-footer {
   display: none !important;
