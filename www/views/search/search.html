@@ -1,12 +1,9 @@
 <ion-view id="loanPages">
   <link href="views/search/search.css" rel="stylesheet" />
-  <ion-content class="ion-modified-content">
+  <div ng-repeat="data in [{'title':'Хайлт'}]" ng-include src="'views/navbar.html'"></div>
+  <ion-content class="ion-modified-content margin-top-50">
     <div class="big-container">
       <div class="magic-container margin-lr-20">
-        <button ng-click="$ionicGoBack()" class="button back-button buttons button-clear header-item car-back-nav">
-          <i class="ion-chevron-left"></i>
-          <span class="back-text" style="transform: translate3d(0px, 0px, 0px);"><span class="default-title hide">Back</span><span class="previous-title">Автомашин лизинг</span></span>
-        </button>
         <p>Та хайх гэж буй үйлдэрээ сонгох эсвэл бичиж оруулна уу</p>
         <div class="selector-container">
           <span class="title">Үйлдвэр</span>

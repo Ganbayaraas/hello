@@ -20,6 +20,7 @@ var app = angular
     "car.Ctrl",
     "carinfo.Ctrl",
     "carlist.Ctrl",
+    "qr.Ctrl",
   ])
   .run(function ($ionicPlatform, $state, $cordovaSplashscreen) {
     $ionicPlatform.ready(function () {
@@ -191,6 +192,11 @@ var app = angular
       url: "/views/carlist",
       templateUrl: "views/carlist/carlist.html",
       controller: "carlistCtrl",
+    });
+    $stateProvider.state("qr", {
+      url: "/views/qr",
+      templateUrl: "views/qr/qr.html",
+      controller: "qrCtrl",
     });
     $urlRouterProvider.otherwise("/views/home ");
   })

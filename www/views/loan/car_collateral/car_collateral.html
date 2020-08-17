@@ -1,11 +1,8 @@
 <ion-view ng-app="car_collateral.Ctrl">
   <link href="views/loan/car_collateral/car_collateral.css" rel="stylesheet" />
-  <ion-content scroll="true" class="car-col-content">
+  <div ng-repeat="data in [{'title':'Автомашин барьцаалсан зээл'}]" ng-include src="'views/navbar.html'"></div>
+  <ion-content scroll="true" class="car-col-content margin-top-50">
     <div class="list car-collateral-list">
-      <button ng-click="$ionicGoBack()" class="button back-button buttons button-clear header-item car-back-nav">
-        <i class="ion-chevron-left"></i>
-        <span class="back-text" style="transform: translate3d(0px, 0px, 0px);"><span class="default-title hide">Back</span><span class="previous-title">Автомашин барьцаат зээл</span></span>
-      </button>
       <label class="item item-input car-collateral-label">
         <p>Улсын дугаар</p>
         <input type="text" placeholder="Улсын дугаар" name="nationalNumber" />

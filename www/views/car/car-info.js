@@ -8,6 +8,16 @@ angular.module("carinfo.Ctrl", []).controller("carinfoCtrl", function ($ionicSli
   $scope.tabhide = function () {
     document.getElementById("home-tab").style.display = "none";
   };
+  $scope.collapse = function () {
+    document.getElementById("addition-info").style.display = "block";
+    document.getElementById("collapse-btn").style.display = "none";
+    document.getElementById("uncollapse-btn").style.display = "block";
+  };
+  $scope.uncollapse = function () {
+    document.getElementById("addition-info").style.display = "none";
+    document.getElementById("collapse-btn").style.display = "block";
+    document.getElementById("uncollapse-btn").style.display = "none";
+  };
   $scope.shouldHide = function () {
     switch ($state.current.name) {
       case "statename1":

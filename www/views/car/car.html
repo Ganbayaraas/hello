@@ -1,19 +1,8 @@
 <ion-view id="loanPages">
   <link href="views/car/car.css" rel="stylesheet" />
-  <ion-header-bar align-title="left" class="navbar">
-    <div class="title ion-color-blue navbar-back-button">
-      <button ng-click="$ionicGoBack()" class="nav-back-button button buttons button-clear header-item car-back-nav">
-        <i class="ion-chevron-left"></i>
-        <span class="navbar-back-text" style="transform: translate3d(0px, 0px, 0px);"><span>Авто машин</span></span>
-      </button>
-    </div>
-    <div class="navbar-right-icon">
-      <button class="button button-clear icon ion-search cus-header-icon ion-float-right ion-color-green" ui-sref="search"></button>
-    </div>
-  </ion-header-bar>
-  <ion-content class="ion-modified-content">
+  <div ng-repeat="data in [{'title':'Авто машин'}]" ng-include src="'views/navbar.html'"></div>
+  <ion-content class="ion-modified-content margin-top-50">
     <div class="big-container">
-      <home></home>
       <div class="magic-container margin-lr-20 margin-top-20">
         <p>Та хайх гэж буй машины брэндийг сонгох эсвэл бичнэ үү</p>
         <div class="search-input">

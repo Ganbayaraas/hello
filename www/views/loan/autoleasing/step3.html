@@ -1,12 +1,9 @@
 <ion-view id="loanPages">
   <link href="views/loan/autoleasing/autoleasing.css" rel="stylesheet" />
-  <ion-content class="ion-modified-content">
+  <div ng-repeat="data in [{'title':'Банк сонгох'}]" ng-include src="'views/navbar.html'"></div>
+  <ion-content class="ion-modified-content margin-top-50">
     <div class="big-container">
       <div class="magic-container">
-        <button ng-click="$ionicGoBack()" class="button back-button buttons button-clear header-item car-back-nav">
-          <i class="ion-chevron-left"></i>
-          <span class="back-text" style="transform: translate3d(0px, 0px, 0px);"><span class="default-title hide">Back</span><span class="previous-title">Банк сонгох</span></span>
-        </button>
         <div class="bg-container">
           <div style="margin-top: 10px; margin-bottom: 55px;">
             <ul id="progress-bar" class="progressbar">

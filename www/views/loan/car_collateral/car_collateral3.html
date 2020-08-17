@@ -1,11 +1,8 @@
 <ion-view ng-app="car_collateral.Ctrl">
   <link href="views/loan/car_collateral/car_collateral.css" rel="stylesheet" />
-  <ion-content scroll="true" class="car-col-content step3-container">
+  <div ng-repeat="data in [{'title':'Банк сонгох'}]" ng-include src="'views/navbar.html'"></div>
+  <ion-content scroll="true" class="car-col-content step3-container margin-top-50">
     <div class="list car-collateral-list">
-      <button ng-click="$ionicGoBack()" class="button back-button buttons button-clear header-item car-back-nav">
-        <i class="ion-chevron-left"></i>
-        <span class="back-text" style="transform: translate3d(0px, 0px, 0px);"><span class="default-title hide">Back</span><span class="previous-title">Банк сонгох</span></span>
-      </button>
       <div class="card car-step3-card">
         <span class="step2-card-span">Анхан шатны шалгуур хангасан банк</span>
         <ion-checkbox class="step3-checkbox-container">

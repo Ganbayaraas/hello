@@ -105,6 +105,9 @@
   margin-left: 20px !important;
   margin-right: 20px !important;
 }
+.ghostwhite {
+  background-color: #f8f8fe;
+}
 /* CHIMDEE CJ GLOBAL */
 h4 {
   font-size: 14px;
@@ -196,6 +199,9 @@ h4 {
 }
 .margin-top-20 {
   margin-top: 20px;
+}
+.margin-top-50 {
+  margin-top: 40px;
 }
 /* .tab-nav,
 .bar-footer {

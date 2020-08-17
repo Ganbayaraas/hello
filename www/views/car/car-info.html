@@ -1,5 +1,6 @@
 <ion-view id="loanPages">
   <link href="views/car/car.css" rel="stylesheet" />
+  <div ng-repeat="data in [{'title':'Автомашин'}]" ng-include src="'views/navbar.html'"></div>
   <div id="paypopup" style="display: none;">
     <div class="pay-container">
       <ion-tabs class="tabs-striped tabs-top">
@@ -66,13 +67,9 @@
       </ion-tabs>
     </div>
   </div>
-  <ion-content class="ion-modified-content">
+  <ion-content class="ion-modified-content margin-top-50">
     <div class="big-container">
       <div class="magic-container">
-        <button ng-click="$ionicGoBack()" class="button back-button buttons button-clear header-item car-back-nav">
-          <i class="ion-chevron-left"></i>
-          <span class="back-text" style="transform: translate3d(0px, 0px, 0px);"><span class="default-title hide">Back</span><span class="previous-title">Буц</span></span>
-        </button>
         <div class="item-info">
           <ion-slide-box class="leasing-badge">
             <ion-slide>
@@ -94,7 +91,21 @@
             <li>Борлуулагч <span> - </span></li>
             <li>Үнэ <span>245,000,000</span></li>
             <li>Бүтээгдэхүүний QR <span> - </span></li>
+            <div id="addition-info" style="display: none;">
+              <li>Өнгө <span> - </span></li>
+              <li>Явсан км<span> - </span></li>
+              <li>Моторын багтаамж <span> - </span></li>
+              <li>Арлын дугаар <span>00</span></li>
+              <li>Хөдөлгүүр <span> - </span></li>
+              <li>Үйлдвэр <span> - </span></li>
+              <li>Хурдны хайрцаг<span> - </span></li>
+              <li>Жолооны хүрд <span> - </span></li>
+              <li>Үйлдвэрлэсэн улс <span>00</span></li>
+              <li>Хөтлөгч <span> - </span></li>
+            </div>
           </ul>
+          <button id="collapse-btn" class="collapse-btn" ng-click="collapse();">Дэлгэрэнгүй >>></button>
+          <button id="uncollapse-btn" class="collapse-btn" ng-click="uncollapse();" style="display: none;">Хумих >>></button>
         </div>
         <div class="custom-buttons">
           <button class="ibutton" ng-click="overlayOff()"><img class="icon" src="img/favicon.png" /> Сагслах</button>

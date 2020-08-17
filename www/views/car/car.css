@@ -264,3 +264,10 @@
   right: -30px;
   clip-path: polygon(120px 20px, 90px -10px, 30px -10px, 0px 20px, 10px 30px, 110px 30px);
 }
+.collapse-btn {
+  border: none;
+  background: none;
+  color: grey;
+  float: right;
+  margin-bottom: 20px;
+}

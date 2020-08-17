@@ -1,0 +1,44 @@
+<ion-view id="qr">
+  <link href="views/qr/qr.css" rel="stylesheet" />
+  <div ng-repeat="data in [{'title':'QR'}]" ng-include src="'views/navbar.html'"></div>
+  <ion-content class="ion-modified-content margin-top-50">
+    <div class="big-container ghostwhite-noscroll-container">
+      <div class="magic-container qr-tab margin-lr-20">
+        <div class="qr-tab-menu-container">
+          <button class="tab-btn active">Бүтээгдэхүүний</button>
+          <button class="tab-btn margin-l-5" ui-sref="profile">Харилцагчийн</button>
+        </div>
+        <div class="tab-view">
+          <div class="qr-image">
+            <img src="img/qr.png" />
+          </div>
+        </div>
+        <div class="margin-top-50">
+          <p>Таны QR уншуулсан бараа</p>
+          <div class="cars">
+            <ul>
+              <li class="car-detail" ui-sref="car-info" href="#/views/loan/car/info">
+                <div class="car-img"><img src="img/car.jpg" /></div>
+                <div class="desc">
+                  <p class="car-title">Lexus ls310</p>
+                  <p class="car-price">29,000,000₮</p>
+                  <span>2019/2020</span>
+                  <span>BLG00021</span>
+                  <span>Да хүрээ</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <ion-footer class="bottom-footer">
+        <button class="button btn" id="Next" ui-sref="autoleasing-2">
+          Сагсанд нэмэх
+        </button>
+        <button class="button btn margin-top-20" id="Next" ui-sref="autoleasing-2">
+          Дэлгэрэнгүй харах
+        </button>
+      </ion-footer>
+    </div>
+  </ion-content>
+</ion-view>
