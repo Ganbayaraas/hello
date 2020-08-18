@@ -239,7 +239,6 @@ app.controller("request_detailCtrl", function ($scope, $ionicPlatform, $ionicPop
 
   $scope.data = {
     model: null,
-    func: "overlayOffConfirm()",
     availableOptions: [
       { id: "1", name: "Баянзүрх дүүрэг" },
       { id: "2", name: "Багануур дүүрэг" },
@@ -248,7 +247,7 @@ app.controller("request_detailCtrl", function ($scope, $ionicPlatform, $ionicPop
   };
   var option = "";
   $scope.data.availableOptions.forEach((element) => {
-    option += "<option ng-click='overlayOffConfirm()' value='" + element.name + "'>" + element.name + " </option>";
+    option += "<option value='" + element.name + "'>" + element.name + " </option>";
   });
   console.log(option);
   var customTemplate = "<label for='repeatSelect'></label>" + "<select name='repeatSelect' id='repeatSelect' ng-model='data.model'>" + "<option  value=''>Сонгох</option>" + option + "</select>";
