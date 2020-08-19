@@ -72,14 +72,33 @@
               </ul>
             </div>
           </div>
-          <div class="item-info">
+          <div class="items">
             <p class="middle-title">Барааны мэдээлэл</p>
-            <img src="img/car.jpg" class="car-img" />
             <ul>
-              <li>Барааны төрөл <span>Машин</span></li>
-              <li>Үйлдвэр <span>toyota</span></li>
-              <li>Загвар <span>land cruise</span></li>
-              <li>Үнэ <span>245,000,000</span></li>
+              <li>
+                <div class="item-detail" ng-click="growDiv()" href="#/views/loan/car/info">
+                  <div class="item-img"><img src="img/car.jpg" /></div>
+                  <div class="desc">
+                    <p class="item-title">Lexus ls310</p>
+                    <p class="item-price">29,000,000₮</p>
+                    <span>Үйлдвэр</span>
+                    <span>Загвар</span>
+                    <span>Да хүрээ</span>
+                  </div>
+                </div>
+                <div class="list fix-list" ng-hide="active" id="grow">
+                  <div class="measuringWrapper">
+                    <div class="item-info">
+                      <ul>
+                        <li>Барааны төрөл <span>Машин</span></li>
+                        <li>Үйлдвэр <span>toyota</span></li>
+                        <li>Загвар <span>land cruise</span></li>
+                        <li>Үнэ <span>245,000,000</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
@@ -124,3 +143,49 @@
     </div>
   </ion-content>
 </ion-view>
+<style>
+  .bank-card {
+    padding: 0px 5px !important;
+  }
+  .loan-card-badge {
+    /* position: fixed !important;
+  right: 0px !important;
+  top: 50px !important; */
+  }
+  #grow .row {
+    padding: 2px 0px 0px 0px !important;
+  }
+  #grow .col {
+    padding: 0px !important;
+  }
+  #grow p {
+    font-weight: bold;
+    font-size: 12px !important;
+  }
+  #grow img {
+    width: 35px !important;
+    height: 35px !important;
+  }
+  #grow {
+    -moz-transition: height 0.5s;
+    -ms-transition: height 0.5s;
+    -o-transition: height 0.5s;
+    -webkit-transition: height 0.5s;
+    transition: height 0.5s;
+    height: 0;
+    overflow: hidden;
+  }
+  .fix-list {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    margin-bottom: 0px;
+  }
+  .item-thumbnail-left {
+    padding-left: 60px !important;
+    min-height: 0px !important;
+  }
+  .item.activated {
+    background-color: #fff;
+  }
+</style>

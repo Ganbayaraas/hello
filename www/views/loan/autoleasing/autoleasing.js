@@ -1,4 +1,13 @@
-﻿angular.module("autoleasing.Ctrl", []).controller("autoleasingCtrl", function ($scope, $ionicPlatform) {
+﻿angular.module("autoleasing.Ctrl", ["ngAnimate"]).controller("autoleasingCtrl", function ($scope, $ionicPlatform) {
+  $scope.growDiv = function () {
+    var growDiv = document.getElementById("grow");
+    if (growDiv.clientHeight) {
+      growDiv.style.height = 0;
+    } else {
+      var wrapper = document.querySelector(".measuringWrapper");
+      growDiv.style.height = wrapper.clientHeight + "px";
+    }
+  };
   var input = document.getElementById("inputId");
   if (input) {
     function addThousandsSeparator(x) {
