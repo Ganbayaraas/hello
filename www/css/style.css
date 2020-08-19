@@ -43,6 +43,7 @@
   height: 40px !important;
   width: 130px !important;
   left: 17px;
+  background: none;
 }
 .tabs-top.tabs-striped .tab-item.tab-item-active {
   border-color: #add321;
@@ -59,13 +60,19 @@
   border-style: solid;
 }
 .tab-item.tab-item-active {
+  border-bottom: 1px solid;
   color: #add321 !important;
+}
+.tab-item {
+  margin-right: 20px;
 }
 .home-tab .tabs {
   width: 100% !important;
   top: unset !important;
   left: unset !important;
   height: 49px !important;
+  background: #f8f8fe;
+  border: none;
 }
 .home-tab .tabs a {
   border: unset !important;
