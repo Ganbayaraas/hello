@@ -47,9 +47,13 @@
 }
 .tabs-top.tabs-striped .tab-item.tab-item-active {
   border-color: #add321;
+  fill: #add321 !important;
 }
 .tab-item-active > .tab-title {
   color: #add321 !important;
+}
+.tab-item-active > .tab-title {
+  filter: invert() !important;
 }
 .tabs-top.tabs-striped .tab-item:active {
   border-color: #add321;
@@ -61,6 +65,8 @@
 }
 .tab-item.tab-item-active {
   border-bottom: 1px solid;
+  fill: #add321 !important;
+  filter: invert(66%) sepia(91%) saturate(387%) hue-rotate(27deg) brightness(100%) contrast(94%);
   color: #add321 !important;
 }
 .tab-item {
@@ -249,4 +255,16 @@ h4 {
 }
 .header-bell-icon {
   padding-right: 15px !important;
+}
+.custom-cart-line {
+  background: url(../lib/icon/shopping-cart-2-line.svg) no-repeat;
+  background-size: contain;
+  width: 80px;
+  background-position: center;
+}
+.custom-cart-fill {
+  background: url(../lib/icon/shopping-cart-2-fill.svg) no-repeat;
+  background-size: contain;
+  width: 80px;
+  background-position: center;
 }

@@ -8,7 +8,6 @@
 }
 .ion,
 .ionicons,
-.home-linee-2,
 .ion-alert:before,
 .ion-alert-circled:before,
 .ion-android-add:before,
@@ -3685,8 +3684,4 @@
 
 .ion-xbox:before {
   content: "\f30c";
-}
-
-.home-linee-2:before {
-  content: "\e900";
 }
