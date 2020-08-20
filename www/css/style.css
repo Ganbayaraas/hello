@@ -56,7 +56,7 @@ body {
   font-size: 32px;
 }
 .tabs-top.tabs-striped .tab-item.tab-item-active {
-  border-color: #add321;
+  /* border-color: #add321; */
   fill: #add321 !important;
 }
 .tab-item-active > .tab-title {
@@ -80,7 +80,7 @@ body {
   border-bottom: 1px solid;
   fill: #add321 !important;
   filter: invert(66%) sepia(91%) saturate(387%) hue-rotate(27deg) brightness(100%) contrast(94%);
-  color: #add321 !important;
+  /* color: #add321 !important; */
 }
 .tab-title {
   color: #b2bfdb;
