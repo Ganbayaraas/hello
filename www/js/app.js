@@ -206,6 +206,22 @@ var app = angular
     });
     $urlRouterProvider.otherwise("/views/home ");
   })
+  .controller("index", function ($scope, $ionicPlatform, $state) {
+    console.log("INDE");
+    console.log($scope);
+    console.log($state);
+    console.log($state.current.name);
+    $scope.shouldHide = function () {
+      switch ($state.current.name) {
+        case "statename1":
+          return true;
+        case "statename2":
+          return true;
+        default:
+          return false;
+      }
+    };
+  })
   .directive("format", [
     "$filter",
     function toAmount($filter) {
@@ -226,6 +242,22 @@ var app = angular
       };
     },
   ]);
+// app.controller("index", function ($scope, $ionicPlatform, $state) {
+//   console.log("INDE");
+//   console.log($scope);
+//   console.log($state);
+//   console.log($state.current.name);
+//   $scope.shouldHide = function () {
+//     switch ($state.current.name) {
+//       case "statename1":
+//         return true;
+//       case "statename2":
+//         return true;
+//       default:
+//         return false;
+//     }
+//   };
+// });
 app.controller("basketCtrl", function ($scope, $ionicPlatform) {});
 app.controller("loan_successCtrl", function ($scope, $ionicPlatform) {});
 app.controller("request_detailCtrl", function ($scope, $ionicPlatform, $ionicPopup, $ionicModal) {
