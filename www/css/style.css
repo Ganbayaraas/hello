@@ -45,12 +45,22 @@
   left: 17px;
   background: none;
 }
+.tab-item .icon {
+  display: block;
+  margin: 0 auto;
+  height: 32px;
+  width: 32px;
+  font-size: 32px;
+}
 .tabs-top.tabs-striped .tab-item.tab-item-active {
   border-color: #add321;
   fill: #add321 !important;
 }
 .tab-item-active > .tab-title {
   color: #add321 !important;
+}
+.tab-button-color-gray {
+  color: #b2bfdb !important;
 }
 .tab-item-active > .tab-title {
   filter: invert() !important;
@@ -69,8 +79,8 @@
   filter: invert(66%) sepia(91%) saturate(387%) hue-rotate(27deg) brightness(100%) contrast(94%);
   color: #add321 !important;
 }
-.tab-item {
-  margin-right: 20px;
+.tab-title {
+  color: #b2bfdb;
 }
 .home-tab .tabs {
   width: 100% !important;
@@ -264,6 +274,42 @@ h4 {
 }
 .custom-cart-fill {
   background: url(../lib/icon/shopping-cart-2-fill.svg) no-repeat;
+  background-size: contain;
+  width: 80px;
+  background-position: center;
+}
+.custom-home-line {
+  background: url(../lib/icon/home-2-line.svg) no-repeat;
+  background-size: contain;
+  width: 80px;
+  background-position: center;
+}
+.custom-home-fill {
+  background: url(../lib/icon/home-2-fill.svg) no-repeat;
+  background-size: contain;
+  width: 80px;
+  background-position: center;
+}
+.custom-qr-line {
+  background: url(../lib/icon/qr-code-line.svg) no-repeat;
+  background-size: contain;
+  width: 80px;
+  background-position: center;
+}
+.custom-qr-fill {
+  background: url(../lib/icon/qr-code-fill.svg) no-repeat;
+  background-size: contain;
+  width: 80px;
+  background-position: center;
+}
+.custom-bank-line {
+  background: url(../lib/icon/bank-line.svg) no-repeat;
+  background-size: contain;
+  width: 80px;
+  background-position: center;
+}
+.custom-bank-fill {
+  background: url(../lib/icon/bank-fill.svg) no-repeat;
   background-size: contain;
   width: 80px;
   background-position: center;
