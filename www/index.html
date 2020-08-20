@@ -50,7 +50,12 @@
     <script src="views/car/car-info.js"></script>
     <script src="views/carlist/carlist.js"></script>
     <script src="views/qr/qr.js"></script>
+<<<<<<< HEAD
     <script src="views/trend/trend.js"></script>
+=======
+
+    <link rel="stylesheet" href="css/ionicons.css" />
+>>>>>>> 4a85f1cab32746f0d3251a475e755717ec56ea30
   </head>
   <body ng-app="index" animation="">
     <ion-header-bar align-title="left">
@@ -77,11 +82,11 @@
         <ion-nav-view name="bank-tab"></ion-nav-view>
       </ion-tab>
 
-      <ion-tab title="Сагс" icon="ion-gear-a" ui-sref="basket">
+      <ion-tab title="Сагс" icon="ion-ios-alarm" ui-sref="basket">
         <ion-nav-view name="basket-tab"></ion-nav-view>
       </ion-tab>
 
-      <ion-tab title="QR" icon="ion-qr-scanner" ui-sref="qr">
+      <ion-tab title="QR" icon-on="ion-ios-home" icon-off="ion-ios-home-outline" ui-sref="qr">
         <ion-nav-view name="qr-tab"></ion-nav-view>
       </ion-tab>
     </ion-tabs>
