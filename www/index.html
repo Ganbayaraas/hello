@@ -57,14 +57,18 @@
   <body ng-app="index" animation="">
     <ion-header-bar align-title="left">
       <div class="bar bar-header cus-header-right-icon">
-        <button class="button button-icon icon ion-navicon header-icon ion-color-blue" style="position: fixed; left: 0px;"></button>
-        <div class="title cus-header-title ion-color-blue">
+        <button class="button button-icon header-icon" style="position: fixed; left: 0px;">
+          <i class="icon custom-menu"></i>
+        </button>
+        <div class="title cus-header-title ion-color-blue" style="margin-left: 5px;">
           <span class="ion-text-bold">Зээлийн маркет</span>
         </div>
-        <div class="cus-header-right-icon" style="right: 0px; position: fixed;">
-          <button class="button button-clear icon ion-search cus-header-icon ion-float-right ion-color-green" ui-sref="search"></button>
-          <button class="button button-icon header-icon ion-float-right ion-color-green header-bell-icon" ui-sref="sign">
-            <i class="fa fa-bell"></i>
+        <div class="cus-header-right-icon" style="right: 10px; position: fixed;">
+          <button class="button button-clear ion-float-right ion-color-green" ui-sref="search" style="margin-right: 10px;">
+            <i class="icon custom-search-green"></i>
+          </button>
+          <button class="button button-clear ion-float-right ion-color-green" ui-sref="sign">
+            <i class="icon custom-bell-green"></i>
           </button>
         </div>
       </div>

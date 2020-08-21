@@ -1,6 +1,21 @@
 <ion-view id="qr">
   <link href="views/qr/qr.css" rel="stylesheet" />
-  <div ng-repeat="data in [{'title':'QR'}]" ng-include src="'views/navbar.html'"></div>
+  <ion-header-bar align-title="left">
+    <div class="bar bar-header cus-header-right-icon">
+      <button class="button button-icon icon ion-navicon header-icon ion-color-blue" style="position: fixed; left: 0px;"></button>
+      <div class="title cus-header-title ion-color-blue">
+        <span class="ion-text-bold">Зээлийн маркет</span>
+      </div>
+      <div class="cus-header-right-icon" style="right: 0px; position: fixed;">
+        <button class="button button-clear icon cus-header-icon ion-float-right ion-color-green" ui-sref="search">
+          <i class="icon custom-home-line"></i>
+        </button>
+        <button class="button button-icon header-icon ion-float-right ion-color-green header-bell-icon" ui-sref="sign">
+          <i class="fa fa-bell"></i>
+        </button>
+      </div>
+    </div>
+  </ion-header-bar>
   <ion-content class="ion-modified-content margin-top-50">
     <div class="big-container ghostwhite-noscroll-container">
       <div class="magic-container qr-tab margin-lr-20">
@@ -15,7 +30,7 @@
         </div>
         <div class="margin-top-50">
           <p>Таны QR уншуулсан бараа</p>
-          <div class="cars">
+          <div class="cars qr">
             <ul>
               <li class="car-detail" ui-sref="car-info" href="#/views/loan/car/info">
                 <div class="car-img"><img src="img/car.jpg" /></div>
