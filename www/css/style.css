@@ -27,11 +27,23 @@ body {
   justify-content: center;
   align-items: center;
 }
-.ion-color-green {
-  color: #add321 !important;
+.ion-color-brand-green {
+  color: #acd322 !important;
 }
-.ion-color-blue {
-  color: #263667 !important;
+.ion-color-brand-blue {
+  color: #3cc1fa !important;
+}
+.ion-color-icon {
+  color: #b1bfda !important;
+}
+.ion-color-header {
+  color: #606060 !important;
+}
+.ion-color-big-text {
+  color: #4b5180 !important;
+}
+.ion-color-text {
+  color: #a2a7b5 !important;
 }
 .ion-text-bold {
   font-weight: bold;
