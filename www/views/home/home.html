@@ -19,7 +19,7 @@
       <ion-tab title="Бараа">
         <ion-nav-view class="ghostwhite">
           <link href="views/home/home.css" rel="stylesheet" />
-          <ion-content scroll="false">
+          <ion-content scroll="false" style="margin: 0 10px;">
             <div class="card home-card-1-line" ui-sref="#">
               <div class="item home-card-1 card-body item-text-wrap">
                 <div class="home-card-1-first-row">
@@ -30,22 +30,16 @@
               </div>
             </div>
             <div class="home-card-container">
-              <div class="card home-card" ui-sref="car">
-                <div class="item home-card-2 card-body item-text-wrap">
-                  <div class="">
-                    <i class="icon ion-speedometer home-card-icon"></i>
-                  </div>
+              <div class="card home-card home-card-2" ui-sref="car">
+                <div class="item card-body item-text-wrap small-box">
                   <div class="ion-text-bold"><span>Автомашин</span></div>
                   <div class="home-card-small-text">
                     <span>Бүх төрлийн автомашин</span>
                   </div>
                 </div>
               </div>
-              <div class="card home-card" ui-sref="trend">
-                <div class="item home-card-3 card-body item-text-wrap">
-                  <div class="">
-                    <i class="icon ion-speedometer home-card-icon"></i>
-                  </div>
+              <div class="card home-card home-card-3" ui-sref="car">
+                <div class="item card-body item-text-wrap small-box">
                   <div class="ion-text-bold"><span>Тренд</span></div>
                   <div class="home-card-small-text">
                     <span>Бүх төрлийн цахилгаан бараа</span>
@@ -54,25 +48,19 @@
               </div>
             </div>
             <div class="home-card-container">
-              <div class="card home-card" ui-sref="loan_success">
-                <div class="item home-card-4 card-body item-text-wrap">
-                  <div class="">
-                    <i class="icon ion-speedometer home-card-icon"></i>
-                  </div>
+              <div class="card home-card home-card-4" ui-sref="car">
+                <div class="item card-body item-text-wrap small-box">
                   <div class="ion-text-bold"><span>Бараа</span></div>
                   <div class="home-card-small-text">
                     <span>Бүх төрлийн цахилгаан бараа</span>
                   </div>
                 </div>
               </div>
-              <div class="card home-card">
-                <div class="item home-card-5 card-body item-text-wrap">
-                  <div class="">
-                    <i class="icon ion-speedometer home-card-icon"></i>
-                  </div>
+              <div class="card home-card home-card-5" ui-sref="car">
+                <div class="item card-body item-text-wrap small-box">
                   <div class="ion-text-bold"><span>Зарлах</span></div>
                   <div class="home-card-small-text">
-                    <span>Бүх төрлийн цахилгаан бараа</span>
+                    <span>Хүссэн бараагаа зээлээр авах</span>
                   </div>
                 </div>
               </div>
@@ -84,7 +72,7 @@
       <!-- Tab 2 -->
       <ion-tab title="Зээл">
         <ion-nav-view class="ghostwhite">
-          <ion-content scroll="true" class="home-tab-2-content">
+          <ion-content scroll="true" class="home-tab-2-content" style="margin: 0 10px;">
             <div class="card" ui-sref="autoleasing-1">
               <div class="item loan-card-1 card-body item-text-wrap">
                 <div class="loan-card-first-row">
