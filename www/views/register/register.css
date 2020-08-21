@@ -110,13 +110,13 @@ body {
 .register-step-1 input {
   border-bottom: 1px solid;
   border-radius: 10px;
-  border-color: yellowgreen;
+  border-color: #acd322;
   padding: 0 15px 0 20px;
 }
 .register-step-2 input {
   border-bottom: 1px solid;
   border-radius: 10px;
-  border-color: yellowgreen;
+  border-color: #acd322;
   padding: 0 15px 0 20px;
 }
 .register-mobile {

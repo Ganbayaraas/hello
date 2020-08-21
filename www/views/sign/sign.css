@@ -16,8 +16,8 @@
   border-radius: 10px;
   min-height: 35px;
   line-height: 35px;
-  color: yellowgreen;
-  border-color: yellowgreen;
+  color: #acd322;
+  border-color: #acd322;
 }
 .sign-reg-button {
   min-height: 35px;
@@ -53,12 +53,12 @@
   border-radius: 10px;
   min-height: 35px;
   line-height: 35px;
-  color: yellowgreen;
-  border-color: yellowgreen;
+  color: #acd322;
+  border-color: #acd322;
   background-color: #fff;
 }
 .sign-login-button:hover {
-  color: yellowgreen;
+  color: #acd322;
 }
 .sign-reg-button.activated {
   color: #fff;

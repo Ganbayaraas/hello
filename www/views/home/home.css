@@ -59,12 +59,12 @@
   width: 100%;
 }
 .loan-card-1 {
-  background: #3cc1f9;
+  background: #3cc1fa;
   color: #fff;
   height: 110px;
 }
 .loan-card-2 {
-  background: #3cc1f9;
+  background: #3cc1fa;
   color: #fff;
   height: 110px;
 }
@@ -99,7 +99,7 @@
   margin-left: 0;
   margin-right: auto;
   zoom: 4;
-  color: #808080;
+  color: #a2a7b5;
 }
 .loan-card-text {
   text-align: right;

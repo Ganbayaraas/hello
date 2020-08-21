@@ -7,7 +7,7 @@
 .request-car-detail p {
   font-size: 14px;
   font-weight: bold;
-  color: #263667 !important;
+  color: #4b5180 !important;
   margin: 0 0 20px !important;
 }
 .request-car-detail span {
@@ -21,18 +21,18 @@
   padding-left: 16px;
   padding-bottom: 10px;
   display: block;
-  color: #263667 !important;
+  color: #4b5180 !important;
 }
 .bank-detail p {
   color: #c4c8d1 !important;
 }
 .bank-detail-label input {
   text-align: right;
-  color: #263667 !important;
+  color: #4b5180 !important;
 }
 .bank-detail > .item-checkbox span {
   font-size: 14px;
-  color: #263667 !important;
+  color: #4b5180 !important;
 }
 .bank-detail > .item-checkbox .checkbox {
   left: unset !important;
@@ -46,7 +46,7 @@
   border-radius: 5px !important;
   background: #fff !important;
   background-color: #fff !important;
-  border-color: #b6e752 !important;
+  border-color: #acd322 !important;
 }
 .checkbox input:checked + .checkbox-icon::after {
   border-radius: 5px !important;
@@ -76,7 +76,7 @@
   border: none !important;
   display: flex;
   text-align: center;
-  color: #b6e752;
+  color: #acd322;
 }
 .detail-btn-container {
   display: flex;
@@ -106,7 +106,7 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  color: #263667;
+  color: #4b5180;
   text-align: center;
   margin-bottom: 48px;
   border-radius: 10px 10px 0px 0px;
@@ -172,7 +172,7 @@
   padding-left: 16px;
   padding-bottom: 10px;
   display: block;
-  color: #263667 !important;
+  color: #4b5180 !important;
 }
 .bank-chat-container {
   border: 1px solid #bebebe;
@@ -180,6 +180,7 @@
   display: flow-root;
   width: 90%;
   margin: 0 auto;
+  box-shadow: 4px 4px 12px 0px #888888;
 }
 .bank-chat-income {
   display: grid;

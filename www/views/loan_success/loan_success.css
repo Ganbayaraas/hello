@@ -3,7 +3,7 @@
   stroke-dashoffset: 166;
   stroke-width: 2;
   stroke-miterlimit: 10;
-  stroke: #add321;
+  stroke: #acd322;
   fill: none;
   animation: stroke 0.5s cubic-bezier(0.65, 0, 0.45, 1) forwards;
 }
@@ -14,7 +14,7 @@
   border-radius: 50%;
   display: block;
   stroke-width: 2;
-  stroke: #add321;
+  stroke: #acd322;
   stroke-miterlimit: 10;
   margin: 10% auto;
   box-shadow: inset 0px 0px 0px #fff;
@@ -50,7 +50,7 @@
 .row-2-text {
   text-align: center;
   margin: 0 auto;
-  color: #add321;
+  color: #acd322;
 }
 .success-bank-list {
   display: grid;
@@ -64,31 +64,16 @@
   margin: 0 auto;
 }
 .success-bank-list span {
-  color: #afafaf;
+  color: #a2a7b5;
 }
 .row-4-text {
   text-align: center;
   margin: 0 auto;
-  color: #add321;
+  color: #acd322;
 }
 .row-5-text {
   text-align: center;
-  color: #afafaf;
-}
-.success-btn {
-  line-height: 20px !important;
-  color: #fff !important;
-  border-radius: 10px !important;
-  background: rgb(162, 209, 52);
-  background: -moz-linear-gradient(45deg, rgba(162, 209, 52, 1) 30%, rgba(59, 193, 249, 1) 77%);
-  background: -webkit-linear-gradient(45deg, rgba(162, 209, 52, 1) 30%, rgba(59, 193, 249, 1) 77%);
-  background: linear-gradient(45deg, rgba(162, 209, 52, 1) 30%, rgba(59, 193, 249, 1) 77%);
-  font-size: 12px !important;
-  width: 65%;
-  padding: 5px 40px;
-  margin: auto;
-  display: block;
-  min-height: 35px !important;
+  color: #a2a7b5;
 }
 .loan_success-content {
   height: 100%;

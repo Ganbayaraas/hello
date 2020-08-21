@@ -70,20 +70,20 @@ body {
 }
 .tabs-top.tabs-striped .tab-item.tab-item-active {
   /* border-color: #add321; */
-  fill: #add321 !important;
+  fill: #acd322 !important;
 }
 .tab-item-active > .tab-title {
-  color: #add321 !important;
+  color: #acd322 !important;
 }
 .tab-button-color-gray {
-  color: #b2bfdb !important;
+  color: #b1bfda !important;
 }
 .tab-item-active > .tab-title {
   filter: invert() !important;
 }
 .tabs-top.tabs-striped .tab-item:active {
-  border-color: #add321;
-  color: #add321 !important;
+  border-color: #acd322;
+  color: #acd322 !important;
 }
 .tab-item .tab-item-active {
   border-width: 0px 0px 2px 0px !important;
@@ -91,12 +91,12 @@ body {
 }
 .tab-item.tab-item-active {
   border-bottom: 1px solid;
-  fill: #add321 !important;
+  fill: #acd322 !important;
   filter: invert(66%) sepia(91%) saturate(387%) hue-rotate(27deg) brightness(100%) contrast(94%);
-  /* color: #add321 !important; */
+  /* color: #acd322 !important; */
 }
 .tab-title {
-  color: #b2bfdb;
+  color: #b1bfda;
 }
 .home-tab .tabs {
   width: 100% !important;
@@ -176,18 +176,18 @@ h4 {
   background: none;
 }
 .bottom-first-button {
-  background: rgb(148, 207, 79);
-  background: -moz-linear-gradient(90deg, rgba(148, 207, 79, 1) 55%, rgba(102, 200, 174, 1) 100%);
-  background: -webkit-linear-gradient(90deg, rgba(148, 207, 79, 1) 55%, rgba(102, 200, 174, 1) 100%);
-  background: linear-gradient(90deg, rgba(148, 207, 79, 1) 55%, rgba(102, 200, 174, 1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#94cf4f",endColorstr="#66c8ae",GradientType=1);
+  background: rgb(147, 207, 81);
+  background: -moz-linear-gradient(86deg, rgba(147, 207, 81, 1) 21%, rgba(100, 199, 174, 1) 90%);
+  background: -webkit-linear-gradient(86deg, rgba(147, 207, 81, 1) 21%, rgba(100, 199, 174, 1) 90%);
+  background: linear-gradient(86deg, rgba(147, 207, 81, 1) 21%, rgba(100, 199, 174, 1) 90%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#93cf51",endColorstr="#64c7ae",GradientType=1);
   color: white;
-  border-radius: 10px;
-  width: 150px;
+  border-radius: 5px;
+  width: 140px;
   height: 35px;
-  min-height: 35px !important;
-  line-height: 35px !important;
-  font-size: 14px !important;
+  min-height: 12px !important;
+  line-height: 12px !important;
+  font-size: 12px !important;
   margin: 0 auto;
 }
 .bottom-second-button {
@@ -197,12 +197,12 @@ h4 {
   background: linear-gradient(119deg, rgba(86, 197, 198, 1) 55%, rgba(61, 192, 250, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#56c5c6",endColorstr="#3dc0fa",GradientType=1);
   color: white;
-  border-radius: 10px;
-  width: 150px;
+  border-radius: 5px;
+  width: 140px;
   height: 35px;
-  min-height: 35px !important;
-  line-height: 35px !important;
-  font-size: 14px !important;
+  min-height: 12px !important;
+  line-height: 12px !important;
+  font-size: 12px !important;
   margin: 0 auto;
 }
 .scroll-content {
@@ -215,8 +215,8 @@ h4 {
   border: none !important;
 }
 .tabs-striped .tab-item.activated {
-  border-color: #add321 !important;
-  color: #add321 !important;
+  border-color: #acd322 !important;
+  color: #acd322 !important;
 }
 .navbar {
   background: #f8f8fe;
@@ -373,4 +373,22 @@ h4 {
 }
 .home-card-tab .tab-item {
   margin-right: 20px;
+}
+.single-button {
+  background: rgb(162, 209, 54);
+  background: -moz-linear-gradient(90deg, rgba(162, 209, 54, 1) 13%, rgba(60, 193, 249, 1) 75%);
+  background: -webkit-linear-gradient(90deg, rgba(162, 209, 54, 1) 13%, rgba(60, 193, 249, 1) 75%);
+  background: linear-gradient(90deg, rgba(162, 209, 54, 1) 13%, rgba(60, 193, 249, 1) 75%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a2d136",endColorstr="#3cc1f9",GradientType=1);
+  color: white;
+  width: 55vw;
+  border-radius: 10px;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 10px;
+  min-height: 35px;
+  line-height: 35px;
+  margin: 10px auto !important;
+  display: block !important;
+  letter-spacing: 1px !important;
 }

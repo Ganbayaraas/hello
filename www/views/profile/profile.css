@@ -28,6 +28,7 @@
 }
 input[type="text"] {
   text-align: right;
+  color: #4b5180;
 }
 input[type="number"] {
   text-align: right;
@@ -90,6 +91,9 @@ input[type="number"] {
 }
 .profile-label {
   width: auto !important;
+}
+.profile-label p {
+  color: #a2a7b5 !important;
 }
 .profile-list .item {
   border-color: #ddd !important;
