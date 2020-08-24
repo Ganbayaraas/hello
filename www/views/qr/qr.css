@@ -68,3 +68,8 @@
 .cars .car-price {
   margin: 0;
 }
+
+#car-dtl p {
+  color: #4b5180;
+  font-weight: bold;
+}

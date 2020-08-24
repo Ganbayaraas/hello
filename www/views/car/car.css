@@ -272,3 +272,11 @@
   float: right;
   margin-bottom: 20px;
 }
+#car-dtl p {
+  color: #4b5180;
+  font-weight: bold;
+}
+.middle-title {
+  color: #4b5180;
+  font-weight: bold;
+}
