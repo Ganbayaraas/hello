@@ -13,35 +13,47 @@
 .home-card-2 {
   color: #fff;
   height: 135px;
-  background-image: rgb(125, 204, 123);
-  background-image: -moz-linear-gradient(15deg, rgba(125, 204, 123, 1) 0%, rgba(86, 197, 200, 1) 80%);
-  background-image: -webkit-linear-gradient(15deg, rgba(125, 204, 123, 1) 0%, rgba(86, 197, 200, 1) 80%);
-  background-image: linear-gradient(15deg, rgba(125, 204, 123, 1) 0%, rgba(86, 197, 200, 1) 80%);
+  background: url(../../img/lines/home-small-line.png), rgb(125, 204, 123);
+  background: url(../../img/lines/home-small-line.png), -moz-linear-gradient(15deg, rgba(125, 204, 123, 1) 0%, rgba(86, 197, 200, 1) 80%);
+  background: url(../../img/lines/home-small-line.png), -webkit-linear-gradient(15deg, rgba(125, 204, 123, 1) 0%, rgba(86, 197, 200, 1) 80%);
+  background: url(../../img/lines/home-small-line.png), linear-gradient(15deg, rgba(125, 204, 123, 1) 0%, rgba(86, 197, 200, 1) 80%);
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  background-size: cover;
 }
 .home-card-3 {
   color: #fff;
   height: 135px;
-  background-image: rgb(109, 200, 152);
-  background-image: -moz-linear-gradient(15deg, rgba(109, 200, 152, 1) 0%, rgba(69, 195, 229, 1) 80%);
-  background-image: -webkit-linear-gradient(15deg, rgba(109, 200, 152, 1) 0%, rgba(69, 195, 229, 1) 80%);
-  background-image: linear-gradient(15deg, rgba(109, 200, 152, 1) 0%, rgba(69, 195, 229, 1) 80%);
+  background-image: url(../../img/lines/home-small-line.png), rgb(109, 200, 152);
+  background-image: url(../../img/lines/home-small-line.png), -moz-linear-gradient(15deg, rgba(109, 200, 152, 1) 0%, rgba(69, 195, 229, 1) 80%);
+  background-image: url(../../img/lines/home-small-line.png), -webkit-linear-gradient(15deg, rgba(109, 200, 152, 1) 0%, rgba(69, 195, 229, 1) 80%);
+  background-image: url(../../img/lines/home-small-line.png), linear-gradient(15deg, rgba(109, 200, 152, 1) 0%, rgba(69, 195, 229, 1) 80%);
+  background-repeat: no-repeat;
+  background-position: 0 86%;
+  background-size: cover;
 }
 .home-card-4 {
   color: #fff;
   height: 135px;
-  background-image: rgb(161, 209, 54);
-  background-image: -moz-linear-gradient(22deg, rgba(161, 209, 54, 1) 0%, rgba(121, 203, 131, 1) 55%);
-  background-image: -webkit-linear-gradient(22deg, rgba(161, 209, 54, 1) 0%, rgba(121, 203, 131, 1) 55%);
-  background-image: linear-gradient(22deg, rgba(161, 209, 54, 1) 0%, rgba(121, 203, 131, 1) 55%);
+  background-image: url(../../img/lines/home-small-line.png), rgb(161, 209, 54);
+  background-image: url(../../img/lines/home-small-line.png), -moz-linear-gradient(22deg, rgba(161, 209, 54, 1) 0%, rgba(121, 203, 131, 1) 55%);
+  background-image: url(../../img/lines/home-small-line.png), -webkit-linear-gradient(22deg, rgba(161, 209, 54, 1) 0%, rgba(121, 203, 131, 1) 55%);
+  background-image: url(../../img/lines/home-small-line.png), linear-gradient(22deg, rgba(161, 209, 54, 1) 8%, rgba(121, 203, 131, 1) 99%);
+  background-repeat: no-repeat;
+  background-position: 0 86%;
+  background-size: cover;
 }
 .home-card-5 {
   color: #fff;
   height: 135px;
   background-image: rgb(145, 206, 88);
-  background-image: -moz-linear-gradient(22deg, rgba(145, 206, 88, 1) 0%, rgba(105, 201, 162, 1) 55%);
-  background-image: -webkit-linear-gradient(22deg, rgba(145, 206, 88, 1) 0%, rgba(105, 201, 162, 1) 55%);
-  background-image: linear-gradient(22deg, rgba(145, 206, 88, 1) 0%, rgba(105, 201, 162, 1) 55%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#91ce58",endColorstr="#69c9a2",GradientType=1);
+  background-image: url(../../img/lines/home-small-line.png), -moz-linear-gradient(22deg, rgba(145, 206, 88, 1) 0%, rgba(105, 201, 162, 1) 55%);
+  background-image: url(../../img/lines/home-small-line.png), -webkit-linear-gradient(22deg, rgba(145, 206, 88, 1) 0%, rgba(105, 201, 162, 1) 55%);
+  background-image: url(../../img/lines/home-small-line.png), linear-gradient(22deg, rgba(145, 206, 88, 1) 24%, rgba(105, 201, 162, 1) 113%);
+  /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#91ce58",endColorstr="#69c9a2",GradientType=1); */
+  background-repeat: no-repeat;
+  background-position: 0 86%;
+  background-size: cover;
 }
 .home-card-1-first-row {
   margin-bottom: 50px;
@@ -57,6 +69,7 @@
 }
 .home-card {
   width: 100%;
+  height: 170px;
 }
 .loan-card-1 {
   background: #3cc1fa;
@@ -117,4 +130,14 @@
 }
 .home-tab-2-content > .scroll {
   min-height: 0px !important;
+}
+.small-box {
+  background: none;
+  color: #fff;
+  top: 70px;
+  position: relative;
+}
+.card {
+  box-shadow: -1px 2px 7px rgba(0, 0, 0, 0.3);
+  background-color: #acd322;
 }
