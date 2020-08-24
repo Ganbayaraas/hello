@@ -139,5 +139,9 @@
 }
 .card {
   box-shadow: -1px 2px 7px rgba(0, 0, 0, 0.3);
-  background-color: #acd322;
+  /* background-color: #acd322; */
+}
+.loan-tab-title {
+  padding: 10px 13px;
+  /* width: 45vw; */
 }

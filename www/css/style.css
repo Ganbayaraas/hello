@@ -96,7 +96,7 @@ body {
   /* color: #acd322 !important; */
 }
 .tab-title {
-  color: #b1bfda;
+  color: #a2a7b5;
 }
 .home-tab .tabs {
   width: 100% !important;
@@ -391,4 +391,11 @@ h4 {
   margin: 10px auto !important;
   display: block !important;
   letter-spacing: 1px !important;
+}
+.nav-back-btn {
+  color: #fff !important;
+  padding-left: 15px;
+}
+.ion-chevron-left:before {
+  padding-right: 10px !important;
 }

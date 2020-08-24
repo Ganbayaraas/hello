@@ -1,7 +1,11 @@
 <ion-view ng-app="car_collateral.Ctrl">
   <link href="views/loan/car_collateral/car_collateral.css" rel="stylesheet" />
   <div ng-repeat="data in [{'title':'Хүсэлт илгээх'}]" ng-include src="'views/navbar.html'"></div>
-  <ion-content scroll="true" class="car-col-content margin-top-50">
+  <ion-content id="car-collateral2" scroll="true" class="car-col-content">
+    <button ng-click="$ionicGoBack()" class="nav-back-button button buttons button-clear header-item car-back-nav">
+      <i class="ion-chevron-left nav-back-btn">Хүсэлт илгээх</i>
+      <span class="navbar-back-text" style="transform: translate3d(0px, 0px, 0px);"><span>{{data.title}}</span></span>
+    </button>
     <div class="list car-collateral-list" ng-controller="car_collateralCtrl">
       <div class="card car-step2-card">
         <span class="step2-card-span">Зээлийн хүсэлтийн мэдээлэл</span>
@@ -20,7 +24,7 @@
         </label>
         <label class="item item-input step2-description-field">
           <p>Тайлбар</p>
-          <textarea type="text" placeholder="Тайлбар" name="description"></textarea>
+          <textarea type="text" placeholder="..." name="description"></textarea>
         </label>
       </div>
       <span class="step2-bank-span"> Боломжит банк санхүү</span>
@@ -61,7 +65,7 @@
           <p>Хаан банк</p>
         </div>
       </div>
-      <button class="button btn car-next-button" id="Next" ui-sref="car_coll3">
+      <button class="button btn single-button" id="Next" ui-sref="car_coll3">
         Үргэлжлүүлэх
       </button>
     </div>

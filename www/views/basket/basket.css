@@ -13,8 +13,8 @@
   /* background: #000; */
 }
 .checkbox input:checked + .checkbox-icon:before {
-  background: #acd322;
-  border-color: #acd322;
+  background: #fff !important;
+  border-color: #acd322 !important;
 }
 .checkbox-icon:before {
   border-radius: 5px !important;

@@ -7538,7 +7538,7 @@ button.item.item-button-right {
 .card,
 .list-inset {
   overflow: hidden;
-  margin: 10px 10px;
+  margin: 10px 15px;
   border-radius: 12px;
   background-color: #fff;
 }
