@@ -167,18 +167,7 @@
   font-size: 15px;
   z-index: 1;
 }
-.bank-container {
-  background-color: #fff;
-  width: 100%;
-  padding: 5px 40px 0px 40px;
-  box-shadow: 0 2px 5px -2px gray;
-}
-.bank-container img {
-  margin: 10px;
-  width: 40px;
-  height: 40px;
-  border-radius: 10%;
-}
+
 /* step 2 */
 .step2-btn-container {
   margin-bottom: 25%;
@@ -442,18 +431,6 @@
 .checkbox input:checked + .checkbox-icon:before {
   background: #acd322;
   border-color: #acd322;
-}
-.bank-container {
-  background-color: #fff;
-  width: 100%;
-  padding: 5px 40px 0px 40px;
-  box-shadow: 0 2px 5px -2px gray;
-}
-.bank-container img {
-  margin: 10px;
-  width: 40px;
-  height: 40px;
-  border-radius: 10%;
 }
 .step3-btn-container {
   margin: 10%;

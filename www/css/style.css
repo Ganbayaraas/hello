@@ -399,3 +399,23 @@ h4 {
 .ion-chevron-left:before {
   padding-right: 10px !important;
 }
+
+.bank-container {
+  background-color: #fff;
+  width: 100%;
+  padding: 10px 30px 0px 30px;
+  box-shadow: 1px 1px 5px -2px grey;
+}
+.bank-container img {
+  margin-bottom: 10px;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 10%;
+}
+.bank-container p {
+  text-transform: uppercase;
+  color: #515151;
+  font-size: 11px;
+  line-height: normal;
+}

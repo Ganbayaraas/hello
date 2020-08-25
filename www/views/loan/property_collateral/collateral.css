@@ -17,16 +17,7 @@
 .bank-container {
   bottom: 20%;
   position: absolute;
-  background-color: #fff;
   width: 100%;
-  padding: 10px 20px 10px 20px;
-  box-shadow: 0 2px 5px -2px gray;
-}
-.bank-container img {
-  margin-right: 10px;
-  width: 40px;
-  height: 40px;
-  border-radius: 10%;
 }
 .bottom-btn-container {
   bottom: 10%;

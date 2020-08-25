@@ -3,26 +3,28 @@
   <div ng-repeat="data in [{'title':'Бизнесийн зээл'}]" ng-include src="'views/navbar.html'"></div>
   <ion-content class="ion-modified-content margin-top-50">
     <div class="big-container ghostwhite-noscroll-container">
-      <div class="magic-container margin-lr-20">
-        <div style="margin-top: 50px;">
-          <span>Танилцуулга</span>
-        </div>
-        <div style="margin-top: 50px;">
-          <select class="selection">
-            <option selected>Зориулалт</option>
-            <option>Option 2</option>
-            <option>Option 3</option>
-          </select>
-          <select class="selection">
-            <option selected>Орлого баталгаажуулах баримт</option>
-            <option>Option 2</option>
-            <option>Option 3</option>
-          </select>
-          <select class="selection">
-            <option selected>Барьцаа хөрөнгө</option>
-            <option>Option 2</option>
-            <option>Option 3</option>
-          </select>
+      <div class="magic-container">
+        <div class="margin-lr-20">
+          <div style="margin-top: 50px;">
+            <span>Танилцуулга</span>
+          </div>
+          <div style="margin-top: 50px;">
+            <select class="selection">
+              <option selected>Зориулалт</option>
+              <option>Option 2</option>
+              <option>Option 3</option>
+            </select>
+            <select class="selection">
+              <option selected>Орлого баталгаажуулах баримт</option>
+              <option>Option 2</option>
+              <option>Option 3</option>
+            </select>
+            <select class="selection">
+              <option selected>Барьцаа хөрөнгө</option>
+              <option>Option 2</option>
+              <option>Option 3</option>
+            </select>
+          </div>
         </div>
         <div style="display: flex; height: 50%; flex-direction: column; align-items: center; justify-content: flex-end;">
           <div class="bank-container">
@@ -37,7 +39,7 @@
         </div>
       </div>
       <ion-footer class="bottom-footer">
-        <button class="button btn" id="Next" ui-sref="">
+        <button class="button btn single-button" id="Next" ui-sref="">
           Үргэлжлүүлэх
         </button>
       </ion-footer>
