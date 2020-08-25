@@ -116,7 +116,7 @@
   padding: 0 15px 0 20px;
   text-align: left !important;
 }
-.btn-container {
+.qr-btn-container {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -142,13 +142,30 @@
 .input-text {
   padding: 20px 40px 0px 40px;
 }
-.btn-container .qr-button {
+.qr-btn-container .qr-button {
   background: none;
   border-top: 1px solid;
   border-bottom: 1px solid;
   border-radius: 10px;
   border-color: #acd322;
-  padding: 0 15px 0 20px;
+  width: 220px;
+}
+.qr-btn-container .filter {
+  background: #f8f8fe;
+  z-index: 0;
+  border-radius: 28px;
+  height: 51px;
+  top: -3px;
+  left: -5px;
+  width: 229px;
+  font-size: 14px;
+  position: absolute;
+  padding: 5px;
+}
+.qr-ico {
+  margin-right: 5px;
+  font-size: 15px;
+  z-index: 1;
 }
 .bank-container {
   background-color: #fff;
