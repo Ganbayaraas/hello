@@ -400,8 +400,8 @@
 .checkbox input,
 .checkbox-icon {
   position: relative;
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
   display: block;
   border: 0;
   background: transparent;
@@ -423,7 +423,7 @@
 }
 .checkbox input:checked:before,
 .checkbox input:checked + .checkbox-icon:before {
-  background: #acd322;
+  background: #fff;
   border-color: #acd322;
 }
 .bank-container {
@@ -597,7 +597,18 @@
 .items .item-price {
   margin: 0;
 }
-.car-grow > .measuringWrapper {
+.car-grow > .car-measuringWrapper {
   padding: 8px;
   background-color: #e5e5e575;
+}
+input:checked + .checkbox-icon:after {
+  content: "\2713";
+  transform: rotate(0);
+  top: 0% !important;
+  left: 20% !important;
+  border: none !important;
+  display: flex;
+  text-align: center;
+  color: #acd322;
+  opacity: 1;
 }

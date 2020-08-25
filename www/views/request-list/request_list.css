@@ -21,12 +21,12 @@
   height: 35px !important;
 }
 #grow {
-  -moz-transition: height 0.5s;
-  -ms-transition: height 0.5s;
-  -o-transition: height 0.5s;
-  -webkit-transition: height 0.5s;
-  transition: height 0.5s;
-  height: 0;
+  -moz-transition: height 0.5s !important;
+  -ms-transition: height 0.5s !important;
+  -o-transition: height 0.5s !important;
+  -webkit-transition: height 0.5s !important;
+  transition: height 0.5s !important;
+  height: 0px;
   overflow: hidden;
 }
 .fix-list {
