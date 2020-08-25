@@ -1,10 +1,10 @@
 ﻿angular.module("autoleasing.Ctrl", ["ngAnimate"]).controller("autoleasingCtrl", function ($scope, $ionicPlatform) {
   $scope.growDiv = function () {
-    var growDiv = document.getElementById("grow");
+    var growDiv = document.getElementById("car-grow");
     if (growDiv.clientHeight) {
       growDiv.style.height = 0;
     } else {
-      var wrapper = document.querySelector(".measuringWrapper");
+      var wrapper = document.querySelector(".car-measuringWrapper");
       growDiv.style.height = wrapper.clientHeight + "px";
     }
   };
