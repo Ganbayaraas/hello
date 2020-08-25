@@ -2,7 +2,7 @@
   margin: 15% 0 30% 0;
 }
 .progressbar-wrapper {
-  background: #7d7d7d;
+  background: #c6c8d4;
   width: 100%;
   padding-top: 10px;
   padding-bottom: 5px;
@@ -107,6 +107,18 @@
   background: -moz-linear-gradient(45deg, rgba(104, 201, 166, 1) 30%, rgba(65, 193, 242, 1) 77%);
   background: -webkit-linear-gradient(45deg, rgba(104, 201, 166, 1) 30%, rgba(65, 193, 242, 1) 77%);
   background: linear-gradient(45deg, rgba(104, 201, 166, 1) 30%, rgba(65, 193, 242, 1) 77%);
+}
+.step-li-44::before {
+  background: #55b776 !important;
+  border: 1px solid #55b776 !important;
+}
+.step-li-33::before {
+  border-color: #41c1f2 !important;
+  background-color: #41c1f2 !important;
+}
+.step-li-22::before {
+  border-color: #68c9a6 !important;
+  background-color: #68c9a6 !important;
 }
 .bottom-border-input-text input {
   background: none;
@@ -321,13 +333,13 @@
 }
 .middle-title {
   font-size: 12px;
-  color: #a2a7b5;
+  color: #c6c8d4;
   text-transform: uppercase;
 }
 .padding-null {
   margin: 0;
   margin-left: 10px;
-  color: #a2a7b5;
+  color: #c6c8d4;
 }
 /* step 3 */
 .bank-list-container {
@@ -349,7 +361,7 @@
   border-color: #ddd;
   border: none;
   background-color: #fff;
-  color: #a2a7b5;
+  color: #c6c8d4;
   position: relative;
   z-index: 2;
   display: block;
@@ -397,7 +409,7 @@
 .switch-list button {
   background: none;
   border: none;
-  color: #a2a7b5;
+  color: #c6c8d4;
   z-index: 1;
   display: inline-block;
   font-size: 12px;
