@@ -416,3 +416,7 @@ ion-header-bar.bar.bar-header {
 .margin-bottom-20 {
   margin-bottom: 20px;
 }
+.margin-tb-20-40 {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
