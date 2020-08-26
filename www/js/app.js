@@ -210,6 +210,16 @@ var app = angular
       templateUrl: "views/sale/sale.html",
       controller: "saleCtrl",
     });
+    $stateProvider.state("sale-auto", {
+      url: "/views/sale-auto",
+      templateUrl: "views/sale/auto.html",
+      controller: "saleCtrl",
+    });
+    $stateProvider.state("sale-goods", {
+      url: "/views/sale-goods",
+      templateUrl: "views/sale/goods.html",
+      controller: "saleCtrl",
+    });
     $urlRouterProvider.otherwise("/views/home ");
   })
   .controller("index", function ($scope, $ionicPlatform, $state) {
