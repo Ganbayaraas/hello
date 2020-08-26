@@ -144,6 +144,10 @@ body {
   margin-left: 20px !important;
   margin-right: 20px !important;
 }
+.margin-lr-40 {
+  margin-left: 40px !important;
+  margin-right: 40px !important;
+}
 .ghostwhite {
   background-color: #f8f8fe;
 }
@@ -405,6 +409,7 @@ h4 {
   width: 100%;
   padding: 10px 30px 0px 30px;
   box-shadow: 1px 1px 5px -2px grey;
+  margin-top: 10px;
 }
 .bank-container img {
   margin-bottom: 10px;

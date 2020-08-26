@@ -11,33 +11,36 @@
 }
 .sign-login-button {
   border: 1px solid;
-  width: 100%;
+  width: 80%;
   font-size: 14px;
   border-radius: 10px;
   min-height: 35px;
   line-height: 35px;
   color: #acd322;
   border-color: #acd322;
+  margin: 0 auto;
+  display: block;
 }
 .sign-reg-button {
   min-height: 35px;
   font-size: 14px;
   line-height: 35px;
   border-color: antiquewhite;
-  width: 100%;
+  width: 80%;
   color: #fff;
-  margin-top: 10px;
   background: rgb(162, 209, 52);
   background: -moz-linear-gradient(45deg, rgba(162, 209, 52, 1) 30%, rgba(59, 193, 249, 1) 77%);
   background: -webkit-linear-gradient(45deg, rgba(162, 209, 52, 1) 30%, rgba(59, 193, 249, 1) 77%);
   background: linear-gradient(45deg, rgba(162, 209, 52, 1) 30%, rgba(59, 193, 249, 1) 77%);
   border-radius: 10px;
+  margin: 10px auto 0 auto;
+  display: block;
 }
 .slider-pager {
   padding-bottom: 60px;
 }
-.slider-img {
-  width: 70vw;
+.slider-img-sign {
+  width: 65vw;
   height: 30vh;
   margin: 0 auto;
   display: flex;
@@ -45,10 +48,10 @@
 .sign-text {
   font-size: 14px;
   color: #5c5f6a;
-  padding: 20px 20px;
+  padding: 20px 40px;
 }
 .sign-login-button.activated {
-  width: 100%;
+  width: 80%;
   font-size: 14px;
   border-radius: 10px;
   min-height: 35px;

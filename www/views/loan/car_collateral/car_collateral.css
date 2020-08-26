@@ -1,7 +1,7 @@
 .car-collateral-list input {
   text-align: right;
   color: #4b5180 !important;
-  font-weight: bold;
+  /* font-weight: bold; */
   /* padding-right: 0px; */
 }
 .car-col-content {
