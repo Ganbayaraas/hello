@@ -6,7 +6,8 @@
   background: none;
 }
 .qr-tab .tab-view {
-  margin-top: 50px;
+  /* margin-top: 50px; */
+  padding: 20px 0px;
 }
 .qr-tab .tab-content {
   background-color: #f8f8fe;
@@ -25,7 +26,7 @@
   padding: 5px;
 }
 .qr-tab-menu-container .active {
-  border-bottom: 2px rgb(162, 209, 52) solid;
+  border-bottom: 2px #fff solid;
 }
 .margin-l-5 {
   margin-left: 5px;
@@ -73,4 +74,22 @@
 #car-dtl p {
   color: #4b5180;
   font-weight: bold;
+}
+.qr-content > .scroll {
+  height: 25vh;
+  background: rgb(134, 205, 109);
+  background: url(/www/img/lines/home-small-line.png), -moz-linear-gradient(90deg, rgba(134, 205, 109, 1) 10%, rgba(63, 193, 243, 1) 97%);
+  background: url(/www/img/lines/home-small-line.png), -webkit-linear-gradient(90deg, rgba(134, 205, 109, 1) 10%, rgba(63, 193, 243, 1) 97%);
+  background: url(/www/img/lines/home-small-line.png), linear-gradient(90deg, rgba(171, 211, 36, 1) 10%, rgba(64, 191, 248, 1) 97%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#86cd6d",endColorstr="#3fc1f3",GradientType=1);
+  background-repeat: no-repeat;
+  background-position: 80% 0%;
+  background-size: contain;
+}
+.qr-tab-title {
+  color: #fff !important;
+}
+.qr-tab {
+  margin-top: 20px;
+  padding: 0 10px;
 }
