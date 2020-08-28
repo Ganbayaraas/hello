@@ -23,7 +23,6 @@
   bottom: 10%;
   position: absolute;
   width: 100%;
-  padding: 0px 25px;
 }
 .blue-card {
   background-color: rgba(61, 192, 250, 1);
@@ -65,7 +64,6 @@
 }
 .blue-btn-container {
   padding: 20px;
-  position: absolute;
   width: 100%;
   bottom: 40%;
 }

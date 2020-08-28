@@ -181,7 +181,7 @@ h4 {
 }
 .bottom-footer {
   margin-bottom: 100px;
-  padding: 30px 50px 10px 50px;
+  /* padding: 30px 50px 10px 50px; */
   flex-shrink: 0;
   background: none;
 }
@@ -404,6 +404,7 @@ ion-header-bar.bar.bar-header {
   padding: 10px 30px 0px 30px;
   box-shadow: 1px 1px 5px -2px grey;
   margin-top: 10px;
+  margin-bottom: 40px;
 }
 .bank-container img {
   margin-bottom: 10px;

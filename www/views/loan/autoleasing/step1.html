@@ -17,7 +17,7 @@
           <p class="ion-color-big-text">Код оруулна уу</p>
           <input type="text" placeholder="DCC0001" name="carCode" class="step1-car-code" />
         </div>
-        <div style="display: flex; height: 40%; flex-direction: column; align-items: center; justify-content: flex-end;">
+        <div style="display: flex; height: 40%; flex-direction: column; align-items: center; justify-content: flex-end">
           <div class="qr-btn-container">
             <button class="button qr-button" id="qr" ui-sref="#">
               <span class="filter">
@@ -26,21 +26,17 @@
               </span>
             </button>
           </div>
-          <div class="bank-container">
-            <p>
-              Та дурын банк болон ББСБ -ын зээлээр захиалан авах боломжтой
-            </p>
-            <img src="img/golomt.png" />
-            <img src="img/khanbank-mn.png" />
-            <img src="img/golomt.png" />
-            <img src="img/golomt.png" />
-          </div>
         </div>
       </div>
       <ion-footer class="bottom-footer">
-        <button class="button btn single-button" id="Next" ui-sref="autoleasing-2">
-          Үргэлжлүүлэх
-        </button>
+        <div class="bank-container">
+          <p>Та дурын банк болон ББСБ -ын зээлээр захиалан авах боломжтой</p>
+          <img src="img/golomt.png" />
+          <img src="img/khanbank-mn.png" />
+          <img src="img/golomt.png" />
+          <img src="img/golomt.png" />
+        </div>
+        <button class="button btn single-button" id="Next" ui-sref="autoleasing-2">Үргэлжлүүлэх</button>
       </ion-footer>
     </div>
   </ion-content>
